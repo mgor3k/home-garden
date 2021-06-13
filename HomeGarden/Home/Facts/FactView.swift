@@ -35,6 +35,7 @@ struct FactView: View {
             
             Spacer()
             
+            // FIX: Clickable area is too big
             Button(action: nextAction) {
                 VStack {
                     Spacer()

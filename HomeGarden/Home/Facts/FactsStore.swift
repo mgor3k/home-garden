@@ -22,6 +22,10 @@ class FactsStore: ObservableObject {
     
     @Published var currentIndex: Int = 0
     
+    var pastFact: Fact {
+        facts[(currentIndex - 1) % facts.count]
+    }
+    
     var currentFact: Fact {
         facts[currentIndex % facts.count]
     }
