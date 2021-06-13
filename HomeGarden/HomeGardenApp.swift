@@ -1,7 +1,4 @@
 //
-//  HomeGardenApp.swift
-//  HomeGarden
-//
 //  Created by Maciej Gorecki on 13/06/2021.
 //
 
@@ -11,7 +8,7 @@ import SwiftUI
 struct HomeGardenApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
