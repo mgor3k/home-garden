@@ -5,19 +5,21 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject var store = FactsStore()
+    
     var body: some View {
-        VStack(alignment: .leading, spacing: 32) {
+        VStack(spacing: 32) {
             HomeTopBar(
                 tasksCount: 2,
-                onSearchTapped: {}
+                onSearchTapped: {
+                    print("search tapped")
+                }
             )
             .padding(.horizontal, 24)
             
             VStack(alignment: .leading, spacing: 24) {
                 SectionText("Did you know...")
-                
-                // TODO: Fix this later
-                FactsView(store: FactsStore())
+                FactsView(store: store)
             }
             .padding(.horizontal, 24)
             
