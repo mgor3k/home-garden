@@ -17,40 +17,43 @@ struct HomeFactsView: View {
                 .font(.title3)
             
             ZStack {
-                if isToggling {
-                    BackCard(opacity: 0.3, rotation: -6)
-                }
-                
-                BackCard(opacity: isToggling ? 0.5 : 0.3, rotation: isToggling ? -4 : -6)
-                BackCard(opacity: isToggling ? 1 : 0.5, rotation: isToggling ? -1 : -4)
-                
-                if isToggling {
-                    FactView(fact: store.currentFact, nextAction: {})
-                        .frame(height: cardHeight)
-                        .rotationEffect(.degrees(-1))
-                }
-                
-                FactView(
-                    fact: isToggling ? store.pastFact : store.currentFact,
-                    nextAction: {
-                    guard !isToggling else { return }
-                    store.toggleNextFact()
-                    withAnimation(Animation.easeIn(duration: 0.5)) {
-                        isToggling = true
-                        
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                            isToggling = false
-                        }
-                    }
-                    
-
-                }
-                )
+                ForEach(store.facts.indices) { index in
+                    FactView(
+                        fact: store.facts[index],
+                        nextAction: store.toggleFacts
+                    )
+                    .zIndex(Double(index) * -1)
                     .frame(height: cardHeight)
-                    .rotationEffect(.degrees(-1))
-                    .opacity(isToggling ? 0 : 1)
-                    .offset(x: isToggling ? 500 : 0, y: isToggling ? -30 : 0)
+                    .opacity(opacity(forIndex: index))
+                    .rotationEffect(rotationAngle(forIndex: index))
+                }
             }
+        }
+    }
+    
+    func opacity(forIndex index: Int) -> Double {
+        switch index {
+        case 0:
+            return 1
+        case 1:
+            return 0.5
+        case 2:
+            return 0.3
+        default:
+            return 0
+        }
+    }
+    
+    func rotationAngle(forIndex index: Int) -> Angle {
+        switch index {
+        case 0:
+            return .zero
+        case 1:
+            return .degrees(-4)
+        case 2:
+            return .degrees(-6)
+        default:
+            return .zero
         }
     }
 }

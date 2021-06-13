@@ -20,22 +20,16 @@ class FactsStore: ObservableObject {
         )
     ]
     
-    @Published var currentIndex: Int = 0
-    
-    var pastFact: Fact {
-        facts[(currentIndex - 1) % facts.count]
-    }
-    
-    var currentFact: Fact {
-        facts[currentIndex % facts.count]
-    }
-    
-    func toggleNextFact() {
-        currentIndex += 1
+    func toggleFacts() {
+        var newFacts = facts
+        let first = newFacts.removeFirst()
+        newFacts.append(first)
+        self.facts = newFacts
     }
 }
 
-struct Fact {
+struct Fact: Identifiable {
+    let id = UUID()
     let title: String
     let content: String
 }

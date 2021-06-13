@@ -15,6 +15,7 @@
 		BFC7179426762DD5000A2F8B /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7179326762DD5000A2F8B /* IconButton.swift */; };
 		BFC71798267630A6000A2F8B /* HomeFactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC71797267630A6000A2F8B /* HomeFactsView.swift */; };
 		BFCE78A726765778009DB52D /* FactsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78A626765778009DB52D /* FactsStore.swift */; };
+		BFCE78A926766E67009DB52D /* ReversibleAnimationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78A826766E67009DB52D /* ReversibleAnimationStore.swift */; };
 		BFF2AA062676399A003069D4 /* FactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2AA052676399A003069D4 /* FactView.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		BFC7179326762DD5000A2F8B /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
 		BFC71797267630A6000A2F8B /* HomeFactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactsView.swift; sourceTree = "<group>"; };
 		BFCE78A626765778009DB52D /* FactsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsStore.swift; sourceTree = "<group>"; };
+		BFCE78A826766E67009DB52D /* ReversibleAnimationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversibleAnimationStore.swift; sourceTree = "<group>"; };
 		BFF2AA052676399A003069D4 /* FactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				BF440180267624CF00C21EBA /* Views */,
+				BFCE78A826766E67009DB52D /* ReversibleAnimationStore.swift */,
 			);
 			path = Reusables;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFCE78A726765778009DB52D /* FactsStore.swift in Sources */,
+				BFCE78A926766E67009DB52D /* ReversibleAnimationStore.swift in Sources */,
 				BFF2AA062676399A003069D4 /* FactView.swift in Sources */,
 				BFC7179426762DD5000A2F8B /* IconButton.swift in Sources */,
 				BF44016F2676245B00C21EBA /* ContentView.swift in Sources */,

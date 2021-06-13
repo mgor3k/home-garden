@@ -12,11 +12,16 @@ struct FactView: View {
     let fact: Fact
     let nextAction: () -> Void
     
+    @StateObject var store = ReversibleAnimationStore()
+    
     var body: some View {
         HStack {
             VStack {
                 Image(systemName: "lightbulb.fill")
                     .font(.title2)
+                    .foregroundColor(store.isAnimating ? .yellow : .white)
+                    .onAppear(perform: store.triggerAnimation)
+                
                 Spacer()
             }
             .padding()
@@ -35,15 +40,17 @@ struct FactView: View {
             
             Spacer()
             
-            // FIX: Clickable area is too big
-            Button(action: nextAction) {
-                VStack {
-                    Spacer()
+            VStack {
+                Spacer()
+                Button(action: {
+                    nextAction()
+                    store.triggerAnimation()
+                }) {
                     Image(systemName: "repeat.circle.fill")
                         .font(.title)
                 }
-                .padding()
             }
+            .padding()
         }
         .foregroundColor(.white)
         .frame(maxWidth: .infinity, maxHeight: 300)
