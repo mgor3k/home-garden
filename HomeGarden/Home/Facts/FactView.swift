@@ -10,7 +10,7 @@ struct FactView: View {
     let darkest = Color.accentColor
     
     let fact: Fact
-    let nextAction: () -> Void
+    let action: () -> Void
     
     @StateObject var store = ReversibleAnimationStore()
     
@@ -43,7 +43,7 @@ struct FactView: View {
             VStack {
                 Spacer()
                 Button(action: {
-                    nextAction()
+                    action()
                     store.triggerAnimation()
                 }) {
                     Image(systemName: "repeat.circle.fill")
@@ -82,7 +82,7 @@ struct FactView: View {
 struct FactView_Previews: PreviewProvider {
     // TODO: Fix this later
     static var previews: some View {
-        FactView(fact: FactsStore().facts[0], nextAction: {})
+        FactView(fact: FactsStore().facts[0], action: {})
             .frame(width: 400, height: 150)
             .padding()
             .previewLayout(.fixed(width: 500, height: 200))

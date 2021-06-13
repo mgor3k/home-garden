@@ -6,7 +6,7 @@ import SwiftUI
 
 struct FactsView: View {
     @StateObject var store: FactsStore
-    @StateObject var animationStore = ReversibleAnimationStore(duration: 0.2)
+    @StateObject var animation = ReversibleAnimationStore(duration: 0.2)
     
     let cardHeight: CGFloat = 150
     @State var isToggling = false
@@ -21,9 +21,9 @@ struct FactsView: View {
                 ForEach(store.facts.indices.prefix(3)) { index in
                     FactView(
                         fact: store.facts[index],
-                        nextAction: {
+                        action: {
                             store.toggleFacts()
-                            animationStore.triggerAnimation()
+                            animation.triggerAnimation()
                         }
                     )
                     .zIndex(Double(index) * -1)
@@ -38,11 +38,11 @@ struct FactsView: View {
     func opacity(forIndex index: Int) -> Double {
         switch index {
         case 0:
-            return animationStore.isAnimating ? 0.9 : 1
+            return animation.isAnimating ? 0.9 : 1
         case 1:
-            return animationStore.isAnimating ? 0.3 : 0.5
+            return animation.isAnimating ? 0.3 : 0.5
         case 2:
-            return animationStore.isAnimating ? 0.2 : 0.3
+            return animation.isAnimating ? 0.2 : 0.3
         default:
             return 0
         }
@@ -51,11 +51,11 @@ struct FactsView: View {
     func rotationAngle(forIndex index: Int) -> Angle {
         switch index {
         case 0:
-            return .degrees(animationStore.isAnimating ? -2 : 0)
+            return .degrees(animation.isAnimating ? -2 : 0)
         case 1:
-            return .degrees(animationStore.isAnimating ? -2 : -4)
+            return .degrees(animation.isAnimating ? -2 : -4)
         case 2:
-            return .degrees(animationStore.isAnimating ? -4 : -6)
+            return .degrees(animation.isAnimating ? -4 : -6)
         default:
             return .zero
         }
