@@ -11,6 +11,9 @@
 		BF44016F2676245B00C21EBA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF44016E2676245B00C21EBA /* ContentView.swift */; };
 		BF4401712676245C00C21EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4401702676245C00C21EBA /* Assets.xcassets */; };
 		BF4401742676245C00C21EBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4401732676245C00C21EBA /* Preview Assets.xcassets */; };
+		BF440183267624F800C21EBA /* HomeTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF440182267624F800C21EBA /* HomeTopBar.swift */; };
+		BFC7179426762DD5000A2F8B /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7179326762DD5000A2F8B /* IconButton.swift */; };
+		BFC71798267630A6000A2F8B /* HomeFactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC71797267630A6000A2F8B /* HomeFactsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		BF44016E2676245B00C21EBA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BF4401702676245C00C21EBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF4401732676245C00C21EBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BF440182267624F800C21EBA /* HomeTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopBar.swift; sourceTree = "<group>"; };
+		BFC7179326762DD5000A2F8B /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
+		BFC71797267630A6000A2F8B /* HomeFactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,11 @@
 			children = (
 				BF44016C2676245B00C21EBA /* HomeGardenApp.swift */,
 				BF44016E2676245B00C21EBA /* ContentView.swift */,
+				BF44017B2676249300C21EBA /* Home */,
+				BF44017C2676249800C21EBA /* Search */,
+				BF44017D2676249C00C21EBA /* Bookmarks */,
+				BF44017E267624A300C21EBA /* Notifications */,
+				BF44017F267624BC00C21EBA /* Reusables */,
 				BF4401702676245C00C21EBA /* Assets.xcassets */,
 				BF4401722676245C00C21EBA /* Preview Content */,
 			);
@@ -65,6 +76,60 @@
 				BF4401732676245C00C21EBA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BF44017B2676249300C21EBA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BF440181267624E800C21EBA /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BF44017C2676249800C21EBA /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		BF44017D2676249C00C21EBA /* Bookmarks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bookmarks;
+			sourceTree = "<group>";
+		};
+		BF44017E267624A300C21EBA /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		BF44017F267624BC00C21EBA /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				BF440180267624CF00C21EBA /* Views */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
+		BF440180267624CF00C21EBA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BFC7179326762DD5000A2F8B /* IconButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF440181267624E800C21EBA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF440182267624F800C21EBA /* HomeTopBar.swift */,
+				BFC71797267630A6000A2F8B /* HomeFactsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +202,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC7179426762DD5000A2F8B /* IconButton.swift in Sources */,
 				BF44016F2676245B00C21EBA /* ContentView.swift in Sources */,
+				BFC71798267630A6000A2F8B /* HomeFactsView.swift in Sources */,
+				BF440183267624F800C21EBA /* HomeTopBar.swift in Sources */,
 				BF44016D2676245B00C21EBA /* HomeGardenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
