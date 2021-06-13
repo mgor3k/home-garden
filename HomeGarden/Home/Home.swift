@@ -1,7 +1,4 @@
 //
-//  ContentView.swift
-//  HomeGarden
-//
 //  Created by Maciej Gorecki on 13/06/2021.
 //
 
@@ -15,7 +12,9 @@ struct ContentView: View {
                 onSearchTapped: {}
             )
                 .padding(24)
-            HomeFactsView()
+            
+            // TODO: Fix this later
+            FactsView(store: FactsStore())
                 .padding(24)
             Spacer()
         }
