@@ -5,15 +5,39 @@
 import SwiftUI
 
 struct HomeFactsView: View {
+    let cardHeight: CGFloat = 150
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
             Text("Did you know...")
                 .bold()
                 .font(.title3)
             
-            FactView()
+            ZStack {
+                BackCard(opacity: 0.3, rotation: -6)
+                BackCard(opacity: 0.5, rotation: -4)
+                
+                FactView()
+                    .frame(height: cardHeight)
+                    .rotationEffect(.degrees(-1))
+            }
+        }
+    }
+}
+
+private extension HomeFactsView {
+    struct BackCard: View {
+        let opacity: CGFloat
+        let rotation: CGFloat
+        
+        var body: some View {
+            Rectangle()
+                .foregroundColor(.accentColor.opacity(opacity))
                 .frame(height: 150)
-                .rotationEffect(.degrees(-1))
+                .clipShape(
+                    RoundedRectangle(cornerRadius: 30, style: .continuous)
+                )
+                .rotationEffect(.degrees(rotation))
         }
     }
 }
