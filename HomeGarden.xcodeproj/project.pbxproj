@@ -14,6 +14,7 @@
 		BF440183267624F800C21EBA /* HomeTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF440182267624F800C21EBA /* HomeTopBar.swift */; };
 		BFC7179426762DD5000A2F8B /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7179326762DD5000A2F8B /* IconButton.swift */; };
 		BFC71798267630A6000A2F8B /* HomeFactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC71797267630A6000A2F8B /* HomeFactsView.swift */; };
+		BFF2AA062676399A003069D4 /* FactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2AA052676399A003069D4 /* FactView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		BF440182267624F800C21EBA /* HomeTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopBar.swift; sourceTree = "<group>"; };
 		BFC7179326762DD5000A2F8B /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
 		BFC71797267630A6000A2F8B /* HomeFactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactsView.swift; sourceTree = "<group>"; };
+		BFF2AA052676399A003069D4 /* FactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				BF44016C2676245B00C21EBA /* HomeGardenApp.swift */,
-				BF44016E2676245B00C21EBA /* ContentView.swift */,
 				BF44017B2676249300C21EBA /* Home */,
 				BF44017C2676249800C21EBA /* Search */,
 				BF44017D2676249C00C21EBA /* Bookmarks */,
@@ -81,6 +82,7 @@
 		BF44017B2676249300C21EBA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				BF44016E2676245B00C21EBA /* ContentView.swift */,
 				BF440181267624E800C21EBA /* Views */,
 			);
 			path = Home;
@@ -128,6 +130,7 @@
 			children = (
 				BF440182267624F800C21EBA /* HomeTopBar.swift */,
 				BFC71797267630A6000A2F8B /* HomeFactsView.swift */,
+				BFF2AA052676399A003069D4 /* FactView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF2AA062676399A003069D4 /* FactView.swift in Sources */,
 				BFC7179426762DD5000A2F8B /* IconButton.swift in Sources */,
 				BF44016F2676245B00C21EBA /* ContentView.swift in Sources */,
 				BFC71798267630A6000A2F8B /* HomeFactsView.swift in Sources */,
