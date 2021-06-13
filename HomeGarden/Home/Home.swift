@@ -6,18 +6,44 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 24) {
+        VStack(alignment: .leading, spacing: 32) {
             HomeTopBar(
                 tasksCount: 2,
                 onSearchTapped: {}
             )
             .padding(.horizontal, 24)
             
-            // TODO: Fix this later
-            FactsView(store: FactsStore())
-                .padding(24)
+            VStack(alignment: .leading, spacing: 24) {
+                SectionText("Did you know...")
+                
+                // TODO: Fix this later
+                FactsView(store: FactsStore())
+            }
+            .padding(.horizontal, 24)
             
-            MyGardenList()
+            VStack {
+                HStack {
+                    SectionText("My Garden")
+                    Spacer()
+                    Text("See all")
+                        .font(.callout)
+                }
+                .padding(.top, 16)
+                .padding(.horizontal, 24)
+                
+                MyGardenView()
+            }
+            
+            VStack {
+                HStack {
+                    SectionText("Caring calendar")
+                    Spacer()
+                    PageIndicator(currentPage: 0, pagesCount: 3)
+                }
+                
+                CaringCalendarView()
+            }
+            .padding(.horizontal, 24)
             
             Spacer()
         }

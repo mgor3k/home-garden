@@ -16,9 +16,12 @@
 		BFC71798267630A6000A2F8B /* FactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC71797267630A6000A2F8B /* FactsView.swift */; };
 		BFCE78A726765778009DB52D /* FactsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78A626765778009DB52D /* FactsStore.swift */; };
 		BFCE78A926766E67009DB52D /* ReversibleAnimationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78A826766E67009DB52D /* ReversibleAnimationStore.swift */; };
-		BFCE78B226767CF1009DB52D /* MyGardenList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78B126767CF1009DB52D /* MyGardenList.swift */; };
+		BFCE78B226767CF1009DB52D /* MyGardenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78B126767CF1009DB52D /* MyGardenView.swift */; };
 		BFCE78B426767DCE009DB52D /* MyPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78B326767DCE009DB52D /* MyPlantView.swift */; };
 		BFCE78B626767DE0009DB52D /* MyGardenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78B526767DE0009DB52D /* MyGardenStore.swift */; };
+		BFCE78C126769A32009DB52D /* SectionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78C026769A32009DB52D /* SectionText.swift */; };
+		BFCE78C326769A9D009DB52D /* CaringCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78C226769A9D009DB52D /* CaringCalendarView.swift */; };
+		BFCE78C526769B60009DB52D /* PageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78C426769B5F009DB52D /* PageIndicator.swift */; };
 		BFF2AA062676399A003069D4 /* FactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2AA052676399A003069D4 /* FactView.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,9 +36,12 @@
 		BFC71797267630A6000A2F8B /* FactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsView.swift; sourceTree = "<group>"; };
 		BFCE78A626765778009DB52D /* FactsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsStore.swift; sourceTree = "<group>"; };
 		BFCE78A826766E67009DB52D /* ReversibleAnimationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversibleAnimationStore.swift; sourceTree = "<group>"; };
-		BFCE78B126767CF1009DB52D /* MyGardenList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenList.swift; sourceTree = "<group>"; };
+		BFCE78B126767CF1009DB52D /* MyGardenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenView.swift; sourceTree = "<group>"; };
 		BFCE78B326767DCE009DB52D /* MyPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantView.swift; sourceTree = "<group>"; };
 		BFCE78B526767DE0009DB52D /* MyGardenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenStore.swift; sourceTree = "<group>"; };
+		BFCE78C026769A32009DB52D /* SectionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionText.swift; sourceTree = "<group>"; };
+		BFCE78C226769A9D009DB52D /* CaringCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaringCalendarView.swift; sourceTree = "<group>"; };
+		BFCE78C426769B5F009DB52D /* PageIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageIndicator.swift; sourceTree = "<group>"; };
 		BFF2AA052676399A003069D4 /* FactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,8 +128,8 @@
 		BF44017F267624BC00C21EBA /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
+				BFCE78BB26769163009DB52D /* Model */,
 				BF440180267624CF00C21EBA /* Views */,
-				BFCE78A826766E67009DB52D /* ReversibleAnimationStore.swift */,
 			);
 			path = Reusables;
 			sourceTree = "<group>";
@@ -132,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				BFC7179326762DD5000A2F8B /* IconButton.swift */,
+				BFCE78C026769A32009DB52D /* SectionText.swift */,
+				BFCE78C426769B5F009DB52D /* PageIndicator.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,6 +168,7 @@
 				BFCE78AA26766F2F009DB52D /* TopBar */,
 				BFCE78A32676573B009DB52D /* Facts */,
 				BFCE78B026767CD8009DB52D /* MyGarden */,
+				BFCE78B7267690D1009DB52D /* Calendar */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -167,11 +176,35 @@
 		BFCE78B026767CD8009DB52D /* MyGarden */ = {
 			isa = PBXGroup;
 			children = (
-				BFCE78B126767CF1009DB52D /* MyGardenList.swift */,
+				BFCE78BA2676913B009DB52D /* Components */,
+				BFCE78B126767CF1009DB52D /* MyGardenView.swift */,
 				BFCE78B526767DE0009DB52D /* MyGardenStore.swift */,
-				BFCE78B326767DCE009DB52D /* MyPlantView.swift */,
 			);
 			path = MyGarden;
+			sourceTree = "<group>";
+		};
+		BFCE78B7267690D1009DB52D /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE78C226769A9D009DB52D /* CaringCalendarView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		BFCE78BA2676913B009DB52D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE78B326767DCE009DB52D /* MyPlantView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BFCE78BB26769163009DB52D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE78A826766E67009DB52D /* ReversibleAnimationStore.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,13 +280,16 @@
 				BFCE78A726765778009DB52D /* FactsStore.swift in Sources */,
 				BFCE78B626767DE0009DB52D /* MyGardenStore.swift in Sources */,
 				BFCE78B426767DCE009DB52D /* MyPlantView.swift in Sources */,
+				BFCE78C326769A9D009DB52D /* CaringCalendarView.swift in Sources */,
 				BFCE78A926766E67009DB52D /* ReversibleAnimationStore.swift in Sources */,
 				BFF2AA062676399A003069D4 /* FactView.swift in Sources */,
 				BFC7179426762DD5000A2F8B /* IconButton.swift in Sources */,
+				BFCE78C126769A32009DB52D /* SectionText.swift in Sources */,
 				BF44016F2676245B00C21EBA /* Home.swift in Sources */,
 				BFC71798267630A6000A2F8B /* FactsView.swift in Sources */,
 				BF440183267624F800C21EBA /* HomeTopBar.swift in Sources */,
-				BFCE78B226767CF1009DB52D /* MyGardenList.swift in Sources */,
+				BFCE78B226767CF1009DB52D /* MyGardenView.swift in Sources */,
+				BFCE78C526769B60009DB52D /* PageIndicator.swift in Sources */,
 				BF44016D2676245B00C21EBA /* HomeGardenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
