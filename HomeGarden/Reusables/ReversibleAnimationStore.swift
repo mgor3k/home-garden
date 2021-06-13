@@ -7,10 +7,16 @@ import SwiftUI
 class ReversibleAnimationStore: ObservableObject {
     @Published var isAnimating = false
     
+    let duration: TimeInterval
+    
     var task: DispatchWorkItem?
     
+    init(duration: TimeInterval = 1) {
+        self.duration = duration
+    }
+    
     func triggerAnimation () {
-        withAnimation(.linear(duration: 1)) {
+        withAnimation(.easeInOut(duration: duration)) {
             isAnimating = true
             scheduleAnimationEnd()
         }
@@ -20,12 +26,12 @@ class ReversibleAnimationStore: ObservableObject {
         task?.cancel()
         
         let task = DispatchWorkItem { [weak self] in
-            withAnimation(.linear(duration: 1)) {
+            withAnimation(.easeInOut(duration: self?.duration ?? 1)) {
                 self?.isAnimating = false
             }
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: task)
+        DispatchQueue.main.asyncAfter(deadline: .now() + duration, execute: task)
         self.task = task
     }
 }

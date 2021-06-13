@@ -4,8 +4,9 @@
 
 import SwiftUI
 
-struct HomeFactsView: View {
+struct FactsView: View {
     @StateObject var store: FactsStore
+    @StateObject var animationStore = ReversibleAnimationStore(duration: 0.2)
     
     let cardHeight: CGFloat = 150
     @State var isToggling = false
@@ -17,10 +18,13 @@ struct HomeFactsView: View {
                 .font(.title3)
             
             ZStack {
-                ForEach(store.facts.indices) { index in
+                ForEach(store.facts.indices.prefix(3)) { index in
                     FactView(
                         fact: store.facts[index],
-                        nextAction: store.toggleFacts
+                        nextAction: {
+                            store.toggleFacts()
+                            animationStore.triggerAnimation()
+                        }
                     )
                     .zIndex(Double(index) * -1)
                     .frame(height: cardHeight)
@@ -34,11 +38,11 @@ struct HomeFactsView: View {
     func opacity(forIndex index: Int) -> Double {
         switch index {
         case 0:
-            return 1
+            return animationStore.isAnimating ? 0.9 : 1
         case 1:
-            return 0.5
+            return animationStore.isAnimating ? 0.3 : 0.5
         case 2:
-            return 0.3
+            return animationStore.isAnimating ? 0.2 : 0.3
         default:
             return 0
         }
@@ -47,37 +51,20 @@ struct HomeFactsView: View {
     func rotationAngle(forIndex index: Int) -> Angle {
         switch index {
         case 0:
-            return .zero
+            return .degrees(animationStore.isAnimating ? -2 : 0)
         case 1:
-            return .degrees(-4)
+            return .degrees(animationStore.isAnimating ? -2 : -4)
         case 2:
-            return .degrees(-6)
+            return .degrees(animationStore.isAnimating ? -4 : -6)
         default:
             return .zero
         }
     }
 }
 
-private extension HomeFactsView {
-    struct BackCard: View {
-        let opacity: CGFloat
-        let rotation: CGFloat
-        
-        var body: some View {
-            Rectangle()
-                .foregroundColor(.accentColor.opacity(opacity))
-                .frame(height: 150)
-                .clipShape(
-                    RoundedRectangle(cornerRadius: 30, style: .continuous)
-                )
-                .rotationEffect(.degrees(rotation))
-        }
-    }
-}
-
 struct HomeFactsView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeFactsView(store: FactsStore())
+        FactsView(store: FactsStore())
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
             .padding()
     }
