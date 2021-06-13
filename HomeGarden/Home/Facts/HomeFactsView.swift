@@ -5,6 +5,8 @@
 import SwiftUI
 
 struct HomeFactsView: View {
+    @StateObject var store: FactsStore
+    
     let cardHeight: CGFloat = 150
     
     var body: some View {
@@ -17,7 +19,10 @@ struct HomeFactsView: View {
                 BackCard(opacity: 0.3, rotation: -6)
                 BackCard(opacity: 0.5, rotation: -4)
                 
-                FactView()
+                FactView(
+                    fact: store.currentFact,
+                    nextAction: store.toggleNextFact
+                )
                     .frame(height: cardHeight)
                     .rotationEffect(.degrees(-1))
             }
@@ -44,7 +49,7 @@ private extension HomeFactsView {
 
 struct HomeFactsView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeFactsView()
+        HomeFactsView(store: FactsStore())
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
             .padding()
     }

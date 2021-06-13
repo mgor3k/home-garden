@@ -15,7 +15,9 @@ struct ContentView: View {
                 onSearchTapped: {}
             )
                 .padding(24)
-            HomeFactsView()
+            
+            // TODO: Fix this later
+            HomeFactsView(store: FactsStore())
                 .padding(24)
             Spacer()
         }

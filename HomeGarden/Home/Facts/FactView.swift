@@ -9,6 +9,9 @@ struct FactView: View {
     let darker = Color(red: 0.12, green: 0.35, blue: 0.24)
     let darkest = Color.accentColor
     
+    let fact: Fact
+    let nextAction: () -> Void
+    
     var body: some View {
         HStack {
             VStack {
@@ -20,9 +23,9 @@ struct FactView: View {
             .padding(.top, 6)
             
             VStack(alignment: .leading, spacing: 8) {
-                Text("Some fact")
+                Text(fact.title)
                     .font(.callout)
-                Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s")
+                Text(fact.content)
                     .font(.caption)
                     .italic()
                 Spacer()
@@ -32,12 +35,14 @@ struct FactView: View {
             
             Spacer()
             
-            VStack {
-                Spacer()
-                Image(systemName: "repeat.circle.fill")
-                    .font(.title)
+            Button(action: nextAction) {
+                VStack {
+                    Spacer()
+                    Image(systemName: "repeat.circle.fill")
+                        .font(.title)
+                }
+                .padding()
             }
-            .padding()
         }
         .foregroundColor(.white)
         .frame(maxWidth: .infinity, maxHeight: 300)
@@ -67,8 +72,9 @@ struct FactView: View {
 }
 
 struct FactView_Previews: PreviewProvider {
+    // TODO: Fix this later
     static var previews: some View {
-        FactView()
+        FactView(fact: FactsStore().facts[0], nextAction: {})
             .frame(width: 400, height: 150)
             .padding()
             .previewLayout(.fixed(width: 500, height: 200))
