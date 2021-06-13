@@ -4,25 +4,29 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 24) {
             HomeTopBar(
                 tasksCount: 2,
                 onSearchTapped: {}
             )
-                .padding(24)
+            .padding(.horizontal, 24)
             
             // TODO: Fix this later
             FactsView(store: FactsStore())
                 .padding(24)
+            
+            MyGardenList()
+            
             Spacer()
         }
+        .padding(.vertical, 24)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }
