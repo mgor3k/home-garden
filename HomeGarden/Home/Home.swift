@@ -8,6 +8,12 @@ struct HomeView: View {
     @StateObject var store = FactsStore()
     
     var body: some View {
+        ScrollView {
+            content
+        }
+    }
+    
+    var content: some View {
         VStack(spacing: 32) {
             HomeTopBar(
                 tasksCount: 2,
@@ -36,16 +42,8 @@ struct HomeView: View {
                 MyGardenView()
             }
             
-            VStack {
-                HStack {
-                    SectionText("Caring calendar")
-                    Spacer()
-                    PageIndicator(currentPage: 0, pagesCount: 3)
-                }
-                
-                CaringCalendarView()
-            }
-            .padding(.horizontal, 24)
+            CalendarSection()
+                .padding(.horizontal, 24)
             
             Spacer()
         }
