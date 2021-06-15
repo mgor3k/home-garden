@@ -12,13 +12,18 @@
 		BF4401712676245C00C21EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4401702676245C00C21EBA /* Assets.xcassets */; };
 		BF4401742676245C00C21EBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4401732676245C00C21EBA /* Preview Assets.xcassets */; };
 		BF440183267624F800C21EBA /* HomeTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF440182267624F800C21EBA /* HomeTopBar.swift */; };
+		BF442AED267862CA0060F6FC /* CalendarSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF442AEC267862CA0060F6FC /* CalendarSection.swift */; };
 		BFC7179426762DD5000A2F8B /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7179326762DD5000A2F8B /* IconButton.swift */; };
 		BFC71798267630A6000A2F8B /* FactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC71797267630A6000A2F8B /* FactsView.swift */; };
 		BFCE78A726765778009DB52D /* FactsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78A626765778009DB52D /* FactsStore.swift */; };
 		BFCE78A926766E67009DB52D /* ReversibleAnimationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78A826766E67009DB52D /* ReversibleAnimationStore.swift */; };
-		BFCE78B226767CF1009DB52D /* MyGardenList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78B126767CF1009DB52D /* MyGardenList.swift */; };
+		BFCE78B226767CF1009DB52D /* MyGardenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78B126767CF1009DB52D /* MyGardenView.swift */; };
 		BFCE78B426767DCE009DB52D /* MyPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78B326767DCE009DB52D /* MyPlantView.swift */; };
 		BFCE78B626767DE0009DB52D /* MyGardenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78B526767DE0009DB52D /* MyGardenStore.swift */; };
+		BFCE78C126769A32009DB52D /* SectionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78C026769A32009DB52D /* SectionText.swift */; };
+		BFCE78C326769A9D009DB52D /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78C226769A9D009DB52D /* CalendarView.swift */; };
+		BFCE78C526769B60009DB52D /* PageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78C426769B5F009DB52D /* PageIndicator.swift */; };
+		BFCE78C726772052009DB52D /* CalendarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78C626772052009DB52D /* CalendarItem.swift */; };
 		BFF2AA062676399A003069D4 /* FactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2AA052676399A003069D4 /* FactView.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,13 +34,18 @@
 		BF4401702676245C00C21EBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF4401732676245C00C21EBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF440182267624F800C21EBA /* HomeTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopBar.swift; sourceTree = "<group>"; };
+		BF442AEC267862CA0060F6FC /* CalendarSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSection.swift; sourceTree = "<group>"; };
 		BFC7179326762DD5000A2F8B /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
 		BFC71797267630A6000A2F8B /* FactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsView.swift; sourceTree = "<group>"; };
 		BFCE78A626765778009DB52D /* FactsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsStore.swift; sourceTree = "<group>"; };
 		BFCE78A826766E67009DB52D /* ReversibleAnimationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversibleAnimationStore.swift; sourceTree = "<group>"; };
-		BFCE78B126767CF1009DB52D /* MyGardenList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenList.swift; sourceTree = "<group>"; };
+		BFCE78B126767CF1009DB52D /* MyGardenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenView.swift; sourceTree = "<group>"; };
 		BFCE78B326767DCE009DB52D /* MyPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantView.swift; sourceTree = "<group>"; };
 		BFCE78B526767DE0009DB52D /* MyGardenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenStore.swift; sourceTree = "<group>"; };
+		BFCE78C026769A32009DB52D /* SectionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionText.swift; sourceTree = "<group>"; };
+		BFCE78C226769A9D009DB52D /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		BFCE78C426769B5F009DB52D /* PageIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageIndicator.swift; sourceTree = "<group>"; };
+		BFCE78C626772052009DB52D /* CalendarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarItem.swift; sourceTree = "<group>"; };
 		BFF2AA052676399A003069D4 /* FactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,8 +132,8 @@
 		BF44017F267624BC00C21EBA /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
+				BFCE78BB26769163009DB52D /* Model */,
 				BF440180267624CF00C21EBA /* Views */,
-				BFCE78A826766E67009DB52D /* ReversibleAnimationStore.swift */,
 			);
 			path = Reusables;
 			sourceTree = "<group>";
@@ -132,16 +142,26 @@
 			isa = PBXGroup;
 			children = (
 				BFC7179326762DD5000A2F8B /* IconButton.swift */,
+				BFCE78C026769A32009DB52D /* SectionText.swift */,
+				BFCE78C426769B5F009DB52D /* PageIndicator.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		BF442AEE267863B80060F6FC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BFF2AA052676399A003069D4 /* FactView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		BFCE78A32676573B009DB52D /* Facts */ = {
 			isa = PBXGroup;
 			children = (
+				BF442AEE267863B80060F6FC /* Components */,
 				BFCE78A626765778009DB52D /* FactsStore.swift */,
 				BFC71797267630A6000A2F8B /* FactsView.swift */,
-				BFF2AA052676399A003069D4 /* FactView.swift */,
 			);
 			path = Facts;
 			sourceTree = "<group>";
@@ -160,6 +180,7 @@
 				BFCE78AA26766F2F009DB52D /* TopBar */,
 				BFCE78A32676573B009DB52D /* Facts */,
 				BFCE78B026767CD8009DB52D /* MyGarden */,
+				BFCE78B7267690D1009DB52D /* Calendar */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -167,11 +188,45 @@
 		BFCE78B026767CD8009DB52D /* MyGarden */ = {
 			isa = PBXGroup;
 			children = (
-				BFCE78B126767CF1009DB52D /* MyGardenList.swift */,
+				BFCE78BA2676913B009DB52D /* Components */,
+				BFCE78B126767CF1009DB52D /* MyGardenView.swift */,
 				BFCE78B526767DE0009DB52D /* MyGardenStore.swift */,
-				BFCE78B326767DCE009DB52D /* MyPlantView.swift */,
 			);
 			path = MyGarden;
+			sourceTree = "<group>";
+		};
+		BFCE78B7267690D1009DB52D /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE78C826772055009DB52D /* Components */,
+				BF442AEC267862CA0060F6FC /* CalendarSection.swift */,
+				BFCE78C226769A9D009DB52D /* CalendarView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		BFCE78BA2676913B009DB52D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE78B326767DCE009DB52D /* MyPlantView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BFCE78BB26769163009DB52D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE78A826766E67009DB52D /* ReversibleAnimationStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFCE78C826772055009DB52D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE78C626772052009DB52D /* CalendarItem.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,13 +302,18 @@
 				BFCE78A726765778009DB52D /* FactsStore.swift in Sources */,
 				BFCE78B626767DE0009DB52D /* MyGardenStore.swift in Sources */,
 				BFCE78B426767DCE009DB52D /* MyPlantView.swift in Sources */,
+				BFCE78C326769A9D009DB52D /* CalendarView.swift in Sources */,
+				BFCE78C726772052009DB52D /* CalendarItem.swift in Sources */,
 				BFCE78A926766E67009DB52D /* ReversibleAnimationStore.swift in Sources */,
 				BFF2AA062676399A003069D4 /* FactView.swift in Sources */,
 				BFC7179426762DD5000A2F8B /* IconButton.swift in Sources */,
+				BFCE78C126769A32009DB52D /* SectionText.swift in Sources */,
+				BF442AED267862CA0060F6FC /* CalendarSection.swift in Sources */,
 				BF44016F2676245B00C21EBA /* Home.swift in Sources */,
 				BFC71798267630A6000A2F8B /* FactsView.swift in Sources */,
 				BF440183267624F800C21EBA /* HomeTopBar.swift in Sources */,
-				BFCE78B226767CF1009DB52D /* MyGardenList.swift in Sources */,
+				BFCE78B226767CF1009DB52D /* MyGardenView.swift in Sources */,
+				BFCE78C526769B60009DB52D /* PageIndicator.swift in Sources */,
 				BF44016D2676245B00C21EBA /* HomeGardenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

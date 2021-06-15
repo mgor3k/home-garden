@@ -55,25 +55,24 @@ struct FactView: View {
         .foregroundColor(.white)
         .frame(maxWidth: .infinity, maxHeight: 300)
         .background(
-            normal
-                .overlay(
-                    GeometryReader { proxy in
-            Circle()
-                .foregroundColor(darker)
-                .frame(width: proxy.size.height * 2, height: proxy.size.height * 2)
-                .offset(x: proxy.size.height, y: -proxy.size.height)
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
-        }
-                )
-                .overlay(
-                    GeometryReader { proxy in
-            Circle()
-                .foregroundColor(darkest)
-                .frame(width: proxy.size.height, height: proxy.size.height)
-                .offset(x: proxy.size.height / 2.5, y: proxy.size.height / 2.5)
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
-        }
-            )
+            ZStack {
+                normal
+            
+            GeometryReader { proxy in
+                darker
+                    .clipShape(Circle())
+                    .frame(width: proxy.size.width / 2)
+                    .scaleEffect(2)
+                    .offset(x: proxy.size.width / 1.5, y: proxy.size.width / 7)
+                }
+            
+            GeometryReader { proxy in
+                darkest
+                    .clipShape(Circle())
+                    .frame(width: proxy.size.width / 2)
+                    .offset(x: proxy.size.width / 1.5, y: proxy.size.width / 7)
+                }
+            }
         )
         .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
     }

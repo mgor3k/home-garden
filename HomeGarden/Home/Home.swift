@@ -5,19 +5,45 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject var store = FactsStore()
+    
     var body: some View {
-        VStack(alignment: .leading, spacing: 24) {
+        ScrollView {
+            content
+        }
+    }
+    
+    var content: some View {
+        VStack(spacing: 32) {
             HomeTopBar(
                 tasksCount: 2,
-                onSearchTapped: {}
+                onSearchTapped: {
+                    print("search tapped")
+                }
             )
             .padding(.horizontal, 24)
             
-            // TODO: Fix this later
-            FactsView(store: FactsStore())
-                .padding(24)
+            VStack(alignment: .leading, spacing: 24) {
+                SectionText("Did you know...")
+                FactsView(store: store)
+            }
+            .padding(.horizontal, 24)
             
-            MyGardenList()
+            VStack {
+                HStack {
+                    SectionText("My Garden")
+                    Spacer()
+                    Text("See all")
+                        .font(.callout)
+                }
+                .padding(.top, 16)
+                .padding(.horizontal, 24)
+                
+                MyGardenView()
+            }
+            
+            CalendarSection()
+                .padding(.horizontal, 24)
             
             Spacer()
         }

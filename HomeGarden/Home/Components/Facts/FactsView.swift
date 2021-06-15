@@ -12,25 +12,19 @@ struct FactsView: View {
     @State var isToggling = false
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 24) {
-            Text("Did you know...")
-                .bold()
-                .font(.title3)
-            
-            ZStack {
-                ForEach(store.facts.indices.prefix(3)) { index in
-                    FactView(
-                        fact: store.facts[index],
-                        action: {
-                            store.toggleFacts()
-                            animation.triggerAnimation()
-                        }
-                    )
+        ZStack {
+            ForEach(store.facts.indices.prefix(3)) { index in
+                FactView(
+                    fact: store.facts[index],
+                    action: {
+                    store.toggleFacts()
+                    animation.triggerAnimation()
+                }
+                )
                     .zIndex(Double(index) * -1)
                     .frame(height: cardHeight)
                     .opacity(opacity(forIndex: index))
                     .rotationEffect(rotationAngle(forIndex: index))
-                }
             }
         }
     }
