@@ -22,6 +22,11 @@ class ReversibleAnimationStore: ObservableObject {
         }
     }
     
+    func triggerWithoutAnimation() {
+        isAnimating = true
+        scheduleAnimationEnd()
+    }
+    
     func scheduleAnimationEnd() {
         task?.cancel()
         

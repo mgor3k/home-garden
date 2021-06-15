@@ -20,7 +20,6 @@ struct CalendarSection: View {
             }
             
             CalendarView(index: $currentPage)
-                .frame(width: UIScreen.main.bounds.width * 0.9)
         }
     }
 }

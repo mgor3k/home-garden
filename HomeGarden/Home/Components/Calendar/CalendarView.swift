@@ -8,16 +8,26 @@ struct CalendarView: View {
     @Binding var index: Int
     
     var body: some View {
-        TabView(selection: $index) {
+//        Text("")
+        HStack {
             ForEach(0..<3) { id in
                 CalendarItem()
-                    .padding(.horizontal, 24)
-                    .padding(.vertical, 8)
+//                    .padding(.horizontal, 24)
+//                    .padding(.vertical, 8)
                     .tag(id)
             }
         }
-        .frame(width: UIScreen.main.bounds.width, height: 200)
-        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+        
+//        TabView(selection: $index) {
+//            ForEach(0..<3) { id in
+//                CalendarItem()
+//                    .padding(.horizontal, 24)
+//                    .padding(.vertical, 8)
+//                    .tag(id)
+//            }
+//        }
+//        .frame(width: UIScreen.main.bounds.width, height: 200)
+//        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
     }
 }
 
