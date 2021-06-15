@@ -20,7 +20,7 @@ struct FactView: View {
                 Image(systemName: "lightbulb.fill")
                     .font(.title2)
                     .foregroundColor(store.isAnimating ? .yellow : .white)
-                    .onAppear(perform: store.triggerAnimation)
+                    .onAppear(perform: store.triggerWithoutAnimation)
                 
                 Spacer()
             }
