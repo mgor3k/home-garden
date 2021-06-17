@@ -16,8 +16,9 @@ struct CalendarSection: View {
                     currentPage: currentPage,
                     pagesCount: 3
                 )
-                .animation(.linear)
+                .animation(.linear, value: currentPage)
             }
+            .padding(.horizontal, 24)
             
             CalendarView(index: $currentPage)
         }

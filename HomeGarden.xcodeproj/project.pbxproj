@@ -281,6 +281,8 @@
 			dependencies = (
 			);
 			name = HomeGarden;
+			packageProductDependencies = (
+			);
 			productName = HomeGarden;
 			productReference = BF4401692676245B00C21EBA /* HomeGarden.app */;
 			productType = "com.apple.product-type.application";
@@ -309,6 +311,8 @@
 				Base,
 			);
 			mainGroup = BF4401602676245B00C21EBA;
+			packageReferences = (
+			);
 			productRefGroup = BF44016A2676245B00C21EBA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

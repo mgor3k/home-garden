@@ -8,7 +8,7 @@ struct HomeView: View {
     @StateObject var store = FactsStore()
     
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             content
         }
     }
@@ -43,7 +43,6 @@ struct HomeView: View {
             }
             
             CalendarSection()
-                .padding(.horizontal, 24)
             
             Spacer()
         }
