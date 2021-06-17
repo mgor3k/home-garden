@@ -23,11 +23,18 @@ struct MainView: View {
                 case .search:
                     Color.red
                         .navigationBarHidden(true)
+                case .bookmarks:
+                    Color.blue
+                        .navigationBarHidden(true)
+                case .notifications:
+                    Color.pink
+                        .navigationBarHidden(true)
                 }
                 
                 // TODO: Check non-notch devices
                 CustomTabBar(
-                    pages: router.possiblePages,
+                    actionPage: router.actionPage,
+                    pages: router.pages,
                     currentPage: $router.currentPage
                 )
                     .frame(

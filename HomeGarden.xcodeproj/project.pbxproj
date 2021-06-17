@@ -13,6 +13,7 @@
 		BF4401742676245C00C21EBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4401732676245C00C21EBA /* Preview Assets.xcassets */; };
 		BF440183267624F800C21EBA /* HomeTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF440182267624F800C21EBA /* HomeTopBar.swift */; };
 		BF442AED267862CA0060F6FC /* CalendarSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF442AEC267862CA0060F6FC /* CalendarSection.swift */; };
+		BF59CE0E267BBEEE0005034D /* TabBarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59CE0D267BBEEE0005034D /* TabBarShape.swift */; };
 		BF756E6326790DC0007EC5E9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF756E6226790DC0007EC5E9 /* MainView.swift */; };
 		BF756E6526791F0F007EC5E9 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF756E6426791F0F007EC5E9 /* CustomTabBar.swift */; };
 		BF756E6B26792076007EC5E9 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF756E6A26792076007EC5E9 /* MainRouter.swift */; };
@@ -39,6 +40,7 @@
 		BF4401732676245C00C21EBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF440182267624F800C21EBA /* HomeTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopBar.swift; sourceTree = "<group>"; };
 		BF442AEC267862CA0060F6FC /* CalendarSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSection.swift; sourceTree = "<group>"; };
+		BF59CE0D267BBEEE0005034D /* TabBarShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarShape.swift; sourceTree = "<group>"; };
 		BF756E6226790DC0007EC5E9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BF756E6426791F0F007EC5E9 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		BF756E6A26792076007EC5E9 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				BF756E6426791F0F007EC5E9 /* CustomTabBar.swift */,
+				BF59CE0D267BBEEE0005034D /* TabBarShape.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				BF756E6B26792076007EC5E9 /* MainRouter.swift in Sources */,
 				BFCE78C726772052009DB52D /* CalendarItem.swift in Sources */,
 				BFCE78A926766E67009DB52D /* ReversibleAnimationStore.swift in Sources */,
+				BF59CE0E267BBEEE0005034D /* TabBarShape.swift in Sources */,
 				BFF2AA062676399A003069D4 /* FactView.swift in Sources */,
 				BFC7179426762DD5000A2F8B /* IconButton.swift in Sources */,
 				BFCE78C126769A32009DB52D /* SectionText.swift in Sources */,

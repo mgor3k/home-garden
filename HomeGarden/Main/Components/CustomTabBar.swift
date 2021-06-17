@@ -5,12 +5,15 @@
 import SwiftUI
 
 struct CustomTabBar: View {
+    let actionPage: Page
     let pages: [Page]
+    
     @Binding var currentPage: Page
     
     var body: some View {
         ZStack {
-            Color.white
+            TabBarShape()
+                .foregroundColor(.white)
                 .shadow(color: .gray.opacity(0.3), radius: 20, x: 0, y: 0)
                 .ignoresSafeArea(edges: .bottom)
             
@@ -30,6 +33,12 @@ struct CustomTabBar: View {
 
 struct CustomTabBar_Previews: PreviewProvider {
     static var previews: some View {
-        CustomTabBar(pages: [], currentPage: .constant(.home))
+        ZStack {
+            Color.blue
+            
+            CustomTabBar(actionPage: .home, pages: [.bookmarks, .notifications], currentPage: .constant(.home))
+                .frame(height: 100)
+        }
+            .previewLayout(.fixed(width: 300, height: 250))
     }
 }

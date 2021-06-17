@@ -7,7 +7,11 @@ import SwiftUI
 class MainRouter: ObservableObject {
     @Published var currentPage: Page = .home
     
-    var possiblePages: [Page] {
-        [.home, .search]
+    var actionPage: Page {
+        .bookmarks
+    }
+    
+    var pages: [Page] {
+        [.home, .search, .bookmarks, .notifications]
     }
 }

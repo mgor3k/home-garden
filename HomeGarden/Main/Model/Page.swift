@@ -7,4 +7,6 @@ import Foundation
 enum Page: Hashable {
     case home
     case search
+    case bookmarks
+    case notifications
 }
