@@ -17,14 +17,44 @@ struct CustomTabBar: View {
                 .shadow(color: .gray.opacity(0.3), radius: 20, x: 0, y: 0)
                 .ignoresSafeArea(edges: .bottom)
             
-            HStack(alignment: .center) {
-                ForEach(pages, id: \.self) { page in
+//            HStack(alignment: .center) {
+//                ForEach(pages, id: \.self) { page in
+//                    Image(systemName: "house.fill")
+//                        .font(.title3)
+//                        .frame(maxWidth: .infinity)
+//                        .onTapGesture {
+//                            currentPage = page
+//                        }
+//                }
+//            }
+            
+            Circle()
+                .foregroundColor(.black)
+                .frame(width: 55, height: 55)
+                .offset(y: -30)
+            
+            HStack {
+                HStack {
                     Image(systemName: "house.fill")
                         .font(.title3)
                         .frame(maxWidth: .infinity)
-                        .onTapGesture {
-                            currentPage = page
-                        }
+                    
+                    Image(systemName: "house.fill")
+                        .font(.title3)
+                        .frame(maxWidth: .infinity)
+                }
+                
+                Spacer()
+                    .frame(width: 70)
+                
+                HStack {
+                    Image(systemName: "house.fill")
+                        .font(.title3)
+                        .frame(maxWidth: .infinity)
+                    
+                    Image(systemName: "house.fill")
+                        .font(.title3)
+                        .frame(maxWidth: .infinity)
                 }
             }
         }
@@ -36,7 +66,7 @@ struct CustomTabBar_Previews: PreviewProvider {
         ZStack {
             Color.blue
             
-            CustomTabBar(actionPage: .home, pages: [.bookmarks, .notifications], currentPage: .constant(.home))
+            CustomTabBar(actionPage: .home, pages: [.bookmarks, .notifications, .bookmarks, .notifications], currentPage: .constant(.home))
                 .frame(height: 100)
         }
             .previewLayout(.fixed(width: 300, height: 250))
