@@ -14,11 +14,10 @@ struct MainView: View {
                 content
                     .navigationBarHidden(true)
                 
-                if router.isPresenting, let plant = router.selectedPlant {
+                if let plant = router.selectedPlant {
                     PlantDetails(
                         namespace: namespace,
                         plant: plant,
-                        isPresenting: router.isPresenting,
                         onDismiss: router.dismissDetails
                     )
                         .background(Color.white.ignoresSafeArea())
@@ -35,8 +34,7 @@ struct MainView: View {
                 case .home:
                     HomeView(
                         namespace: namespace,
-                        selectedPlant: $router.selectedPlant,
-                        isPresenting: $router.isPresenting
+                        selectedPlant: $router.selectedPlant
                     )
                 case .search:
                     Color.red

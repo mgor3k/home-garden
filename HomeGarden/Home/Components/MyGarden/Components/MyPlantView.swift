@@ -7,7 +7,6 @@ import SwiftUI
 struct MyPlantView: View {
     let plant: Plant
     let namespace: Namespace.ID
-    @Binding var isPresenting: Bool
     
     var body: some View {
         VStack {
@@ -22,8 +21,7 @@ struct MyPlantView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
                 .matchedGeometryEffect(
                     id: plant,
-                    in: namespace,
-                    isSource: !isPresenting
+                    in: namespace
                 )
             
             HStack {
@@ -45,8 +43,7 @@ struct MyGardenView_Previews: PreviewProvider {
     static var previews: some View {
         MyPlantView(
             plant: MyGardenStore().plants[4],
-            namespace: namespace,
-            isPresenting: .constant(false)
+            namespace: namespace
         )
             .padding()
             .previewLayout(.sizeThatFits)

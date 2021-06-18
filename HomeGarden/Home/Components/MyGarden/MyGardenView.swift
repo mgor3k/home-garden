@@ -9,26 +9,23 @@ struct MyGardenView: View {
     
     @StateObject var store = MyGardenStore()
     @Binding var selectedPlant: Plant?
-    @Binding var isPresenting: Bool
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHGrid(rows: [.init(.adaptive(minimum: 300))], spacing: 16) {
                 ForEach(store.plants) { plant in
-                    if selectedPlant == plant, isPresenting {
+                    if selectedPlant == plant {
                         Color.clear
                     } else {
                         MyPlantView(
                             plant: plant,
-                            namespace: namespace,
-                            isPresenting: $isPresenting
+                            namespace: namespace
                         )
                             .padding(.leading, store.isPlantFirst(plant) ? 24 : 0)
                             .padding(.trailing, store.isPlantLast(plant) ? 24 : 0)
                             .onTapGesture {
                                 withAnimation {
                                     selectedPlant = plant
-                                    isPresenting = true
                                 }
                             }
                     }
@@ -45,8 +42,7 @@ struct MyGardenList_Previews: PreviewProvider {
     static var previews: some View {
         MyGardenView(
             namespace: namespace,
-            selectedPlant: .constant(nil),
-            isPresenting: .constant(false)
+            selectedPlant: .constant(nil)
         )
             .padding()
             .previewLayout(.sizeThatFits)

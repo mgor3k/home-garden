@@ -9,7 +9,6 @@ struct HomeView: View {
     
     @StateObject var store = FactsStore()
     @Binding var selectedPlant: Plant?
-    @Binding var isPresenting: Bool
     
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -47,8 +46,7 @@ struct HomeView: View {
                 
                 MyGardenView(
                     namespace: namespace,
-                    selectedPlant: $selectedPlant,
-                    isPresenting: $isPresenting
+                    selectedPlant: $selectedPlant
                 )
             }
             
@@ -65,8 +63,7 @@ struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView(
             namespace: namespace,
-            selectedPlant: .constant(nil),
-            isPresenting: .constant(false)
+            selectedPlant: .constant(nil)
         )
     }
 }

@@ -8,7 +8,6 @@ struct PlantDetails: View {
     let namespace: Namespace.ID
     let plant: Plant
     
-    let isPresenting: Bool
     let onDismiss: (() -> Void)
         
     var body: some View {
@@ -34,8 +33,7 @@ struct PlantDetails: View {
                     .scaledToFit()
                     .matchedGeometryEffect(
                         id: plant,
-                        in: namespace,
-                        isSource: isPresenting
+                        in: namespace
                     )
                     .frame(width: 200, height: 300)
             }
@@ -50,7 +48,6 @@ struct PlantDetails_Previews: PreviewProvider {
         PlantDetails(
             namespace: namespace,
             plant: .init(name: "hehe", imageName: "1"),
-            isPresenting: false,
             onDismiss: {}
         )
     }
