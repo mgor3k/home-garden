@@ -6,7 +6,8 @@ import SwiftUI
 
 class MainRouter: ObservableObject {
     @Published var currentPage: Page = .home
-    
+    @Published var selectedPlant: Plant?
+        
     var tabBarModel: CustomTabBar.ViewModel {
         .init(
             actionPage: .bookmarks,
@@ -15,5 +16,11 @@ class MainRouter: ObservableObject {
             page3: .bookmarks,
             page4: .notifications
         )
+    }
+    
+    func dismissDetails() {
+        withAnimation {
+            selectedPlant = nil
+        }
     }
 }

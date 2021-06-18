@@ -22,7 +22,7 @@ class MyGardenStore: ObservableObject {
     }
 }
 
-struct Plant: Identifiable, Equatable {
+struct Plant: Identifiable, Equatable, Hashable {
     let id = UUID()
     let name: String
     let imageName: String

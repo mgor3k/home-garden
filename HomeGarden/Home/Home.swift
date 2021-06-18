@@ -5,7 +5,10 @@
 import SwiftUI
 
 struct HomeView: View {
+    let namespace: Namespace.ID
+    
     @StateObject var store = FactsStore()
+    @Binding var selectedPlant: Plant?
     
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -39,7 +42,10 @@ struct HomeView: View {
                 .padding(.top, 16)
                 .padding(.horizontal, 24)
                 
-                MyGardenView()
+                MyGardenView(
+                    namespace: namespace,
+                    selectedPlant: $selectedPlant
+                )
             }
             
             CalendarSection()
@@ -51,7 +57,8 @@ struct HomeView: View {
 }
 
 struct HomeView_Previews: PreviewProvider {
+    @Namespace static var namespace
     static var previews: some View {
-        HomeView()
+        HomeView(namespace: namespace, selectedPlant: .constant(nil))
     }
 }

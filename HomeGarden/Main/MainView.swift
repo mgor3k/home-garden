@@ -5,11 +5,22 @@
 import SwiftUI
 
 struct MainView: View {
+    @Namespace var namespace
     @StateObject var router = MainRouter()
     
     var body: some View {
-        NavigationView {
+        ZStack {
             content
+            
+            if let plant = router.selectedPlant {
+                PlantDetails(
+                    namespace: namespace,
+                    plant: plant,
+                    onDismiss: router.dismissDetails
+                )
+                    .background(Color.white)
+                    .zIndex(3)
+            }
         }
     }
     
@@ -18,17 +29,16 @@ struct MainView: View {
             VStack(spacing: 0) {
                 switch router.currentPage {
                 case .home:
-                    HomeView()
-                        .navigationBarHidden(true)
+                    HomeView(
+                        namespace: namespace,
+                        selectedPlant: $router.selectedPlant
+                    )
                 case .search:
                     Color.red
-                        .navigationBarHidden(true)
                 case .bookmarks:
                     Color.blue
-                        .navigationBarHidden(true)
                 case .notifications:
                     Color.pink
-                        .navigationBarHidden(true)
                 }
                 
                 // TODO: Check non-notch devices
