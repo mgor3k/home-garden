@@ -33,8 +33,7 @@ struct MainView: View {
                 
                 // TODO: Check non-notch devices
                 CustomTabBar(
-                    actionPage: router.actionPage,
-                    pages: router.pages,
+                    viewModel: router.tabBarModel,
                     currentPage: $router.currentPage
                 )
                     .frame(

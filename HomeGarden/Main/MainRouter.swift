@@ -7,11 +7,13 @@ import SwiftUI
 class MainRouter: ObservableObject {
     @Published var currentPage: Page = .home
     
-    var actionPage: Page {
-        .bookmarks
-    }
-    
-    var pages: [Page] {
-        [.home, .search, .bookmarks, .notifications]
+    var tabBarModel: CustomTabBar.ViewModel {
+        .init(
+            actionPage: .bookmarks,
+            page1: .home,
+            page2: .search,
+            page3: .bookmarks,
+            page4: .notifications
+        )
     }
 }

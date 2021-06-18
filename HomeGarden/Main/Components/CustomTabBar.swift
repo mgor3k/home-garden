@@ -5,8 +5,7 @@
 import SwiftUI
 
 struct CustomTabBar: View {
-    let actionPage: Page
-    let pages: [Page]
+    let viewModel: ViewModel
     
     @Binding var currentPage: Page
     
@@ -17,47 +16,58 @@ struct CustomTabBar: View {
                 .shadow(color: .gray.opacity(0.3), radius: 20, x: 0, y: 0)
                 .ignoresSafeArea(edges: .bottom)
             
-//            HStack(alignment: .center) {
-//                ForEach(pages, id: \.self) { page in
-//                    Image(systemName: "house.fill")
-//                        .font(.title3)
-//                        .frame(maxWidth: .infinity)
-//                        .onTapGesture {
-//                            currentPage = page
-//                        }
-//                }
-//            }
-            
-            Circle()
-                .foregroundColor(.black)
-                .frame(width: 55, height: 55)
-                .offset(y: -30)
+            GeometryReader { proxy in
+                Circle()
+                    .foregroundColor(.accentColor)
+                    .overlay(
+                        Image(systemName: "square.dashed")
+                            .foregroundColor(.white)
+                            .font(.title3)
+                    )
+                    .frame(width: 55, height: 55)
+                    .frame(maxWidth: .infinity)
+                    .offset(y: -(proxy.size.height / 2) + 10)
+                    .shadow(radius: 20)
+            }
             
             HStack {
                 HStack {
-                    Image(systemName: "house.fill")
-                        .font(.title3)
-                        .frame(maxWidth: .infinity)
-                    
-                    Image(systemName: "house.fill")
-                        .font(.title3)
-                        .frame(maxWidth: .infinity)
+                    TabItem(
+                        page: viewModel.page1,
+                        currentPage: $currentPage
+                    )
+                    TabItem(
+                        page: viewModel.page2,
+                        currentPage: $currentPage
+                    )
                 }
                 
                 Spacer()
                     .frame(width: 70)
                 
                 HStack {
-                    Image(systemName: "house.fill")
-                        .font(.title3)
-                        .frame(maxWidth: .infinity)
-                    
-                    Image(systemName: "house.fill")
-                        .font(.title3)
-                        .frame(maxWidth: .infinity)
+                    TabItem(
+                        page: viewModel.page3,
+                        currentPage: $currentPage
+                    )
+                    TabItem(
+                        page: viewModel.page4,
+                        currentPage: $currentPage
+                    )
                 }
             }
+            .padding(.horizontal, 16)
         }
+    }
+}
+
+extension CustomTabBar {
+    struct ViewModel {
+        let actionPage: Page
+        let page1: Page
+        let page2: Page
+        let page3: Page
+        let page4: Page
     }
 }
 
@@ -66,7 +76,10 @@ struct CustomTabBar_Previews: PreviewProvider {
         ZStack {
             Color.blue
             
-            CustomTabBar(actionPage: .home, pages: [.bookmarks, .notifications, .bookmarks, .notifications], currentPage: .constant(.home))
+            CustomTabBar(
+                viewModel: MainRouter().tabBarModel,
+                currentPage: .constant(.home)
+            )
                 .frame(height: 100)
         }
             .previewLayout(.fixed(width: 300, height: 250))
