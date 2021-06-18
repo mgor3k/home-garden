@@ -19,7 +19,10 @@ struct MyPlantView: View {
                            .stroke(.gray, lineWidth: 1)
                    )
                 .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
-                .matchedGeometryEffect(id: plant, in: namespace)
+                .matchedGeometryEffect(
+                    id: plant,
+                    in: namespace
+                )
             
             HStack {
                 Text(plant.name)
@@ -38,7 +41,10 @@ struct MyPlantView: View {
 struct MyGardenView_Previews: PreviewProvider {
     @Namespace static var namespace
     static var previews: some View {
-        MyPlantView(plant: MyGardenStore().plants[4], namespace: namespace)
+        MyPlantView(
+            plant: MyGardenStore().plants[4],
+            namespace: namespace
+        )
             .padding()
             .previewLayout(.sizeThatFits)
     }

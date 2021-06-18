@@ -9,17 +9,20 @@ struct MainView: View {
     @StateObject var router = MainRouter()
     
     var body: some View {
-        ZStack {
-            content
-            
-            if let plant = router.selectedPlant {
-                PlantDetails(
-                    namespace: namespace,
-                    plant: plant,
-                    onDismiss: router.dismissDetails
-                )
-                    .background(Color.white)
-                    .zIndex(3)
+        NavigationView {
+            ZStack {
+                content
+                    .navigationBarHidden(true)
+                
+                if let plant = router.selectedPlant {
+                    PlantDetails(
+                        namespace: namespace,
+                        plant: plant,
+                        onDismiss: router.dismissDetails
+                    )
+                        .background(Color.white.ignoresSafeArea())
+                        .zIndex(3)
+                }
             }
         }
     }

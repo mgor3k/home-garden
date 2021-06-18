@@ -14,17 +14,22 @@ struct MyGardenView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHGrid(rows: [.init(.adaptive(minimum: 300))], spacing: 16) {
                 ForEach(store.plants) { plant in
-                    MyPlantView(
-                        plant: plant,
-                        namespace: namespace
-                    )
-                        .padding(.leading, store.isPlantFirst(plant) ? 24 : 0)
-                        .padding(.trailing, store.isPlantLast(plant) ? 24 : 0)
-                        .onTapGesture {
-                            withAnimation {
-                                selectedPlant = plant
+                    if selectedPlant == plant {
+                        Color.clear
+                    } else {
+                        MyPlantView(
+                            plant: plant,
+                            namespace: namespace
+                        )
+                            .padding(.leading, store.isPlantFirst(plant) ? 24 : 0)
+                            .padding(.trailing, store.isPlantLast(plant) ? 24 : 0)
+                            .onTapGesture {
+                                withAnimation {
+                                    selectedPlant = plant
+                                }
                             }
-                        }
+                    }
+
                 }
             }
         }
@@ -35,7 +40,10 @@ struct MyGardenView: View {
 struct MyGardenList_Previews: PreviewProvider {
     @Namespace static var namespace
     static var previews: some View {
-        MyGardenView(namespace: namespace, selectedPlant: .constant(nil))
+        MyGardenView(
+            namespace: namespace,
+            selectedPlant: .constant(nil)
+        )
             .padding()
             .previewLayout(.sizeThatFits)
     }
