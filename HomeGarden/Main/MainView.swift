@@ -9,17 +9,21 @@ struct MainView: View {
     @StateObject var router = MainRouter()
     
     var body: some View {
-        ZStack {
-            content
-            
-            if let plant = router.selectedPlant {
-                PlantDetails(
-                    namespace: namespace,
-                    plant: plant,
-                    onDismiss: router.dismissDetails
-                )
-                    .background(Color.white)
-                    .zIndex(3)
+        NavigationView {
+            ZStack {
+                content
+                    .navigationBarHidden(true)
+                
+                if router.isPresenting, let plant = router.selectedPlant {
+                    PlantDetails(
+                        namespace: namespace,
+                        plant: plant,
+                        isPresenting: router.isPresenting,
+                        onDismiss: router.dismissDetails
+                    )
+                        .background(Color.white.ignoresSafeArea())
+                        .zIndex(3)
+                }
             }
         }
     }
@@ -31,7 +35,8 @@ struct MainView: View {
                 case .home:
                     HomeView(
                         namespace: namespace,
-                        selectedPlant: $router.selectedPlant
+                        selectedPlant: $router.selectedPlant,
+                        isPresenting: $router.isPresenting
                     )
                 case .search:
                     Color.red

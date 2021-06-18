@@ -7,6 +7,7 @@ import SwiftUI
 class MainRouter: ObservableObject {
     @Published var currentPage: Page = .home
     @Published var selectedPlant: Plant?
+    @Published var isPresenting = false
         
     var tabBarModel: CustomTabBar.ViewModel {
         .init(
@@ -20,7 +21,7 @@ class MainRouter: ObservableObject {
     
     func dismissDetails() {
         withAnimation {
-            selectedPlant = nil
+            isPresenting = false
         }
     }
 }

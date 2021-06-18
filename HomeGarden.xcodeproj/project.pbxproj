@@ -31,6 +31,7 @@
 		BFCE78C326769A9D009DB52D /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78C226769A9D009DB52D /* CalendarView.swift */; };
 		BFCE78C526769B60009DB52D /* PageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78C426769B5F009DB52D /* PageIndicator.swift */; };
 		BFCE78C726772052009DB52D /* CalendarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78C626772052009DB52D /* CalendarItem.swift */; };
+		BFDB3C81267D2A2000B645A2 /* MyGardenListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDB3C80267D2A2000B645A2 /* MyGardenListView.swift */; };
 		BFF2AA062676399A003069D4 /* FactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2AA052676399A003069D4 /* FactView.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		BFCE78C226769A9D009DB52D /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		BFCE78C426769B5F009DB52D /* PageIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageIndicator.swift; sourceTree = "<group>"; };
 		BFCE78C626772052009DB52D /* CalendarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarItem.swift; sourceTree = "<group>"; };
+		BFDB3C80267D2A2000B645A2 /* MyGardenListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenListView.swift; sourceTree = "<group>"; };
 		BFF2AA052676399A003069D4 /* FactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 				BF756E6626791F60007EC5E9 /* Main */,
 				BF44017B2676249300C21EBA /* Home */,
 				BF9539C5267D13D9008882B1 /* Details */,
+				BFDB3C7F267D29F300B645A2 /* My Garden */,
 				BF44017C2676249800C21EBA /* Search */,
 				BF44017D2676249C00C21EBA /* Bookmarks */,
 				BF44017E267624A300C21EBA /* Notifications */,
@@ -282,6 +285,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		BFDB3C7F267D29F300B645A2 /* My Garden */ = {
+			isa = PBXGroup;
+			children = (
+				BFDB3C80267D2A2000B645A2 /* MyGardenListView.swift */,
+			);
+			path = "My Garden";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -379,6 +390,7 @@
 				BFCE78B226767CF1009DB52D /* MyGardenView.swift in Sources */,
 				BFCE78C526769B60009DB52D /* PageIndicator.swift in Sources */,
 				BF44016D2676245B00C21EBA /* HomeGardenApp.swift in Sources */,
+				BFDB3C81267D2A2000B645A2 /* MyGardenListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@ struct HomeView: View {
     
     @StateObject var store = FactsStore()
     @Binding var selectedPlant: Plant?
+    @Binding var isPresenting: Bool
     
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -36,15 +37,18 @@ struct HomeView: View {
                 HStack {
                     SectionText("My Garden")
                     Spacer()
-                    Text("See all")
-                        .font(.callout)
+                    NavigationLink(destination: MyGardenListView()) {
+                        Text("See all")
+                            .font(.callout)
+                    }
                 }
                 .padding(.top, 16)
                 .padding(.horizontal, 24)
                 
                 MyGardenView(
                     namespace: namespace,
-                    selectedPlant: $selectedPlant
+                    selectedPlant: $selectedPlant,
+                    isPresenting: $isPresenting
                 )
             }
             
@@ -59,6 +63,10 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     @Namespace static var namespace
     static var previews: some View {
-        HomeView(namespace: namespace, selectedPlant: .constant(nil))
+        HomeView(
+            namespace: namespace,
+            selectedPlant: .constant(nil),
+            isPresenting: .constant(false)
+        )
     }
 }
