@@ -58,7 +58,7 @@ struct FactsView: View {
 
 struct HomeFactsView_Previews: PreviewProvider {
     static var previews: some View {
-        FactsView(store: FactsStore())
+        FactsView(store: FactsStore(facts: []))
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
             .padding()
     }

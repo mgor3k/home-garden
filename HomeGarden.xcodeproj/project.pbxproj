@@ -12,6 +12,10 @@
 		BF227293267DF330008A0DFB /* PlantDetailsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF227292267DF330008A0DFB /* PlantDetailsMenu.swift */; };
 		BF227297267DF396008A0DFB /* PlantDetailsMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF227296267DF396008A0DFB /* PlantDetailsMenuItem.swift */; };
 		BF22729A267DFEF9008A0DFB /* PlantDetailsBottomSheetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF227299267DFEF9008A0DFB /* PlantDetailsBottomSheetStore.swift */; };
+		BF366DE5267E325500286255 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF366DE4267E325500286255 /* Fact.swift */; };
+		BF366DED267E34BC00286255 /* MockFactsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF366DEC267E34BC00286255 /* MockFactsProvider.swift */; };
+		BF366DEF267E354700286255 /* MainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF366DEE267E354700286255 /* MainStore.swift */; };
+		BF366DF1267E363F00286255 /* HomeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF366DF0267E363F00286255 /* HomeStore.swift */; };
 		BF44016D2676245B00C21EBA /* HomeGardenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF44016C2676245B00C21EBA /* HomeGardenApp.swift */; };
 		BF44016F2676245B00C21EBA /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF44016E2676245B00C21EBA /* Home.swift */; };
 		BF4401712676245C00C21EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4401702676245C00C21EBA /* Assets.xcassets */; };
@@ -26,6 +30,10 @@
 		BF4C91C4267E2371005B0530 /* MockSignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C91C3267E2371005B0530 /* MockSignInWithAppleButton.swift */; };
 		BF4C91C7267E2642005B0530 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C91C6267E2641005B0530 /* ProfileView.swift */; };
 		BF59CE0E267BBEEE0005034D /* TabBarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59CE0D267BBEEE0005034D /* TabBarShape.swift */; };
+		BF645306267E42D8003F7B96 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF645305267E42D8003F7B96 /* AppState.swift */; };
+		BF645308267E42F3003F7B96 /* Providers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF645307267E42F3003F7B96 /* Providers.swift */; };
+		BF64530E267E4F64003F7B96 /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = BF64530D267E4F64003F7B96 /* ActivityIndicatorView */; };
+		BF645310267E4FBF003F7B96 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF64530F267E4FBF003F7B96 /* LoaderView.swift */; };
 		BF756E6326790DC0007EC5E9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF756E6226790DC0007EC5E9 /* MainView.swift */; };
 		BF756E6526791F0F007EC5E9 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF756E6426791F0F007EC5E9 /* CustomTabBar.swift */; };
 		BF756E6B26792076007EC5E9 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF756E6A26792076007EC5E9 /* MainRouter.swift */; };
@@ -56,6 +64,10 @@
 		BF227292267DF330008A0DFB /* PlantDetailsMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsMenu.swift; sourceTree = "<group>"; };
 		BF227296267DF396008A0DFB /* PlantDetailsMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsMenuItem.swift; sourceTree = "<group>"; };
 		BF227299267DFEF9008A0DFB /* PlantDetailsBottomSheetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsBottomSheetStore.swift; sourceTree = "<group>"; };
+		BF366DE4267E325500286255 /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
+		BF366DEC267E34BC00286255 /* MockFactsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFactsProvider.swift; sourceTree = "<group>"; };
+		BF366DEE267E354700286255 /* MainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStore.swift; sourceTree = "<group>"; };
+		BF366DF0267E363F00286255 /* HomeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStore.swift; sourceTree = "<group>"; };
 		BF4401692676245B00C21EBA /* HomeGarden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeGarden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF44016C2676245B00C21EBA /* HomeGardenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGardenApp.swift; sourceTree = "<group>"; };
 		BF44016E2676245B00C21EBA /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -71,6 +83,9 @@
 		BF4C91C3267E2371005B0530 /* MockSignInWithAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignInWithAppleButton.swift; sourceTree = "<group>"; };
 		BF4C91C6267E2641005B0530 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		BF59CE0D267BBEEE0005034D /* TabBarShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarShape.swift; sourceTree = "<group>"; };
+		BF645305267E42D8003F7B96 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		BF645307267E42F3003F7B96 /* Providers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Providers.swift; sourceTree = "<group>"; };
+		BF64530F267E4FBF003F7B96 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		BF756E6226790DC0007EC5E9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BF756E6426791F0F007EC5E9 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		BF756E6A26792076007EC5E9 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
@@ -100,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF64530E267E4F64003F7B96 /* ActivityIndicatorView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +172,15 @@
 			path = Feature;
 			sourceTree = "<group>";
 		};
+		BF366DEB267E34A700286255 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				BF645309267E4305003F7B96 /* Implementations */,
+				BF645307267E42F3003F7B96 /* Providers.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
 		BF4401602676245B00C21EBA = {
 			isa = PBXGroup;
 			children = (
@@ -175,17 +200,9 @@
 		BF44016B2676245B00C21EBA /* HomeGarden */ = {
 			isa = PBXGroup;
 			children = (
-				BF44016C2676245B00C21EBA /* HomeGardenApp.swift */,
-				BF8CD84A267D43E7006E2988 /* Common */,
-				BF4C91BF267E1794005B0530 /* Onboarding */,
-				BF756E6626791F60007EC5E9 /* Main */,
-				BF44017B2676249300C21EBA /* Home */,
-				BF4C91C5267E262E005B0530 /* Profile */,
-				BF9539C5267D13D9008882B1 /* Details */,
-				BFDB3C7F267D29F300B645A2 /* My Garden */,
-				BF44017C2676249800C21EBA /* Search */,
-				BF44017D2676249C00C21EBA /* Bookmarks */,
-				BF44017E267624A300C21EBA /* Notifications */,
+				BF645304267E42CC003F7B96 /* App */,
+				BF8CD84A267D43E7006E2988 /* Domain */,
+				BF645311267E53DA003F7B96 /* Scenes */,
 				BF44017F267624BC00C21EBA /* Reusables */,
 				BF4401702676245C00C21EBA /* Assets.xcassets */,
 				BF4401722676245C00C21EBA /* Preview Content */,
@@ -206,6 +223,7 @@
 			children = (
 				BFCE78AD26767BCD009DB52D /* Components */,
 				BF44016E2676245B00C21EBA /* Home.swift */,
+				BF366DF0267E363F00286255 /* HomeStore.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -245,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				BFC7179326762DD5000A2F8B /* IconButton.swift */,
+				BF64530F267E4FBF003F7B96 /* LoaderView.swift */,
 				BFCE78C026769A32009DB52D /* SectionText.swift */,
 				BFCE78C426769B5F009DB52D /* PageIndicator.swift */,
 			);
@@ -295,6 +314,39 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		BF645304267E42CC003F7B96 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BF44016C2676245B00C21EBA /* HomeGardenApp.swift */,
+				BF645305267E42D8003F7B96 /* AppState.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BF645309267E4305003F7B96 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				BF366DEC267E34BC00286255 /* MockFactsProvider.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		BF645311267E53DA003F7B96 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BF4C91BF267E1794005B0530 /* Onboarding */,
+				BF756E6626791F60007EC5E9 /* Main */,
+				BF44017B2676249300C21EBA /* Home */,
+				BF4C91C5267E262E005B0530 /* Profile */,
+				BF9539C5267D13D9008882B1 /* Details */,
+				BFDB3C7F267D29F300B645A2 /* My Garden */,
+				BF44017C2676249800C21EBA /* Search */,
+				BF44017D2676249C00C21EBA /* Bookmarks */,
+				BF44017E267624A300C21EBA /* Notifications */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		BF756E6626791F60007EC5E9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +354,7 @@
 				BF756E6726791F6A007EC5E9 /* Model */,
 				BF756E6226790DC0007EC5E9 /* MainView.swift */,
 				BF756E6A26792076007EC5E9 /* MainRouter.swift */,
+				BF366DEE267E354700286255 /* MainStore.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -324,18 +377,20 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		BF8CD84A267D43E7006E2988 /* Common */ = {
+		BF8CD84A267D43E7006E2988 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				BF366DEB267E34A700286255 /* Providers */,
 				BF8CD84B267D43EE006E2988 /* Model */,
 			);
-			path = Common;
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		BF8CD84B267D43EE006E2988 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				BF8CD84C267D43F7006E2988 /* Plant.swift */,
+				BF366DE4267E325500286255 /* Fact.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -459,6 +514,7 @@
 			);
 			name = HomeGarden;
 			packageProductDependencies = (
+				BF64530D267E4F64003F7B96 /* ActivityIndicatorView */,
 			);
 			productName = HomeGarden;
 			productReference = BF4401692676245B00C21EBA /* HomeGarden.app */;
@@ -489,6 +545,7 @@
 			);
 			mainGroup = BF4401602676245B00C21EBA;
 			packageReferences = (
+				BF64530C267E4F64003F7B96 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
 			);
 			productRefGroup = BF44016A2676245B00C21EBA /* Products */;
 			projectDirPath = "";
@@ -520,9 +577,11 @@
 				BF4C91C7267E2642005B0530 /* ProfileView.swift in Sources */,
 				BF227291267DF240008A0DFB /* View+Shadow.swift in Sources */,
 				BFCE78B626767DE0009DB52D /* MyGardenStore.swift in Sources */,
+				BF366DF1267E363F00286255 /* HomeStore.swift in Sources */,
 				BFCE78B426767DCE009DB52D /* MyPlantView.swift in Sources */,
 				BFCE78C326769A9D009DB52D /* CalendarView.swift in Sources */,
 				BF9539C7267D13EF008882B1 /* PlantDetails.swift in Sources */,
+				BF645308267E42F3003F7B96 /* Providers.swift in Sources */,
 				BF756E6526791F0F007EC5E9 /* CustomTabBar.swift in Sources */,
 				BF756E6B26792076007EC5E9 /* MainRouter.swift in Sources */,
 				BF4C91C4267E2371005B0530 /* MockSignInWithAppleButton.swift in Sources */,
@@ -533,8 +592,10 @@
 				BF9539C4267D1000008882B1 /* TabItem.swift in Sources */,
 				BF8CD84D267D43F7006E2988 /* Plant.swift in Sources */,
 				BF4C91BC267E0D08005B0530 /* PlantDetailsActivityView.swift in Sources */,
+				BF366DED267E34BC00286255 /* MockFactsProvider.swift in Sources */,
 				BFC7179426762DD5000A2F8B /* IconButton.swift in Sources */,
 				BFCE78C126769A32009DB52D /* SectionText.swift in Sources */,
+				BF645306267E42D8003F7B96 /* AppState.swift in Sources */,
 				BF227297267DF396008A0DFB /* PlantDetailsMenuItem.swift in Sources */,
 				BF22729A267DFEF9008A0DFB /* PlantDetailsBottomSheetStore.swift in Sources */,
 				BF442AED267862CA0060F6FC /* CalendarSection.swift in Sources */,
@@ -543,10 +604,13 @@
 				BF756E6D26792279007EC5E9 /* Page.swift in Sources */,
 				BF8CD850267D45B8006E2988 /* PlantFeatureView.swift in Sources */,
 				BFC71798267630A6000A2F8B /* FactsView.swift in Sources */,
+				BF366DEF267E354700286255 /* MainStore.swift in Sources */,
+				BF366DE5267E325500286255 /* Fact.swift in Sources */,
 				BF440183267624F800C21EBA /* HomeTopBar.swift in Sources */,
 				BF4C91C1267E17A4005B0530 /* OnboardingView.swift in Sources */,
 				BF4C91BA267E0CFC005B0530 /* PlantDetailsTipView.swift in Sources */,
 				BF4C91BE267E0D13005B0530 /* PlantDetailsCalendarView.swift in Sources */,
+				BF645310267E4FBF003F7B96 /* LoaderView.swift in Sources */,
 				BFCE78B226767CF1009DB52D /* MyGardenView.swift in Sources */,
 				BF22728E267DF1F1008A0DFB /* PlantDetailsBottomSheet.swift in Sources */,
 				BF227293267DF330008A0DFB /* PlantDetailsMenu.swift in Sources */,
@@ -759,6 +823,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF64530C267E4F64003F7B96 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF64530D267E4F64003F7B96 /* ActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF64530C267E4F64003F7B96 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */;
+			productName = ActivityIndicatorView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BF4401612676245B00C21EBA /* Project object */;
 }
