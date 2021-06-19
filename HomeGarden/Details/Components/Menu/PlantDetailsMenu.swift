@@ -15,6 +15,10 @@ struct PlantDetailsMenu: View {
             ForEach(items) { item in
                 Text(item.title)
                     .bold()
+                    .rotationEffect(
+                        item == selectedItem ? .degrees(-4) : .zero
+                    )
+                    .animation(.default, value: selectedItem)
                     .background(
                         item == selectedItem ? Rectangle()
                             .foregroundColor(.orange)
