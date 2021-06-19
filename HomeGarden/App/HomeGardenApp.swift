@@ -25,9 +25,7 @@ struct HomeGardenApp: App {
                     )
                 }
                 
-                if state.isLoading {
-                    Color.brown
-                }
+                LoaderView(isVisible: $state.isLoading)
             }
         }
     }

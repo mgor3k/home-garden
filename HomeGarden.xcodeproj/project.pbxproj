@@ -33,6 +33,8 @@
 		BF645306267E42D8003F7B96 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF645305267E42D8003F7B96 /* AppState.swift */; };
 		BF645308267E42F3003F7B96 /* Providers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF645307267E42F3003F7B96 /* Providers.swift */; };
 		BF64530B267E430F003F7B96 /* FactsProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF64530A267E430F003F7B96 /* FactsProviding.swift */; };
+		BF64530E267E4F64003F7B96 /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = BF64530D267E4F64003F7B96 /* ActivityIndicatorView */; };
+		BF645310267E4FBF003F7B96 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF64530F267E4FBF003F7B96 /* LoaderView.swift */; };
 		BF756E6326790DC0007EC5E9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF756E6226790DC0007EC5E9 /* MainView.swift */; };
 		BF756E6526791F0F007EC5E9 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF756E6426791F0F007EC5E9 /* CustomTabBar.swift */; };
 		BF756E6B26792076007EC5E9 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF756E6A26792076007EC5E9 /* MainRouter.swift */; };
@@ -85,6 +87,7 @@
 		BF645305267E42D8003F7B96 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		BF645307267E42F3003F7B96 /* Providers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Providers.swift; sourceTree = "<group>"; };
 		BF64530A267E430F003F7B96 /* FactsProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsProviding.swift; sourceTree = "<group>"; };
+		BF64530F267E4FBF003F7B96 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		BF756E6226790DC0007EC5E9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BF756E6426791F0F007EC5E9 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		BF756E6A26792076007EC5E9 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
@@ -114,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF64530E267E4F64003F7B96 /* ActivityIndicatorView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				BFC7179326762DD5000A2F8B /* IconButton.swift */,
+				BF64530F267E4FBF003F7B96 /* LoaderView.swift */,
 				BFCE78C026769A32009DB52D /* SectionText.swift */,
 				BFCE78C426769B5F009DB52D /* PageIndicator.swift */,
 			);
@@ -504,6 +509,7 @@
 			);
 			name = HomeGarden;
 			packageProductDependencies = (
+				BF64530D267E4F64003F7B96 /* ActivityIndicatorView */,
 			);
 			productName = HomeGarden;
 			productReference = BF4401692676245B00C21EBA /* HomeGarden.app */;
@@ -534,6 +540,7 @@
 			);
 			mainGroup = BF4401602676245B00C21EBA;
 			packageReferences = (
+				BF64530C267E4F64003F7B96 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
 			);
 			productRefGroup = BF44016A2676245B00C21EBA /* Products */;
 			projectDirPath = "";
@@ -599,6 +606,7 @@
 				BF4C91C1267E17A4005B0530 /* OnboardingView.swift in Sources */,
 				BF4C91BA267E0CFC005B0530 /* PlantDetailsTipView.swift in Sources */,
 				BF4C91BE267E0D13005B0530 /* PlantDetailsCalendarView.swift in Sources */,
+				BF645310267E4FBF003F7B96 /* LoaderView.swift in Sources */,
 				BFCE78B226767CF1009DB52D /* MyGardenView.swift in Sources */,
 				BF22728E267DF1F1008A0DFB /* PlantDetailsBottomSheet.swift in Sources */,
 				BF227293267DF330008A0DFB /* PlantDetailsMenu.swift in Sources */,
@@ -811,6 +819,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF64530C267E4F64003F7B96 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF64530D267E4F64003F7B96 /* ActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF64530C267E4F64003F7B96 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */;
+			productName = ActivityIndicatorView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BF4401612676245B00C21EBA /* Project object */;
 }
