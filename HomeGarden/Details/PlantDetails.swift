@@ -11,22 +11,29 @@ struct PlantDetails: View {
     let onDismiss: (() -> Void)
         
     var body: some View {
-        VStack {
-            HStack {
-                Button(action: onDismiss) {
-                    Image(systemName: "arrow.left")
-                        .font(.title3)
-                        .padding()
-                }
-                Spacer()
-            }
+        VStack(spacing: 0) {
+            PlantDetailsNavigationBar(
+                onDismiss: onDismiss
+            )
+            
             HStack(alignment: .top) {
-                VStack {
-                    Text(plant.name)
-                        .font(.largeTitle)
-                        .padding()
-                    Spacer()
+                VStack(alignment: .leading, spacing: 32) {
+                    VStack(spacing: 12) {
+                        Text(plant.name)
+                            .font(.largeTitle)
+                            .bold()
+                        
+                        Text("some description")
+                            .font(.caption)
+                            .fontWeight(.light)
+                    }
+                                        
+                    ForEach(plant.features) {
+                        PlantFeatureView(feature: $0)
+                    }
                 }
+                .padding(.horizontal)
+                
                 Spacer()
                 Image(plant.imageName)
                     .resizable()
@@ -47,7 +54,7 @@ struct PlantDetails_Previews: PreviewProvider {
     static var previews: some View {
         PlantDetails(
             namespace: namespace,
-            plant: .init(name: "hehe", imageName: "1"),
+            plant: MyGardenStore().plants[0],
             onDismiss: {}
         )
     }

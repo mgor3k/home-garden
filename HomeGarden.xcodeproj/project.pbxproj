@@ -18,6 +18,9 @@
 		BF756E6526791F0F007EC5E9 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF756E6426791F0F007EC5E9 /* CustomTabBar.swift */; };
 		BF756E6B26792076007EC5E9 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF756E6A26792076007EC5E9 /* MainRouter.swift */; };
 		BF756E6D26792279007EC5E9 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF756E6C26792279007EC5E9 /* Page.swift */; };
+		BF8CD84D267D43F7006E2988 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8CD84C267D43F7006E2988 /* Plant.swift */; };
+		BF8CD850267D45B8006E2988 /* PlantFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8CD84F267D45B8006E2988 /* PlantFeatureView.swift */; };
+		BF8CD852267D47A0006E2988 /* PlantDetailsNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8CD851267D47A0006E2988 /* PlantDetailsNavigationBar.swift */; };
 		BF9539C4267D1000008882B1 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9539C3267D1000008882B1 /* TabItem.swift */; };
 		BF9539C7267D13EF008882B1 /* PlantDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9539C6267D13EF008882B1 /* PlantDetails.swift */; };
 		BFC7179426762DD5000A2F8B /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7179326762DD5000A2F8B /* IconButton.swift */; };
@@ -48,6 +51,9 @@
 		BF756E6426791F0F007EC5E9 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		BF756E6A26792076007EC5E9 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		BF756E6C26792279007EC5E9 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		BF8CD84C267D43F7006E2988 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		BF8CD84F267D45B8006E2988 /* PlantFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantFeatureView.swift; sourceTree = "<group>"; };
+		BF8CD851267D47A0006E2988 /* PlantDetailsNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsNavigationBar.swift; sourceTree = "<group>"; };
 		BF9539C3267D1000008882B1 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		BF9539C6267D13EF008882B1 /* PlantDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetails.swift; sourceTree = "<group>"; };
 		BFC7179326762DD5000A2F8B /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
@@ -96,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				BF44016C2676245B00C21EBA /* HomeGardenApp.swift */,
+				BF8CD84A267D43E7006E2988 /* Common */,
 				BF756E6626791F60007EC5E9 /* Main */,
 				BF44017B2676249300C21EBA /* Home */,
 				BF9539C5267D13D9008882B1 /* Details */,
@@ -204,9 +211,35 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		BF8CD84A267D43E7006E2988 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BF8CD84B267D43EE006E2988 /* Model */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BF8CD84B267D43EE006E2988 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF8CD84C267D43F7006E2988 /* Plant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF8CD84E267D45AC006E2988 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BF8CD84F267D45B8006E2988 /* PlantFeatureView.swift */,
+				BF8CD851267D47A0006E2988 /* PlantDetailsNavigationBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		BF9539C5267D13D9008882B1 /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				BF8CD84E267D45AC006E2988 /* Components */,
 				BF9539C6267D13EF008882B1 /* PlantDetails.swift */,
 			);
 			path = Details;
@@ -379,18 +412,21 @@
 				BF59CE0E267BBEEE0005034D /* TabBarShape.swift in Sources */,
 				BFF2AA062676399A003069D4 /* FactView.swift in Sources */,
 				BF9539C4267D1000008882B1 /* TabItem.swift in Sources */,
+				BF8CD84D267D43F7006E2988 /* Plant.swift in Sources */,
 				BFC7179426762DD5000A2F8B /* IconButton.swift in Sources */,
 				BFCE78C126769A32009DB52D /* SectionText.swift in Sources */,
 				BF442AED267862CA0060F6FC /* CalendarSection.swift in Sources */,
 				BF44016F2676245B00C21EBA /* Home.swift in Sources */,
 				BF756E6326790DC0007EC5E9 /* MainView.swift in Sources */,
 				BF756E6D26792279007EC5E9 /* Page.swift in Sources */,
+				BF8CD850267D45B8006E2988 /* PlantFeatureView.swift in Sources */,
 				BFC71798267630A6000A2F8B /* FactsView.swift in Sources */,
 				BF440183267624F800C21EBA /* HomeTopBar.swift in Sources */,
 				BFCE78B226767CF1009DB52D /* MyGardenView.swift in Sources */,
 				BFCE78C526769B60009DB52D /* PageIndicator.swift in Sources */,
 				BF44016D2676245B00C21EBA /* HomeGardenApp.swift in Sources */,
 				BFDB3C81267D2A2000B645A2 /* MyGardenListView.swift in Sources */,
+				BF8CD852267D47A0006E2988 /* PlantDetailsNavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
