@@ -20,10 +20,9 @@ struct PlantDetails: View {
                 
                 PlantDetailsBottomSheet()
                     .defaultShadow()
-                    .ignoresSafeArea()
                     .frame(
                         width: proxy.size.width,
-                        height: proxy.size.height / 4
+                        height: proxy.size.height / 3
                     )
             }
         }
