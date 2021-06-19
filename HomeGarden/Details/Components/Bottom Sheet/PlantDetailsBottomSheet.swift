@@ -33,9 +33,6 @@ struct PlantDetailsBottomSheet: View {
             .padding(.horizontal, 24)
             
             Spacer()
-            Button("Some button", action: {})
-                .buttonStyle(.bordered)
-                .tint(.accentColor)
         }
         .frame(maxWidth: .infinity)
         .background(Color.white.ignoresSafeArea())
