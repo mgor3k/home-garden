@@ -18,7 +18,7 @@ struct PlantDetails: View {
                 }
                 Spacer()
                 
-                PlantDetailsBottomSheet()
+                PlantDetailsBottomSheet(plant: plant)
                     .defaultShadow()
                     .frame(
                         width: proxy.size.width,

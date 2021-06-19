@@ -5,6 +5,7 @@
 import SwiftUI
 
 struct PlantDetailsBottomSheet: View {
+    let plant: Plant
     @StateObject var store = PlantDetailsBottomSheetStore()
     
     var body: some View {
@@ -15,16 +16,21 @@ struct PlantDetailsBottomSheet: View {
             )
                 .padding(24)
             
-            switch store.currentItem {
-            case .more:
-                PlantDetailsMoreView()
-            case .tips:
-                PlantDetailsTipView()
-            case .activity:
-                PlantDetailsActivityView()
-            case .calendar:
-                PlantDetailsCalendarView()
+            VStack {
+                switch store.currentItem {
+                case .more:
+                    PlantDetailsMoreView(
+                        description: plant.description
+                    )
+                case .tips:
+                    PlantDetailsTipView()
+                case .activity:
+                    PlantDetailsActivityView()
+                case .calendar:
+                    PlantDetailsCalendarView()
+                }
             }
+            .padding(.horizontal, 24)
             
             Spacer()
             Button("Some button", action: {})
@@ -38,6 +44,6 @@ struct PlantDetailsBottomSheet: View {
 
 struct PlantDetailsBottomSheet_Previews: PreviewProvider {
     static var previews: some View {
-        PlantDetailsBottomSheet()
+        PlantDetailsBottomSheet(plant: MyGardenStore().plants[0])
     }
 }

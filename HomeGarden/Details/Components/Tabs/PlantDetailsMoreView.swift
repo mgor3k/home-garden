@@ -5,13 +5,16 @@
 import SwiftUI
 
 struct PlantDetailsMoreView: View {
+    let description: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(description)
+            .multilineTextAlignment(.leading)
     }
 }
 
 struct PlantDetailsMoreView_Previews: PreviewProvider {
     static var previews: some View {
-        PlantDetailsMoreView()
+        PlantDetailsMoreView(description: "test")
     }
 }

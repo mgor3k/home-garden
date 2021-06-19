@@ -9,6 +9,8 @@ struct Plant: Identifiable, Equatable, Hashable {
     let name: String
     let imageName: String
     let features: [PlantFeature]
+    
+    let description: String
 }
 
 struct PlantFeature: Identifiable, Hashable, Equatable {
