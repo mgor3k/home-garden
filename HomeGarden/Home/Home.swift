@@ -7,7 +7,7 @@ import SwiftUI
 struct HomeView: View {
     let namespace: Namespace.ID
     
-    @StateObject var store = FactsStore()
+    @StateObject var store: HomeStore
     
     @Binding var selectedPlant: Plant?
     @State var isShowingProfile = false
@@ -40,7 +40,7 @@ struct HomeView: View {
             
             VStack(alignment: .leading, spacing: 24) {
                 SectionText("Did you know...")
-                FactsView(store: store)
+                FactsView(store: .init(facts: store.facts))
             }
             .padding(.horizontal, 24)
             
@@ -75,6 +75,7 @@ struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView(
             namespace: namespace,
+            store: HomeStore(facts: []),
             selectedPlant: .constant(nil),
             onSearchTapped: {},
             onLogoutTapped: {}

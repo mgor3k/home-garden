@@ -81,7 +81,7 @@ struct FactView: View {
 struct FactView_Previews: PreviewProvider {
     // TODO: Fix this later
     static var previews: some View {
-        FactView(fact: FactsStore().facts[0], action: {})
+        FactView(fact: FactsStore(facts: [.init(title: "hehe", content: "hoho")]).facts[0], action: {})
             .frame(width: 400, height: 150)
             .padding()
             .previewLayout(.fixed(width: 500, height: 200))

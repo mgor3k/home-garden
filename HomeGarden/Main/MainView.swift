@@ -7,6 +7,7 @@ import SwiftUI
 struct MainView: View {
     @Namespace var namespace
     @StateObject var router = MainRouter()
+    @StateObject var store: MainStore
     
     let onLogoutTapped: () -> Void
     
@@ -36,6 +37,7 @@ struct MainView: View {
                 case .home:
                     HomeView(
                         namespace: namespace,
+                        store: .init(facts: store.facts),
                         selectedPlant: $router.selectedPlant,
                         onSearchTapped: router.switchToSearch,
                         onLogoutTapped: onLogoutTapped
@@ -68,6 +70,6 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView(onLogoutTapped: {})
+        MainView(store: MainStore(facts: []), onLogoutTapped: {})
     }
 }
