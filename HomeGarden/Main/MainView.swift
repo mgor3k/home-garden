@@ -42,7 +42,11 @@ struct MainView: View {
                     Color.blue
                 case .notifications:
                     Color.pink
+                case .camera:
+                    Text("Camera should be here")
                 }
+                
+                Spacer()
                 
                 // TODO: Check non-notch devices
                 CustomTabBar(

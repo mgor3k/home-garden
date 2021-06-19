@@ -9,6 +9,8 @@ enum Page: Hashable {
     case search
     case bookmarks
     case notifications
+    
+    case camera
 }
 
 extension Page {
@@ -22,6 +24,8 @@ extension Page {
             return "bookmark"
         case .notifications:
             return "bell"
+        case .camera:
+            return "square.dashed"
         }
     }
 }

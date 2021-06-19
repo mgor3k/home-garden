@@ -10,7 +10,7 @@ class MainRouter: ObservableObject {
         
     var tabBarModel: CustomTabBar.ViewModel {
         .init(
-            actionPage: .bookmarks,
+            actionPage: .camera,
             page1: .home,
             page2: .search,
             page3: .bookmarks,

@@ -20,7 +20,7 @@ struct CustomTabBar: View {
                 Circle()
                     .foregroundColor(.accentColor)
                     .overlay(
-                        Image(systemName: "square.dashed")
+                        Image(systemName: viewModel.actionPage.imageName)
                             .foregroundColor(.white)
                             .font(.title3)
                     )
@@ -28,6 +28,9 @@ struct CustomTabBar: View {
                     .frame(maxWidth: .infinity)
                     .offset(y: -(proxy.size.height / 2) + 10)
                     .shadow(radius: 20)
+                    .onTapGesture {
+                        currentPage = viewModel.actionPage
+                    }
             }
             
             HStack {
