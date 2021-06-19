@@ -6,10 +6,18 @@ import SwiftUI
 
 @main
 struct HomeGardenApp: App {
+    // TODO: Temporary until authentication is presented
+    @State var isLoggedIn = false
+    
     var body: some Scene {
         WindowGroup {
-//            MainView()
-            OnboardingView()
+            if isLoggedIn {
+                MainView()
+            } else {
+                OnboardingView {
+                    isLoggedIn = true
+                }
+            }
         }
     }
 }

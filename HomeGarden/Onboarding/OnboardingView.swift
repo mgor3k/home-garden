@@ -3,9 +3,10 @@
 //
 
 import SwiftUI
-import AuthenticationServices
 
 struct OnboardingView: View {
+    let didLogin: () -> Void
+    
     var body: some View {
         VStack {
             HStack {
@@ -22,10 +23,7 @@ struct OnboardingView: View {
             
             Spacer()
             
-            SignInWithAppleButton(onRequest: {_ in }, onCompletion: { _ in
-                
-            })
-                .signInWithAppleButtonStyle(.white)
+            MockSignInWithAppleButton(action: didLogin)
                 .frame(maxHeight: 48)
                 .cornerRadius(10)
                 .padding()
@@ -45,6 +43,6 @@ struct OnboardingView: View {
 
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingView()
+        OnboardingView(didLogin: {})
     }
 }
