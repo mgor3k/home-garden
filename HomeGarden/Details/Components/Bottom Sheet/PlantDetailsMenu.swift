@@ -24,7 +24,11 @@ struct PlantDetailsMenu: View {
                             .matchedGeometryEffect(
                                 id: "geo",
                                 in: namespace
-                            ).animation(.spring().speed(4)) : nil
+                            ) : nil
+                    )
+                    .animation(
+                        .spring().speed(4),
+                        value: selectedItem
                     )
                     .onTapGesture {
                         selectedItem = item
