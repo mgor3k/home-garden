@@ -9,8 +9,28 @@ struct PlantDetails: View {
     let plant: Plant
     
     let onDismiss: (() -> Void)
-        
+    
     var body: some View {
+        GeometryReader { proxy in
+            VStack {
+                ScrollView {
+                    content
+                }
+                Spacer()
+                
+                PlantDetailsBottomSheet()
+                    .defaultShadow()
+                    .ignoresSafeArea()
+                    .frame(
+                        width: proxy.size.width,
+                        height: proxy.size.height / 4
+                    )
+            }
+        }
+        
+    }
+    
+    var content: some View {
         VStack(spacing: 0) {
             PlantDetailsNavigationBar(
                 onDismiss: onDismiss
@@ -27,7 +47,7 @@ struct PlantDetails: View {
                             .font(.caption)
                             .fontWeight(.light)
                     }
-                                        
+                    
                     ForEach(plant.features) {
                         PlantFeatureView(feature: $0)
                     }
