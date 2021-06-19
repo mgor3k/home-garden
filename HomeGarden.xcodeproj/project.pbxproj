@@ -18,6 +18,10 @@
 		BF4401742676245C00C21EBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4401732676245C00C21EBA /* Preview Assets.xcassets */; };
 		BF440183267624F800C21EBA /* HomeTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF440182267624F800C21EBA /* HomeTopBar.swift */; };
 		BF442AED267862CA0060F6FC /* CalendarSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF442AEC267862CA0060F6FC /* CalendarSection.swift */; };
+		BF4C91B8267E0CE8005B0530 /* PlantDetailsMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C91B7267E0CE8005B0530 /* PlantDetailsMoreView.swift */; };
+		BF4C91BA267E0CFC005B0530 /* PlantDetailsTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C91B9267E0CFC005B0530 /* PlantDetailsTipView.swift */; };
+		BF4C91BC267E0D08005B0530 /* PlantDetailsActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C91BB267E0D08005B0530 /* PlantDetailsActivityView.swift */; };
+		BF4C91BE267E0D13005B0530 /* PlantDetailsCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C91BD267E0D13005B0530 /* PlantDetailsCalendarView.swift */; };
 		BF59CE0E267BBEEE0005034D /* TabBarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59CE0D267BBEEE0005034D /* TabBarShape.swift */; };
 		BF756E6326790DC0007EC5E9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF756E6226790DC0007EC5E9 /* MainView.swift */; };
 		BF756E6526791F0F007EC5E9 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF756E6426791F0F007EC5E9 /* CustomTabBar.swift */; };
@@ -56,6 +60,10 @@
 		BF4401732676245C00C21EBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF440182267624F800C21EBA /* HomeTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopBar.swift; sourceTree = "<group>"; };
 		BF442AEC267862CA0060F6FC /* CalendarSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSection.swift; sourceTree = "<group>"; };
+		BF4C91B7267E0CE8005B0530 /* PlantDetailsMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsMoreView.swift; sourceTree = "<group>"; };
+		BF4C91B9267E0CFC005B0530 /* PlantDetailsTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsTipView.swift; sourceTree = "<group>"; };
+		BF4C91BB267E0D08005B0530 /* PlantDetailsActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsActivityView.swift; sourceTree = "<group>"; };
+		BF4C91BD267E0D13005B0530 /* PlantDetailsCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsCalendarView.swift; sourceTree = "<group>"; };
 		BF59CE0D267BBEEE0005034D /* TabBarShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarShape.swift; sourceTree = "<group>"; };
 		BF756E6226790DC0007EC5E9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BF756E6426791F0F007EC5E9 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
@@ -243,6 +251,17 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		BF4C91B6267E0CD7005B0530 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				BF4C91B7267E0CE8005B0530 /* PlantDetailsMoreView.swift */,
+				BF4C91B9267E0CFC005B0530 /* PlantDetailsTipView.swift */,
+				BF4C91BB267E0D08005B0530 /* PlantDetailsActivityView.swift */,
+				BF4C91BD267E0D13005B0530 /* PlantDetailsCalendarView.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
 		BF756E6626791F60007EC5E9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +310,7 @@
 		BF8CD84E267D45AC006E2988 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				BF4C91B6267E0CD7005B0530 /* Tabs */,
 				BF22729D267DFF76008A0DFB /* Feature */,
 				BF22729C267DFF65008A0DFB /* Navigation Bar */,
 				BF22729B267DFF58008A0DFB /* Menu */,
@@ -477,6 +497,7 @@
 				BFF2AA062676399A003069D4 /* FactView.swift in Sources */,
 				BF9539C4267D1000008882B1 /* TabItem.swift in Sources */,
 				BF8CD84D267D43F7006E2988 /* Plant.swift in Sources */,
+				BF4C91BC267E0D08005B0530 /* PlantDetailsActivityView.swift in Sources */,
 				BFC7179426762DD5000A2F8B /* IconButton.swift in Sources */,
 				BFCE78C126769A32009DB52D /* SectionText.swift in Sources */,
 				BF227297267DF396008A0DFB /* PlantDetailsMenuItem.swift in Sources */,
@@ -488,10 +509,13 @@
 				BF8CD850267D45B8006E2988 /* PlantFeatureView.swift in Sources */,
 				BFC71798267630A6000A2F8B /* FactsView.swift in Sources */,
 				BF440183267624F800C21EBA /* HomeTopBar.swift in Sources */,
+				BF4C91BA267E0CFC005B0530 /* PlantDetailsTipView.swift in Sources */,
+				BF4C91BE267E0D13005B0530 /* PlantDetailsCalendarView.swift in Sources */,
 				BFCE78B226767CF1009DB52D /* MyGardenView.swift in Sources */,
 				BF22728E267DF1F1008A0DFB /* PlantDetailsBottomSheet.swift in Sources */,
 				BF227293267DF330008A0DFB /* PlantDetailsMenu.swift in Sources */,
 				BFCE78C526769B60009DB52D /* PageIndicator.swift in Sources */,
+				BF4C91B8267E0CE8005B0530 /* PlantDetailsMoreView.swift in Sources */,
 				BF44016D2676245B00C21EBA /* HomeGardenApp.swift in Sources */,
 				BFDB3C81267D2A2000B645A2 /* MyGardenListView.swift in Sources */,
 				BF8CD852267D47A0006E2988 /* PlantDetailsNavigationBar.swift in Sources */,
