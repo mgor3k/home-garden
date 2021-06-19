@@ -8,7 +8,8 @@ import SwiftUI
 struct HomeGardenApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+//            MainView()
+            OnboardingView()
         }
     }
 }

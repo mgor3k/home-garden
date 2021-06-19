@@ -22,6 +22,7 @@
 		BF4C91BA267E0CFC005B0530 /* PlantDetailsTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C91B9267E0CFC005B0530 /* PlantDetailsTipView.swift */; };
 		BF4C91BC267E0D08005B0530 /* PlantDetailsActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C91BB267E0D08005B0530 /* PlantDetailsActivityView.swift */; };
 		BF4C91BE267E0D13005B0530 /* PlantDetailsCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C91BD267E0D13005B0530 /* PlantDetailsCalendarView.swift */; };
+		BF4C91C1267E17A4005B0530 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C91C0267E17A4005B0530 /* OnboardingView.swift */; };
 		BF59CE0E267BBEEE0005034D /* TabBarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59CE0D267BBEEE0005034D /* TabBarShape.swift */; };
 		BF756E6326790DC0007EC5E9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF756E6226790DC0007EC5E9 /* MainView.swift */; };
 		BF756E6526791F0F007EC5E9 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF756E6426791F0F007EC5E9 /* CustomTabBar.swift */; };
@@ -64,6 +65,7 @@
 		BF4C91B9267E0CFC005B0530 /* PlantDetailsTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsTipView.swift; sourceTree = "<group>"; };
 		BF4C91BB267E0D08005B0530 /* PlantDetailsActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsActivityView.swift; sourceTree = "<group>"; };
 		BF4C91BD267E0D13005B0530 /* PlantDetailsCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsCalendarView.swift; sourceTree = "<group>"; };
+		BF4C91C0267E17A4005B0530 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		BF59CE0D267BBEEE0005034D /* TabBarShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarShape.swift; sourceTree = "<group>"; };
 		BF756E6226790DC0007EC5E9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BF756E6426791F0F007EC5E9 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				BF44016C2676245B00C21EBA /* HomeGardenApp.swift */,
 				BF8CD84A267D43E7006E2988 /* Common */,
+				BF4C91BF267E1794005B0530 /* Onboarding */,
 				BF756E6626791F60007EC5E9 /* Main */,
 				BF44017B2676249300C21EBA /* Home */,
 				BF9539C5267D13D9008882B1 /* Details */,
@@ -260,6 +263,14 @@
 				BF4C91BD267E0D13005B0530 /* PlantDetailsCalendarView.swift */,
 			);
 			path = Tabs;
+			sourceTree = "<group>";
+		};
+		BF4C91BF267E1794005B0530 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				BF4C91C0267E17A4005B0530 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		BF756E6626791F60007EC5E9 /* Main */ = {
@@ -509,6 +520,7 @@
 				BF8CD850267D45B8006E2988 /* PlantFeatureView.swift in Sources */,
 				BFC71798267630A6000A2F8B /* FactsView.swift in Sources */,
 				BF440183267624F800C21EBA /* HomeTopBar.swift in Sources */,
+				BF4C91C1267E17A4005B0530 /* OnboardingView.swift in Sources */,
 				BF4C91BA267E0CFC005B0530 /* PlantDetailsTipView.swift in Sources */,
 				BF4C91BE267E0D13005B0530 /* PlantDetailsCalendarView.swift in Sources */,
 				BFCE78B226767CF1009DB52D /* MyGardenView.swift in Sources */,
