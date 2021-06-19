@@ -9,10 +9,19 @@ struct HomeView: View {
     
     @StateObject var store = FactsStore()
     @Binding var selectedPlant: Plant?
+    @State var isShowingProfile = false
+    
+    let onLogoutTapped: () -> Void
     
     var body: some View {
         ScrollView(showsIndicators: false) {
             content
+        }
+        .sheet(isPresented: $isShowingProfile) {
+            ProfileView {
+                isShowingProfile = false
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: onLogoutTapped)
+            }
         }
     }
     
@@ -22,6 +31,9 @@ struct HomeView: View {
                 tasksCount: 2,
                 onSearchTapped: {
                     print("search tapped")
+                },
+                onProfileTapped: {
+                    isShowingProfile = true
                 }
             )
             .padding(.horizontal, 24)
@@ -63,7 +75,8 @@ struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView(
             namespace: namespace,
-            selectedPlant: .constant(nil)
+            selectedPlant: .constant(nil),
+            onLogoutTapped: {}
         )
     }
 }

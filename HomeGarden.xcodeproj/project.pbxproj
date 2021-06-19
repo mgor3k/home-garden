@@ -24,6 +24,7 @@
 		BF4C91BE267E0D13005B0530 /* PlantDetailsCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C91BD267E0D13005B0530 /* PlantDetailsCalendarView.swift */; };
 		BF4C91C1267E17A4005B0530 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C91C0267E17A4005B0530 /* OnboardingView.swift */; };
 		BF4C91C4267E2371005B0530 /* MockSignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C91C3267E2371005B0530 /* MockSignInWithAppleButton.swift */; };
+		BF4C91C7267E2642005B0530 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C91C6267E2641005B0530 /* ProfileView.swift */; };
 		BF59CE0E267BBEEE0005034D /* TabBarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59CE0D267BBEEE0005034D /* TabBarShape.swift */; };
 		BF756E6326790DC0007EC5E9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF756E6226790DC0007EC5E9 /* MainView.swift */; };
 		BF756E6526791F0F007EC5E9 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF756E6426791F0F007EC5E9 /* CustomTabBar.swift */; };
@@ -68,6 +69,7 @@
 		BF4C91BD267E0D13005B0530 /* PlantDetailsCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsCalendarView.swift; sourceTree = "<group>"; };
 		BF4C91C0267E17A4005B0530 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		BF4C91C3267E2371005B0530 /* MockSignInWithAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignInWithAppleButton.swift; sourceTree = "<group>"; };
+		BF4C91C6267E2641005B0530 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		BF59CE0D267BBEEE0005034D /* TabBarShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarShape.swift; sourceTree = "<group>"; };
 		BF756E6226790DC0007EC5E9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BF756E6426791F0F007EC5E9 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				BF4C91BF267E1794005B0530 /* Onboarding */,
 				BF756E6626791F60007EC5E9 /* Main */,
 				BF44017B2676249300C21EBA /* Home */,
+				BF4C91C5267E262E005B0530 /* Profile */,
 				BF9539C5267D13D9008882B1 /* Details */,
 				BFDB3C7F267D29F300B645A2 /* My Garden */,
 				BF44017C2676249800C21EBA /* Search */,
@@ -282,6 +285,14 @@
 				BF4C91C3267E2371005B0530 /* MockSignInWithAppleButton.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		BF4C91C5267E262E005B0530 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				BF4C91C6267E2641005B0530 /* ProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		BF756E6626791F60007EC5E9 /* Main */ = {
@@ -506,6 +517,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFCE78A726765778009DB52D /* FactsStore.swift in Sources */,
+				BF4C91C7267E2642005B0530 /* ProfileView.swift in Sources */,
 				BF227291267DF240008A0DFB /* View+Shadow.swift in Sources */,
 				BFCE78B626767DE0009DB52D /* MyGardenStore.swift in Sources */,
 				BFCE78B426767DCE009DB52D /* MyPlantView.swift in Sources */,

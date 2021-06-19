@@ -8,6 +8,8 @@ struct MainView: View {
     @Namespace var namespace
     @StateObject var router = MainRouter()
     
+    let onLogoutTapped: () -> Void
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -34,7 +36,8 @@ struct MainView: View {
                 case .home:
                     HomeView(
                         namespace: namespace,
-                        selectedPlant: $router.selectedPlant
+                        selectedPlant: $router.selectedPlant,
+                        onLogoutTapped: onLogoutTapped
                     )
                 case .search:
                     Color.red
@@ -64,6 +67,6 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView(onLogoutTapped: {})
     }
 }
