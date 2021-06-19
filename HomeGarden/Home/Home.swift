@@ -8,6 +8,7 @@ struct HomeView: View {
     let namespace: Namespace.ID
     
     @StateObject var store = FactsStore()
+    
     @Binding var selectedPlant: Plant?
     @State var isShowingProfile = false
     

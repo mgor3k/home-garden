@@ -12,13 +12,13 @@ struct HomeGardenApp: App {
     var body: some Scene {
         WindowGroup {
             if isLoggedIn {
-                MainView {
-                    isLoggedIn = false
-                }
+                MainView(
+                    onLogoutTapped: { isLoggedIn = false }
+                )
             } else {
-                OnboardingView {
-                    isLoggedIn = true
-                }
+                OnboardingView(
+                    didLogin: { isLoggedIn = true }
+                )
             }
         }
     }
