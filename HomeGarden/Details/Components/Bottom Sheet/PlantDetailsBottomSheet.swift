@@ -5,13 +5,13 @@
 import SwiftUI
 
 struct PlantDetailsBottomSheet: View {
-    @State var currentItem: PlantDetailsMenuItem = .more
+    @StateObject var store = PlantDetailsBottomSheetStore()
     
     var body: some View {
         VStack {
             PlantDetailsMenu(
-                items: PlantDetailsMenuItem.allCases,
-                selectedItem: $currentItem
+                items: store.items,
+                selectedItem: $store.currentItem
             )
                 .padding(24)
             Spacer()
