@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF22728E267DF1F1008A0DFB /* PlantDetailsBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF22728D267DF1F0008A0DFB /* PlantDetailsBottomSheet.swift */; };
+		BF227291267DF240008A0DFB /* View+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF227290267DF240008A0DFB /* View+Shadow.swift */; };
+		BF227293267DF330008A0DFB /* PlantDetailsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF227292267DF330008A0DFB /* PlantDetailsMenu.swift */; };
+		BF227297267DF396008A0DFB /* PlantDetailsMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF227296267DF396008A0DFB /* PlantDetailsMenuItem.swift */; };
+		BF22729A267DFEF9008A0DFB /* PlantDetailsBottomSheetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF227299267DFEF9008A0DFB /* PlantDetailsBottomSheetStore.swift */; };
 		BF44016D2676245B00C21EBA /* HomeGardenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF44016C2676245B00C21EBA /* HomeGardenApp.swift */; };
 		BF44016F2676245B00C21EBA /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF44016E2676245B00C21EBA /* Home.swift */; };
 		BF4401712676245C00C21EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4401702676245C00C21EBA /* Assets.xcassets */; };
@@ -18,6 +23,9 @@
 		BF756E6526791F0F007EC5E9 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF756E6426791F0F007EC5E9 /* CustomTabBar.swift */; };
 		BF756E6B26792076007EC5E9 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF756E6A26792076007EC5E9 /* MainRouter.swift */; };
 		BF756E6D26792279007EC5E9 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF756E6C26792279007EC5E9 /* Page.swift */; };
+		BF8CD84D267D43F7006E2988 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8CD84C267D43F7006E2988 /* Plant.swift */; };
+		BF8CD850267D45B8006E2988 /* PlantFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8CD84F267D45B8006E2988 /* PlantFeatureView.swift */; };
+		BF8CD852267D47A0006E2988 /* PlantDetailsNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8CD851267D47A0006E2988 /* PlantDetailsNavigationBar.swift */; };
 		BF9539C4267D1000008882B1 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9539C3267D1000008882B1 /* TabItem.swift */; };
 		BF9539C7267D13EF008882B1 /* PlantDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9539C6267D13EF008882B1 /* PlantDetails.swift */; };
 		BFC7179426762DD5000A2F8B /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7179326762DD5000A2F8B /* IconButton.swift */; };
@@ -36,6 +44,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF22728D267DF1F0008A0DFB /* PlantDetailsBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsBottomSheet.swift; sourceTree = "<group>"; };
+		BF227290267DF240008A0DFB /* View+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Shadow.swift"; sourceTree = "<group>"; };
+		BF227292267DF330008A0DFB /* PlantDetailsMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsMenu.swift; sourceTree = "<group>"; };
+		BF227296267DF396008A0DFB /* PlantDetailsMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsMenuItem.swift; sourceTree = "<group>"; };
+		BF227299267DFEF9008A0DFB /* PlantDetailsBottomSheetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsBottomSheetStore.swift; sourceTree = "<group>"; };
 		BF4401692676245B00C21EBA /* HomeGarden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeGarden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF44016C2676245B00C21EBA /* HomeGardenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGardenApp.swift; sourceTree = "<group>"; };
 		BF44016E2676245B00C21EBA /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -48,6 +61,9 @@
 		BF756E6426791F0F007EC5E9 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		BF756E6A26792076007EC5E9 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		BF756E6C26792279007EC5E9 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		BF8CD84C267D43F7006E2988 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		BF8CD84F267D45B8006E2988 /* PlantFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantFeatureView.swift; sourceTree = "<group>"; };
+		BF8CD851267D47A0006E2988 /* PlantDetailsNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsNavigationBar.swift; sourceTree = "<group>"; };
 		BF9539C3267D1000008882B1 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		BF9539C6267D13EF008882B1 /* PlantDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetails.swift; sourceTree = "<group>"; };
 		BFC7179326762DD5000A2F8B /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
@@ -76,6 +92,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF22728F267DF237008A0DFB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF227290267DF240008A0DFB /* View+Shadow.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BF227295267DF383008A0DFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF227296267DF396008A0DFB /* PlantDetailsMenuItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF227298267DF518008A0DFB /* Bottom Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				BF227295267DF383008A0DFB /* Model */,
+				BF227299267DFEF9008A0DFB /* PlantDetailsBottomSheetStore.swift */,
+				BF22728D267DF1F0008A0DFB /* PlantDetailsBottomSheet.swift */,
+			);
+			path = "Bottom Sheet";
+			sourceTree = "<group>";
+		};
+		BF22729B267DFF58008A0DFB /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				BF227292267DF330008A0DFB /* PlantDetailsMenu.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		BF22729C267DFF65008A0DFB /* Navigation Bar */ = {
+			isa = PBXGroup;
+			children = (
+				BF8CD851267D47A0006E2988 /* PlantDetailsNavigationBar.swift */,
+			);
+			path = "Navigation Bar";
+			sourceTree = "<group>";
+		};
+		BF22729D267DFF76008A0DFB /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				BF8CD84F267D45B8006E2988 /* PlantFeatureView.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
 		BF4401602676245B00C21EBA = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				BF44016C2676245B00C21EBA /* HomeGardenApp.swift */,
+				BF8CD84A267D43E7006E2988 /* Common */,
 				BF756E6626791F60007EC5E9 /* Main */,
 				BF44017B2676249300C21EBA /* Home */,
 				BF9539C5267D13D9008882B1 /* Details */,
@@ -151,6 +218,7 @@
 		BF44017F267624BC00C21EBA /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
+				BF22728F267DF237008A0DFB /* Extensions */,
 				BFCE78BB26769163009DB52D /* Model */,
 				BF440180267624CF00C21EBA /* Views */,
 			);
@@ -204,9 +272,37 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		BF8CD84A267D43E7006E2988 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BF8CD84B267D43EE006E2988 /* Model */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BF8CD84B267D43EE006E2988 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF8CD84C267D43F7006E2988 /* Plant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF8CD84E267D45AC006E2988 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BF22729D267DFF76008A0DFB /* Feature */,
+				BF22729C267DFF65008A0DFB /* Navigation Bar */,
+				BF22729B267DFF58008A0DFB /* Menu */,
+				BF227298267DF518008A0DFB /* Bottom Sheet */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		BF9539C5267D13D9008882B1 /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				BF8CD84E267D45AC006E2988 /* Components */,
 				BF9539C6267D13EF008882B1 /* PlantDetails.swift */,
 			);
 			path = Details;
@@ -368,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFCE78A726765778009DB52D /* FactsStore.swift in Sources */,
+				BF227291267DF240008A0DFB /* View+Shadow.swift in Sources */,
 				BFCE78B626767DE0009DB52D /* MyGardenStore.swift in Sources */,
 				BFCE78B426767DCE009DB52D /* MyPlantView.swift in Sources */,
 				BFCE78C326769A9D009DB52D /* CalendarView.swift in Sources */,
@@ -379,18 +476,25 @@
 				BF59CE0E267BBEEE0005034D /* TabBarShape.swift in Sources */,
 				BFF2AA062676399A003069D4 /* FactView.swift in Sources */,
 				BF9539C4267D1000008882B1 /* TabItem.swift in Sources */,
+				BF8CD84D267D43F7006E2988 /* Plant.swift in Sources */,
 				BFC7179426762DD5000A2F8B /* IconButton.swift in Sources */,
 				BFCE78C126769A32009DB52D /* SectionText.swift in Sources */,
+				BF227297267DF396008A0DFB /* PlantDetailsMenuItem.swift in Sources */,
+				BF22729A267DFEF9008A0DFB /* PlantDetailsBottomSheetStore.swift in Sources */,
 				BF442AED267862CA0060F6FC /* CalendarSection.swift in Sources */,
 				BF44016F2676245B00C21EBA /* Home.swift in Sources */,
 				BF756E6326790DC0007EC5E9 /* MainView.swift in Sources */,
 				BF756E6D26792279007EC5E9 /* Page.swift in Sources */,
+				BF8CD850267D45B8006E2988 /* PlantFeatureView.swift in Sources */,
 				BFC71798267630A6000A2F8B /* FactsView.swift in Sources */,
 				BF440183267624F800C21EBA /* HomeTopBar.swift in Sources */,
 				BFCE78B226767CF1009DB52D /* MyGardenView.swift in Sources */,
+				BF22728E267DF1F1008A0DFB /* PlantDetailsBottomSheet.swift in Sources */,
+				BF227293267DF330008A0DFB /* PlantDetailsMenu.swift in Sources */,
 				BFCE78C526769B60009DB52D /* PageIndicator.swift in Sources */,
 				BF44016D2676245B00C21EBA /* HomeGardenApp.swift in Sources */,
 				BFDB3C81267D2A2000B645A2 /* MyGardenListView.swift in Sources */,
+				BF8CD852267D47A0006E2988 /* PlantDetailsNavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,7 +633,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -559,7 +663,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

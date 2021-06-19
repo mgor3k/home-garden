@@ -13,7 +13,7 @@ struct CustomTabBar: View {
         ZStack {
             TabBarShape()
                 .foregroundColor(.white)
-                .shadow(color: .gray.opacity(0.3), radius: 20, x: 0, y: 0)
+                .defaultShadow()
                 .ignoresSafeArea(edges: .bottom)
             
             GeometryReader { proxy in
