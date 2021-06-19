@@ -28,13 +28,13 @@ struct MainView: View {
                 }
             }
         }
+        .hidesTabBar()
     }
     
     var content: some View {
         GeometryReader { proxy in
             VStack(spacing: 0) {
-                switch router.currentPage {
-                case .home:
+                TabView(selection: $router.currentPage) {
                     HomeView(
                         namespace: namespace,
                         store: .init(facts: store.facts),
@@ -42,14 +42,19 @@ struct MainView: View {
                         onSearchTapped: router.switchToSearch,
                         onLogoutTapped: onLogoutTapped
                     )
-                case .search:
+                        .tag(Page.home)
+                
                     Color.red
-                case .bookmarks:
+                        .tag(Page.search)
+                
                     Color.blue
-                case .notifications:
+                        .tag(Page.bookmarks)
+                
                     Color.pink
-                case .camera:
+                        .tag(Page.notifications)
+                
                     Text("Camera should be here")
+                        .tag(Page.camera)
                 }
                 
                 Spacer()

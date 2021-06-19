@@ -30,6 +30,7 @@
 		BF4C91C4267E2371005B0530 /* MockSignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C91C3267E2371005B0530 /* MockSignInWithAppleButton.swift */; };
 		BF4C91C7267E2642005B0530 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C91C6267E2641005B0530 /* ProfileView.swift */; };
 		BF59CE0E267BBEEE0005034D /* TabBarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59CE0D267BBEEE0005034D /* TabBarShape.swift */; };
+		BF5CE6D2267E6BF7001DA12D /* View+TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5CE6D1267E6BF7001DA12D /* View+TabBar.swift */; };
 		BF645306267E42D8003F7B96 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF645305267E42D8003F7B96 /* AppState.swift */; };
 		BF645308267E42F3003F7B96 /* Providers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF645307267E42F3003F7B96 /* Providers.swift */; };
 		BF64530E267E4F64003F7B96 /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = BF64530D267E4F64003F7B96 /* ActivityIndicatorView */; };
@@ -83,6 +84,7 @@
 		BF4C91C3267E2371005B0530 /* MockSignInWithAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignInWithAppleButton.swift; sourceTree = "<group>"; };
 		BF4C91C6267E2641005B0530 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		BF59CE0D267BBEEE0005034D /* TabBarShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarShape.swift; sourceTree = "<group>"; };
+		BF5CE6D1267E6BF7001DA12D /* View+TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+TabBar.swift"; sourceTree = "<group>"; };
 		BF645305267E42D8003F7B96 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		BF645307267E42F3003F7B96 /* Providers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Providers.swift; sourceTree = "<group>"; };
 		BF64530F267E4FBF003F7B96 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				BF227290267DF240008A0DFB /* View+Shadow.swift */,
+				BF5CE6D1267E6BF7001DA12D /* View+TabBar.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -586,6 +589,7 @@
 				BF756E6B26792076007EC5E9 /* MainRouter.swift in Sources */,
 				BF4C91C4267E2371005B0530 /* MockSignInWithAppleButton.swift in Sources */,
 				BFCE78C726772052009DB52D /* CalendarItem.swift in Sources */,
+				BF5CE6D2267E6BF7001DA12D /* View+TabBar.swift in Sources */,
 				BFCE78A926766E67009DB52D /* ReversibleAnimationStore.swift in Sources */,
 				BF59CE0E267BBEEE0005034D /* TabBarShape.swift in Sources */,
 				BFF2AA062676399A003069D4 /* FactView.swift in Sources */,
