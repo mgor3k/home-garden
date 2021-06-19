@@ -38,7 +38,7 @@ struct PlantDetails: View {
             
             HStack(alignment: .top) {
                 VStack(alignment: .leading, spacing: 32) {
-                    VStack(spacing: 12) {
+                    VStack(alignment: .leading, spacing: 12) {
                         Text(plant.name)
                             .font(.largeTitle)
                             .bold()

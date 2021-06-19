@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BF22728E267DF1F1008A0DFB /* PlantDetailsBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF22728D267DF1F0008A0DFB /* PlantDetailsBottomSheet.swift */; };
 		BF227291267DF240008A0DFB /* View+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF227290267DF240008A0DFB /* View+Shadow.swift */; };
+		BF227293267DF330008A0DFB /* PlantDetailsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF227292267DF330008A0DFB /* PlantDetailsMenu.swift */; };
+		BF227297267DF396008A0DFB /* PlantDetailsMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF227296267DF396008A0DFB /* PlantDetailsMenuItem.swift */; };
 		BF44016D2676245B00C21EBA /* HomeGardenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF44016C2676245B00C21EBA /* HomeGardenApp.swift */; };
 		BF44016F2676245B00C21EBA /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF44016E2676245B00C21EBA /* Home.swift */; };
 		BF4401712676245C00C21EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4401702676245C00C21EBA /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 /* Begin PBXFileReference section */
 		BF22728D267DF1F0008A0DFB /* PlantDetailsBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsBottomSheet.swift; sourceTree = "<group>"; };
 		BF227290267DF240008A0DFB /* View+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Shadow.swift"; sourceTree = "<group>"; };
+		BF227292267DF330008A0DFB /* PlantDetailsMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsMenu.swift; sourceTree = "<group>"; };
+		BF227296267DF396008A0DFB /* PlantDetailsMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsMenuItem.swift; sourceTree = "<group>"; };
 		BF4401692676245B00C21EBA /* HomeGarden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeGarden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF44016C2676245B00C21EBA /* HomeGardenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGardenApp.swift; sourceTree = "<group>"; };
 		BF44016E2676245B00C21EBA /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -92,6 +96,24 @@
 				BF227290267DF240008A0DFB /* View+Shadow.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BF227295267DF383008A0DFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF227296267DF396008A0DFB /* PlantDetailsMenuItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF227298267DF518008A0DFB /* Bottom Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				BF227295267DF383008A0DFB /* Model */,
+				BF22728D267DF1F0008A0DFB /* PlantDetailsBottomSheet.swift */,
+				BF227292267DF330008A0DFB /* PlantDetailsMenu.swift */,
+			);
+			path = "Bottom Sheet";
 			sourceTree = "<group>";
 		};
 		BF4401602676245B00C21EBA = {
@@ -243,8 +265,8 @@
 		BF8CD84E267D45AC006E2988 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				BF227298267DF518008A0DFB /* Bottom Sheet */,
 				BF8CD84F267D45B8006E2988 /* PlantFeatureView.swift */,
-				BF22728D267DF1F0008A0DFB /* PlantDetailsBottomSheet.swift */,
 				BF8CD851267D47A0006E2988 /* PlantDetailsNavigationBar.swift */,
 			);
 			path = Components;
@@ -430,6 +452,7 @@
 				BF8CD84D267D43F7006E2988 /* Plant.swift in Sources */,
 				BFC7179426762DD5000A2F8B /* IconButton.swift in Sources */,
 				BFCE78C126769A32009DB52D /* SectionText.swift in Sources */,
+				BF227297267DF396008A0DFB /* PlantDetailsMenuItem.swift in Sources */,
 				BF442AED267862CA0060F6FC /* CalendarSection.swift in Sources */,
 				BF44016F2676245B00C21EBA /* Home.swift in Sources */,
 				BF756E6326790DC0007EC5E9 /* MainView.swift in Sources */,
@@ -439,6 +462,7 @@
 				BF440183267624F800C21EBA /* HomeTopBar.swift in Sources */,
 				BFCE78B226767CF1009DB52D /* MyGardenView.swift in Sources */,
 				BF22728E267DF1F1008A0DFB /* PlantDetailsBottomSheet.swift in Sources */,
+				BF227293267DF330008A0DFB /* PlantDetailsMenu.swift in Sources */,
 				BFCE78C526769B60009DB52D /* PageIndicator.swift in Sources */,
 				BF44016D2676245B00C21EBA /* HomeGardenApp.swift in Sources */,
 				BFDB3C81267D2A2000B645A2 /* MyGardenListView.swift in Sources */,
