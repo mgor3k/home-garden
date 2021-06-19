@@ -7,6 +7,7 @@ import SwiftUI
 struct HomeTopBar: View {
     let tasksCount: Int
     let onSearchTapped: () -> Void
+    let onProfileTapped: () -> Void
     
     var body: some View {
         HStack {
@@ -21,10 +22,12 @@ struct HomeTopBar: View {
             }
             Spacer()
             IconButton(icon: .search, action: onSearchTapped)
-            Image("avatar")
-                .resizable()
-                .frame(width: 44, height: 44)
-                .clipShape(Circle())
+            Button(action: onProfileTapped) {
+                Image("avatar")
+                    .resizable()
+                    .frame(width: 44, height: 44)
+                    .clipShape(Circle())
+            }
         }
     }
 }
@@ -33,7 +36,8 @@ struct HomeTopBar_Previews: PreviewProvider {
     static var previews: some View {
         HomeTopBar(
             tasksCount: 0,
-            onSearchTapped: {}
+            onSearchTapped: {},
+            onProfileTapped: {}
         )
             .padding()
             .previewLayout(.sizeThatFits)
