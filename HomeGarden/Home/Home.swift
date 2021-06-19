@@ -12,6 +12,7 @@ struct HomeView: View {
     @Binding var selectedPlant: Plant?
     @State var isShowingProfile = false
     
+    let onSearchTapped: () -> Void
     let onLogoutTapped: () -> Void
     
     var body: some View {
@@ -30,9 +31,7 @@ struct HomeView: View {
         VStack(spacing: 32) {
             HomeTopBar(
                 tasksCount: 2,
-                onSearchTapped: {
-                    print("search tapped")
-                },
+                onSearchTapped: onSearchTapped,
                 onProfileTapped: {
                     isShowingProfile = true
                 }
@@ -77,6 +76,7 @@ struct HomeView_Previews: PreviewProvider {
         HomeView(
             namespace: namespace,
             selectedPlant: .constant(nil),
+            onSearchTapped: {},
             onLogoutTapped: {}
         )
     }

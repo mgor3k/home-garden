@@ -37,6 +37,7 @@ struct MainView: View {
                     HomeView(
                         namespace: namespace,
                         selectedPlant: $router.selectedPlant,
+                        onSearchTapped: router.switchToSearch,
                         onLogoutTapped: onLogoutTapped
                     )
                 case .search:

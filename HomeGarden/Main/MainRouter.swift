@@ -23,4 +23,8 @@ class MainRouter: ObservableObject {
             selectedPlant = nil
         }
     }
+    
+    func switchToSearch() {
+        currentPage = .search
+    }
 }
