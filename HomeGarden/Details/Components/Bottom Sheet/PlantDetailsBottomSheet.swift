@@ -14,6 +14,18 @@ struct PlantDetailsBottomSheet: View {
                 selectedItem: $store.currentItem
             )
                 .padding(24)
+            
+            switch store.currentItem {
+            case .more:
+                PlantDetailsMoreView()
+            case .tips:
+                PlantDetailsTipView()
+            case .activity:
+                PlantDetailsActivityView()
+            case .calendar:
+                PlantDetailsCalendarView()
+            }
+            
             Spacer()
             Button("Some button", action: {})
                 .buttonStyle(.bordered)

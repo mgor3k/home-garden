@@ -13,30 +13,30 @@ struct PlantDetailsMenu: View {
     var body: some View {
         HStack(spacing: 32) {
             ForEach(items) { item in
-                Text(item.title)
-                    .bold()
-                    .rotationEffect(
-                        item == selectedItem ? .degrees(-4) : .zero
-                    )
-                    .animation(.default, value: selectedItem)
-                    .background(
-                        item == selectedItem ? Rectangle()
-                            .foregroundColor(.orange)
-                            .frame(height: 2)
-                            .cornerRadius(1)
-                            .offset(y: 16)
-                            .matchedGeometryEffect(
-                                id: "geo",
-                                in: namespace
-                            ) : nil
-                    )
-                    .animation(
-                        .spring().speed(4),
-                        value: selectedItem
-                    )
-                    .onTapGesture {
-                        selectedItem = item
-                    }
+                Button(action: { selectedItem = item }) {
+                    Text(item.title)
+                        .foregroundColor(.black)
+                        .bold()
+                }
+                .rotationEffect(
+                    item == selectedItem ? .degrees(-2) : .zero
+                )
+                .animation(.default, value: selectedItem)
+                .background(
+                    item == selectedItem ? Rectangle()
+                        .foregroundColor(.orange)
+                        .frame(height: 2)
+                        .cornerRadius(1)
+                        .offset(y: 16)
+                        .matchedGeometryEffect(
+                            id: "geo",
+                            in: namespace
+                        ) : nil
+                )
+                .animation(
+                    Animation.spring(response: 1, dampingFraction: 0.7, blendDuration: 1).speed(4),
+                    value: selectedItem
+                )
             }
             Spacer()
         }
