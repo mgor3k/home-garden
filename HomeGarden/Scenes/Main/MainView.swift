@@ -57,8 +57,6 @@ struct MainView: View {
                         .tag(Page.camera)
                 }
                 
-                Spacer()
-                
                 // TODO: Check non-notch devices
                 CustomTabBar(
                     viewModel: router.tabBarModel,
