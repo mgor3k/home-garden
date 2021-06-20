@@ -8,7 +8,12 @@ struct ProfileView: View {
     let onLogoutTapped: () -> Void
     
     var body: some View {
-        Button("Logout", action: onLogoutTapped)
+        Button(action: onLogoutTapped) {
+            Text("Logout")
+                .frame(width: 200, height: 32)
+        }
+        .buttonStyle(.bordered)
+        .tint(.accentColor)
     }
 }
 
