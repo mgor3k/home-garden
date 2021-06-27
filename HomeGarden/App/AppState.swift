@@ -19,9 +19,13 @@ class AppState: ObservableObject {
     func login() {
         isLoading = true
         async {
-            let facts = try? await providers.facts.fetchFacts()
-            let myGarden = try? await providers.myGarden.fetchMyGarden()
-            await didLogin(store: .init(facts: facts ?? [], myGarden: myGarden ?? []))
+            do {
+                let facts = try await providers.facts.fetchFacts()
+                let myGarden = try await providers.myGarden.fetchMyGarden()
+                await didLogin(store: .init(facts: facts, myGarden: myGarden))
+            } catch {
+                print(error)
+            }
         }
     }
     

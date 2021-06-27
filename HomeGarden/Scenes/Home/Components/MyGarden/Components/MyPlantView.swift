@@ -10,7 +10,7 @@ struct MyPlantView: View {
     
     var body: some View {
         VStack {
-            Image(plant.imageName)
+            Image(plant.imageURL)
                 .resizable()
                 .scaledToFill()
                 .frame(height: 200)

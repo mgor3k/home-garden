@@ -54,7 +54,7 @@ struct PlantDetails: View {
                 .padding(.horizontal)
                 
                 Spacer()
-                Image(plant.imageName)
+                Image(plant.imageURL)
                     .resizable()
                     .scaledToFit()
                     .matchedGeometryEffect(

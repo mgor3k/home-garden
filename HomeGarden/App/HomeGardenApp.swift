@@ -10,11 +10,14 @@ struct HomeGardenApp: App {
     
     init() {
         #if MOCK
-        let providers = Providers(facts: MockFactsProvider())
+        let providers = Providers(
+            facts: MockFactsProvider(),
+            myGarden: MockMyGardenProvider()
+        )
         #else
         let providers = Providers(
             facts: FirebaseFactsProvider(),
-            myGarden: MockMyGardenProvider()
+            myGarden: FirebaseMyGardenProvider()
         )
         #endif
         
