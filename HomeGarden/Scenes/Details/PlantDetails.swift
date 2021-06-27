@@ -47,7 +47,7 @@ struct PlantDetails: View {
                             .fontWeight(.light)
                     }
                     
-                    ForEach(plant.features) {
+                    ForEach(plant.features ?? []) {
                         PlantFeatureView(feature: $0)
                     }
                 }

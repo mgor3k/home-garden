@@ -8,7 +8,7 @@ struct Plant: Identifiable, Equatable, Hashable, Decodable {
     let id: String
     let name: String
     let imageURL: String
-    let features: [PlantFeature]
+    let features: [PlantFeature]?
     
     let description: String
 }
