@@ -41,6 +41,8 @@ struct PlantDetailsBottomSheet: View {
 
 struct PlantDetailsBottomSheet_Previews: PreviewProvider {
     static var previews: some View {
-        PlantDetailsBottomSheet(plant: MyGardenStore().plants[0])
+        PlantDetailsBottomSheet(
+            plant: MockMyGardenProvider.plants[0]
+        )
     }
 }

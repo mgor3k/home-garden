@@ -32,7 +32,7 @@ struct PlantFeatureView: View {
 
 struct PlantFeatureView_Previews: PreviewProvider {
     static var previews: some View {
-        PlantFeatureView(feature: .init(title: "haha", value: "loool", systemImageName: "drop"))
+        PlantFeatureView(feature: .init(id: "1", title: "haha", value: "loool", systemImageName: "drop"))
             .frame(width: 200)
     }
 }

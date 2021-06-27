@@ -6,8 +6,8 @@ import SwiftUI
 
 struct MyGardenView: View {
     let namespace: Namespace.ID
+    let store: MyGardenStore
     
-    @StateObject var store = MyGardenStore()
     @Binding var selectedPlant: Plant?
     
     var body: some View {
@@ -42,6 +42,7 @@ struct MyGardenList_Previews: PreviewProvider {
     static var previews: some View {
         MyGardenView(
             namespace: namespace,
+            store: .init(plants: []),
             selectedPlant: .constant(nil)
         )
             .padding()

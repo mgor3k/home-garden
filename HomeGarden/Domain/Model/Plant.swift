@@ -4,17 +4,17 @@
 
 import Foundation
 
-struct Plant: Identifiable, Equatable, Hashable {
-    let id = UUID()
+struct Plant: Identifiable, Equatable, Hashable, Decodable {
+    let id: String
     let name: String
-    let imageName: String
-    let features: [PlantFeature]
+    let imageURL: String
+    let features: [PlantFeature]?
     
     let description: String
 }
 
-struct PlantFeature: Identifiable, Hashable, Equatable {
-    let id = UUID()
+struct PlantFeature: Identifiable, Hashable, Equatable, Decodable {
+    let id: String
     let title: String
     let value: String
     let systemImageName: String

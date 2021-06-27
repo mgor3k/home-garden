@@ -34,7 +34,8 @@ struct MainView: View {
                 TabView(selection: $router.currentPage) {
                     HomeView(
                         namespace: namespace,
-                        store: .init(facts: store.facts),
+                        facts: store.facts,
+                        myGarden: store.myGarden,
                         selectedPlant: $router.selectedPlant,
                         onSearchTapped: router.switchToSearch,
                         onLogoutTapped: onLogoutTapped
@@ -70,6 +71,9 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView(store: MainStore(facts: []), onLogoutTapped: {})
+        MainView(
+            store: .init(facts: [], myGarden: []),
+            onLogoutTapped: {}
+        )
     }
 }

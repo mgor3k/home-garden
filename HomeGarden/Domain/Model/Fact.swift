@@ -4,8 +4,8 @@
 
 import Foundation
 
-struct Fact: Identifiable {
-    let id = UUID()
+struct Fact: Identifiable, Decodable {
+    let id: String
     let title: String
     let content: String
 }

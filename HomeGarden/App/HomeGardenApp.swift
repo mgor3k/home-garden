@@ -6,7 +6,7 @@ import SwiftUI
 
 @main
 struct HomeGardenApp: App {
-    @StateObject var state = AppState(providers: .init(facts: MockFactsProvider()))
+    @StateObject var state = AppState(providers: .environmentBased)
     
     var body: some Scene {
         WindowGroup {
@@ -18,9 +18,9 @@ struct HomeGardenApp: App {
                     OnboardingView(
                         didLogin: state.login
                     )
-                case .running(let facts):
+                case .running(let store):
                     MainView(
-                        store: .init(facts: facts),
+                        store: store,
                         onLogoutTapped: state.logout
                     )
                 }

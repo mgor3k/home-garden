@@ -47,14 +47,14 @@ struct PlantDetails: View {
                             .fontWeight(.light)
                     }
                     
-                    ForEach(plant.features) {
+                    ForEach(plant.features ?? []) {
                         PlantFeatureView(feature: $0)
                     }
                 }
                 .padding(.horizontal)
                 
                 Spacer()
-                Image(plant.imageName)
+                Image(plant.imageURL)
                     .resizable()
                     .scaledToFit()
                     .matchedGeometryEffect(
@@ -73,7 +73,7 @@ struct PlantDetails_Previews: PreviewProvider {
     static var previews: some View {
         PlantDetails(
             namespace: namespace,
-            plant: MyGardenStore().plants[0],
+            plant: MockMyGardenProvider.plants[0],
             onDismiss: {}
         )
     }

@@ -10,7 +10,7 @@ struct MyPlantView: View {
     
     var body: some View {
         VStack {
-            Image(plant.imageName)
+            Image(plant.imageURL)
                 .resizable()
                 .scaledToFill()
                 .frame(height: 200)
@@ -42,7 +42,7 @@ struct MyGardenView_Previews: PreviewProvider {
     @Namespace static var namespace
     static var previews: some View {
         MyPlantView(
-            plant: MyGardenStore().plants[4],
+            plant: MockMyGardenProvider.plants[4],
             namespace: namespace
         )
             .padding()

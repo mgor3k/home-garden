@@ -19,15 +19,20 @@ class AppState: ObservableObject {
     func login() {
         isLoading = true
         async {
-            let facts = try? await providers.facts.fetchFacts()
-            await didLogin(facts: facts ?? [])
+            do {
+                let facts = try await providers.facts.fetchFacts()
+                let myGarden = try await providers.myGarden.fetchMyGarden()
+                await didLogin(store: .init(facts: facts, myGarden: myGarden))
+            } catch {
+                print(error)
+            }
         }
     }
     
     @MainActor
-    func didLogin(facts: [Fact]) {
+    func didLogin(store: MainStore) {
         isLoading = false
-        current = .running(facts)
+        current = .running(store)
     }
     
     func logout() {
@@ -39,6 +44,6 @@ extension AppState {
     enum State {
         case launching
         case onboarding
-        case running([Fact])
+        case running(MainStore)
     }
 }
