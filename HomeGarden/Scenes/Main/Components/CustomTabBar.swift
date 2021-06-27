@@ -55,7 +55,8 @@ struct CustomTabBar: View {
                     )
                     TabItem(
                         page: viewModel.page4,
-                        currentPage: $currentPage
+                        currentPage: $currentPage,
+                        badge: .init(count: 2, color: .orange)
                     )
                 }
             }

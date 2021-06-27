@@ -29,6 +29,8 @@
 		BF4C91C1267E17A4005B0530 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C91C0267E17A4005B0530 /* OnboardingView.swift */; };
 		BF4C91C4267E2371005B0530 /* MockSignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C91C3267E2371005B0530 /* MockSignInWithAppleButton.swift */; };
 		BF4C91C7267E2642005B0530 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C91C6267E2641005B0530 /* ProfileView.swift */; };
+		BF57FEC726887C120052D40B /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57FEC626887C120052D40B /* Badge.swift */; };
+		BF57FEC9268884B60052D40B /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57FEC8268884B60052D40B /* BadgeView.swift */; };
 		BF59CE0E267BBEEE0005034D /* TabBarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59CE0D267BBEEE0005034D /* TabBarShape.swift */; };
 		BF5CE6D2267E6BF7001DA12D /* View+TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5CE6D1267E6BF7001DA12D /* View+TabBar.swift */; };
 		BF645306267E42D8003F7B96 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF645305267E42D8003F7B96 /* AppState.swift */; };
@@ -87,6 +89,8 @@
 		BF4C91C0267E17A4005B0530 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		BF4C91C3267E2371005B0530 /* MockSignInWithAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignInWithAppleButton.swift; sourceTree = "<group>"; };
 		BF4C91C6267E2641005B0530 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		BF57FEC626887C120052D40B /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		BF57FEC8268884B60052D40B /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 		BF59CE0D267BBEEE0005034D /* TabBarShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarShape.swift; sourceTree = "<group>"; };
 		BF5CE6D1267E6BF7001DA12D /* View+TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+TabBar.swift"; sourceTree = "<group>"; };
 		BF645305267E42D8003F7B96 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
@@ -378,6 +382,7 @@
 			isa = PBXGroup;
 			children = (
 				BF756E6C26792279007EC5E9 /* Page.swift */,
+				BF57FEC626887C120052D40B /* Badge.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -387,6 +392,7 @@
 			children = (
 				BF756E6426791F0F007EC5E9 /* CustomTabBar.swift */,
 				BF9539C3267D1000008882B1 /* TabItem.swift */,
+				BF57FEC8268884B60052D40B /* BadgeView.swift */,
 				BF59CE0D267BBEEE0005034D /* TabBarShape.swift */,
 			);
 			path = Components;
@@ -632,7 +638,9 @@
 				BFC71798267630A6000A2F8B /* FactsView.swift in Sources */,
 				BF366DEF267E354700286255 /* MainStore.swift in Sources */,
 				BF366DE5267E325500286255 /* Fact.swift in Sources */,
+				BF57FEC9268884B60052D40B /* BadgeView.swift in Sources */,
 				BF440183267624F800C21EBA /* HomeTopBar.swift in Sources */,
+				BF57FEC726887C120052D40B /* Badge.swift in Sources */,
 				BF4C91C1267E17A4005B0530 /* OnboardingView.swift in Sources */,
 				BF4C91BA267E0CFC005B0530 /* PlantDetailsTipView.swift in Sources */,
 				BFD5347226887349007FB5D1 /* SearchView.swift in Sources */,
