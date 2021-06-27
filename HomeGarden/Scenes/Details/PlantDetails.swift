@@ -73,7 +73,7 @@ struct PlantDetails_Previews: PreviewProvider {
     static var previews: some View {
         PlantDetails(
             namespace: namespace,
-            plant: MyGardenStore().plants[0],
+            plant: MockMyGardenProvider.plants[0],
             onDismiss: {}
         )
     }

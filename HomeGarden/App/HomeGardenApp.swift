@@ -12,7 +12,10 @@ struct HomeGardenApp: App {
         #if MOCK
         let providers = Providers(facts: MockFactsProvider())
         #else
-        let providers = Providers(facts: FirebaseFactsProvider())
+        let providers = Providers(
+            facts: FirebaseFactsProvider(),
+            myGarden: MockMyGardenProvider()
+        )
         #endif
         
         _state = StateObject(wrappedValue: AppState(providers: providers))
@@ -28,9 +31,9 @@ struct HomeGardenApp: App {
                     OnboardingView(
                         didLogin: state.login
                     )
-                case .running(let facts):
+                case .running(let store):
                     MainView(
-                        store: .init(facts: facts),
+                        store: store,
                         onLogoutTapped: state.logout
                     )
                 }
