@@ -31,6 +31,7 @@
 		BF4C91C7267E2642005B0530 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C91C6267E2641005B0530 /* ProfileView.swift */; };
 		BF57FEC726887C120052D40B /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57FEC626887C120052D40B /* Badge.swift */; };
 		BF57FEC9268884B60052D40B /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57FEC8268884B60052D40B /* BadgeView.swift */; };
+		BF57FECB26888CB80052D40B /* FirebaseFactsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57FECA26888CB70052D40B /* FirebaseFactsProvider.swift */; };
 		BF59CE0E267BBEEE0005034D /* TabBarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59CE0D267BBEEE0005034D /* TabBarShape.swift */; };
 		BF5CE6D2267E6BF7001DA12D /* View+TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5CE6D1267E6BF7001DA12D /* View+TabBar.swift */; };
 		BF645306267E42D8003F7B96 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF645305267E42D8003F7B96 /* AppState.swift */; };
@@ -91,6 +92,7 @@
 		BF4C91C6267E2641005B0530 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		BF57FEC626887C120052D40B /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		BF57FEC8268884B60052D40B /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
+		BF57FECA26888CB70052D40B /* FirebaseFactsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFactsProvider.swift; sourceTree = "<group>"; };
 		BF59CE0D267BBEEE0005034D /* TabBarShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarShape.swift; sourceTree = "<group>"; };
 		BF5CE6D1267E6BF7001DA12D /* View+TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+TabBar.swift"; sourceTree = "<group>"; };
 		BF645305267E42D8003F7B96 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
@@ -345,6 +347,7 @@
 			isa = PBXGroup;
 			children = (
 				BF366DEC267E34BC00286255 /* MockFactsProvider.swift */,
+				BF57FECA26888CB70052D40B /* FirebaseFactsProvider.swift */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -605,6 +608,7 @@
 				BFCE78A726765778009DB52D /* FactsStore.swift in Sources */,
 				BF4C91C7267E2642005B0530 /* ProfileView.swift in Sources */,
 				BF227291267DF240008A0DFB /* View+Shadow.swift in Sources */,
+				BF57FECB26888CB80052D40B /* FirebaseFactsProvider.swift in Sources */,
 				BFCE78B626767DE0009DB52D /* MyGardenStore.swift in Sources */,
 				BF366DF1267E363F00286255 /* HomeStore.swift in Sources */,
 				BFCE78B426767DCE009DB52D /* MyPlantView.swift in Sources */,

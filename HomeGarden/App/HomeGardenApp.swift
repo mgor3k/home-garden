@@ -6,7 +6,7 @@ import SwiftUI
 
 @main
 struct HomeGardenApp: App {
-    @StateObject var state = AppState(providers: .init(facts: MockFactsProvider()))
+    @StateObject var state = AppState(providers: .init(facts: FirebaseFactsProvider()))
     
     var body: some Scene {
         WindowGroup {
