@@ -6,23 +6,7 @@ import SwiftUI
 
 @main
 struct HomeGardenApp: App {
-    @StateObject var state: AppState
-    
-    init() {
-        #if MOCK
-        let providers = Providers(
-            facts: MockFactsProvider(),
-            myGarden: MockMyGardenProvider()
-        )
-        #else
-        let providers = Providers(
-            facts: FirebaseFactsProvider(),
-            myGarden: FirebaseMyGardenProvider()
-        )
-        #endif
-        
-        _state = StateObject(wrappedValue: AppState(providers: providers))
-    }
+    @StateObject var state = AppState(providers: .environmentBased)
     
     var body: some Scene {
         WindowGroup {
