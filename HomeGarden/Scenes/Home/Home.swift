@@ -16,14 +16,17 @@ struct HomeView: View {
     let onLogoutTapped: () -> Void
     
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            content
-        }
-        .sheet(isPresented: $isShowingProfile) {
-            ProfileView {
-                isShowingProfile = false
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: onLogoutTapped)
+        NavigationView {
+            ScrollView(showsIndicators: false) {
+                content
             }
+            .sheet(isPresented: $isShowingProfile) {
+                ProfileView {
+                    isShowingProfile = false
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: onLogoutTapped)
+                }
+            }
+            .navigationBarHidden(true)
         }
     }
     

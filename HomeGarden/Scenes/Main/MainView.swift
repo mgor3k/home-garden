@@ -32,28 +32,25 @@ struct MainView: View {
         GeometryReader { proxy in
             VStack(spacing: 0) {
                 TabView(selection: $router.currentPage) {
-                    NavigationView {
-                        HomeView(
-                            namespace: namespace,
-                            store: .init(facts: store.facts),
-                            selectedPlant: $router.selectedPlant,
-                            onSearchTapped: router.switchToSearch,
-                            onLogoutTapped: onLogoutTapped
-                        )
-                            .navigationBarHidden(true)
-                    }
-                    .tag(Page.home)
-                
-                    Color.red
+                    HomeView(
+                        namespace: namespace,
+                        store: .init(facts: store.facts),
+                        selectedPlant: $router.selectedPlant,
+                        onSearchTapped: router.switchToSearch,
+                        onLogoutTapped: onLogoutTapped
+                    )
+                        .tag(Page.home)
+                    
+                    SearchView()
                         .tag(Page.search)
                 
-                    Color.blue
+                    BookmarksView()
                         .tag(Page.bookmarks)
                 
-                    Color.pink
+                    NotificationsView()
                         .tag(Page.notifications)
                 
-                    Text("Camera should be here")
+                    CameraView()
                         .tag(Page.camera)
                 }
                 

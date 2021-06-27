@@ -55,6 +55,10 @@
 		BFCE78C326769A9D009DB52D /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78C226769A9D009DB52D /* CalendarView.swift */; };
 		BFCE78C526769B60009DB52D /* PageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78C426769B5F009DB52D /* PageIndicator.swift */; };
 		BFCE78C726772052009DB52D /* CalendarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78C626772052009DB52D /* CalendarItem.swift */; };
+		BFD53470268872A4007FB5D1 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD5346F268872A4007FB5D1 /* CameraView.swift */; };
+		BFD5347226887349007FB5D1 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD5347126887349007FB5D1 /* SearchView.swift */; };
+		BFD534742688752F007FB5D1 /* BookmarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD534732688752F007FB5D1 /* BookmarksView.swift */; };
+		BFD534762688755D007FB5D1 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD534752688755D007FB5D1 /* NotificationsView.swift */; };
 		BFDB3C81267D2A2000B645A2 /* MyGardenListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDB3C80267D2A2000B645A2 /* MyGardenListView.swift */; };
 		BFF2AA062676399A003069D4 /* FactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2AA052676399A003069D4 /* FactView.swift */; };
 /* End PBXBuildFile section */
@@ -108,6 +112,10 @@
 		BFCE78C226769A9D009DB52D /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		BFCE78C426769B5F009DB52D /* PageIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageIndicator.swift; sourceTree = "<group>"; };
 		BFCE78C626772052009DB52D /* CalendarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarItem.swift; sourceTree = "<group>"; };
+		BFD5346F268872A4007FB5D1 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		BFD5347126887349007FB5D1 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		BFD534732688752F007FB5D1 /* BookmarksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksView.swift; sourceTree = "<group>"; };
+		BFD534752688755D007FB5D1 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		BFDB3C80267D2A2000B645A2 /* MyGardenListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenListView.swift; sourceTree = "<group>"; };
 		BFF2AA052676399A003069D4 /* FactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -234,6 +242,7 @@
 		BF44017C2676249800C21EBA /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				BFD5347126887349007FB5D1 /* SearchView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -241,6 +250,7 @@
 		BF44017D2676249C00C21EBA /* Bookmarks */ = {
 			isa = PBXGroup;
 			children = (
+				BFD534732688752F007FB5D1 /* BookmarksView.swift */,
 			);
 			path = Bookmarks;
 			sourceTree = "<group>";
@@ -248,6 +258,7 @@
 		BF44017E267624A300C21EBA /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				BFD534752688755D007FB5D1 /* NotificationsView.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -337,6 +348,7 @@
 		BF645311267E53DA003F7B96 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				BFD5346E26887288007FB5D1 /* Camera */,
 				BF4C91BF267E1794005B0530 /* Onboarding */,
 				BF756E6626791F60007EC5E9 /* Main */,
 				BF44017B2676249300C21EBA /* Home */,
@@ -492,6 +504,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		BFD5346E26887288007FB5D1 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				BFD5346F268872A4007FB5D1 /* CameraView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		BFDB3C7F267D29F300B645A2 /* My Garden */ = {
 			isa = PBXGroup;
 			children = (
@@ -591,7 +611,9 @@
 				BFCE78C726772052009DB52D /* CalendarItem.swift in Sources */,
 				BF5CE6D2267E6BF7001DA12D /* View+TabBar.swift in Sources */,
 				BFCE78A926766E67009DB52D /* ReversibleAnimationStore.swift in Sources */,
+				BFD53470268872A4007FB5D1 /* CameraView.swift in Sources */,
 				BF59CE0E267BBEEE0005034D /* TabBarShape.swift in Sources */,
+				BFD534762688755D007FB5D1 /* NotificationsView.swift in Sources */,
 				BFF2AA062676399A003069D4 /* FactView.swift in Sources */,
 				BF9539C4267D1000008882B1 /* TabItem.swift in Sources */,
 				BF8CD84D267D43F7006E2988 /* Plant.swift in Sources */,
@@ -613,6 +635,7 @@
 				BF440183267624F800C21EBA /* HomeTopBar.swift in Sources */,
 				BF4C91C1267E17A4005B0530 /* OnboardingView.swift in Sources */,
 				BF4C91BA267E0CFC005B0530 /* PlantDetailsTipView.swift in Sources */,
+				BFD5347226887349007FB5D1 /* SearchView.swift in Sources */,
 				BF4C91BE267E0D13005B0530 /* PlantDetailsCalendarView.swift in Sources */,
 				BF645310267E4FBF003F7B96 /* LoaderView.swift in Sources */,
 				BFCE78B226767CF1009DB52D /* MyGardenView.swift in Sources */,
@@ -622,6 +645,7 @@
 				BF4C91B8267E0CE8005B0530 /* PlantDetailsMoreView.swift in Sources */,
 				BF44016D2676245B00C21EBA /* HomeGardenApp.swift in Sources */,
 				BFDB3C81267D2A2000B645A2 /* MyGardenListView.swift in Sources */,
+				BFD534742688752F007FB5D1 /* BookmarksView.swift in Sources */,
 				BF8CD852267D47A0006E2988 /* PlantDetailsNavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
