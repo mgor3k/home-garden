@@ -12,20 +12,17 @@ struct MainView: View {
     let onLogoutTapped: () -> Void
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                content
-                    .navigationBarHidden(true)
-                
-                if let plant = router.selectedPlant {
-                    PlantDetails(
-                        namespace: namespace,
-                        plant: plant,
-                        onDismiss: router.dismissDetails
-                    )
-                        .background(Color.white.ignoresSafeArea())
-                        .zIndex(3)
-                }
+        ZStack {
+            content
+            
+            if let plant = router.selectedPlant {
+                PlantDetails(
+                    namespace: namespace,
+                    plant: plant,
+                    onDismiss: router.dismissDetails
+                )
+                    .background(Color.white.ignoresSafeArea())
+                    .zIndex(3)
             }
         }
         .hidesTabBar()
@@ -35,14 +32,17 @@ struct MainView: View {
         GeometryReader { proxy in
             VStack(spacing: 0) {
                 TabView(selection: $router.currentPage) {
-                    HomeView(
-                        namespace: namespace,
-                        store: .init(facts: store.facts),
-                        selectedPlant: $router.selectedPlant,
-                        onSearchTapped: router.switchToSearch,
-                        onLogoutTapped: onLogoutTapped
-                    )
-                        .tag(Page.home)
+                    NavigationView {
+                        HomeView(
+                            namespace: namespace,
+                            store: .init(facts: store.facts),
+                            selectedPlant: $router.selectedPlant,
+                            onSearchTapped: router.switchToSearch,
+                            onLogoutTapped: onLogoutTapped
+                        )
+                            .navigationBarHidden(true)
+                    }
+                    .tag(Page.home)
                 
                     Color.red
                         .tag(Page.search)
