@@ -4,11 +4,12 @@
 
 import Foundation
 
-struct FirebaseFactsProvider: FactsProviding {
+struct FirebaseFactsProvider {
+    let networkClient: NetworkClient
+}
+
+extension FirebaseFactsProvider: FactsProviding {
     func fetchFacts() async throws -> [Fact] {
-        let url = URL(string: "https://homegarden-519db-default-rtdb.firebaseio.com/facts.json")!
-        let (data, _) = try await URLSession.shared.data(from: url, delegate: nil)
-        let parsed = try JSONDecoder().decode([Fact].self, from: data)
-        return parsed
+        try await networkClient.execute(FirebaseFactsEndpoint())
     }
 }

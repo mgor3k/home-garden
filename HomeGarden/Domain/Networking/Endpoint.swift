@@ -17,12 +17,20 @@ protocol Endpoint {
 }
 
 extension Endpoint {
+    func body() throws -> Data? {
+        nil
+    }
+    
     var query: [URLQueryItem] {
         []
     }
     
     var headers: HTTPHeaders {
         [:]
+    }
+    
+    var method: HTTPMethod {
+        .get
     }
 }
 

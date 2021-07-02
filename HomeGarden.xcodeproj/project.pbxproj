@@ -77,6 +77,8 @@
 		BFE5EEAD268FA87D003E1E66 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEAC268FA87D003E1E66 /* Endpoint.swift */; };
 		BFE5EEAF268FA899003E1E66 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEAE268FA899003E1E66 /* HTTPHeaders.swift */; };
 		BFE5EEB1268FA8B1003E1E66 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEB0268FA8B1003E1E66 /* HTTPMethod.swift */; };
+		BFE5EEB3268FAC83003E1E66 /* FirebaseMyGardenEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEB2268FAC83003E1E66 /* FirebaseMyGardenEndpoint.swift */; };
+		BFE5EEB5268FACD2003E1E66 /* FirebaseFactsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEB4268FACD2003E1E66 /* FirebaseFactsEndpoint.swift */; };
 		BFEEDBE826889C4200331BA2 /* MockMyGardenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEEDBE726889C4200331BA2 /* MockMyGardenProvider.swift */; };
 		BFEEDBEA2688A01B00331BA2 /* FirebaseMyGardenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEEDBE92688A01B00331BA2 /* FirebaseMyGardenProvider.swift */; };
 		BFF2AA062676399A003069D4 /* FactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2AA052676399A003069D4 /* FactView.swift */; };
@@ -153,6 +155,8 @@
 		BFE5EEAC268FA87D003E1E66 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		BFE5EEAE268FA899003E1E66 /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
 		BFE5EEB0268FA8B1003E1E66 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		BFE5EEB2268FAC83003E1E66 /* FirebaseMyGardenEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMyGardenEndpoint.swift; sourceTree = "<group>"; };
+		BFE5EEB4268FACD2003E1E66 /* FirebaseFactsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFactsEndpoint.swift; sourceTree = "<group>"; };
 		BFEEDBE726889C4200331BA2 /* MockMyGardenProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMyGardenProvider.swift; sourceTree = "<group>"; };
 		BFEEDBE92688A01B00331BA2 /* FirebaseMyGardenProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMyGardenProvider.swift; sourceTree = "<group>"; };
 		BFF2AA052676399A003069D4 /* FactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactView.swift; sourceTree = "<group>"; };
@@ -637,6 +641,8 @@
 			isa = PBXGroup;
 			children = (
 				BFE5EEAA268FA867003E1E66 /* FirebaseSigninEndpoint.swift */,
+				BFE5EEB4268FACD2003E1E66 /* FirebaseFactsEndpoint.swift */,
+				BFE5EEB2268FAC83003E1E66 /* FirebaseMyGardenEndpoint.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -718,6 +724,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE5EEAB268FA867003E1E66 /* FirebaseSigninEndpoint.swift in Sources */,
+				BFE5EEB5268FACD2003E1E66 /* FirebaseFactsEndpoint.swift in Sources */,
 				BFCE78A726765778009DB52D /* FactsStore.swift in Sources */,
 				BF4C91C7267E2642005B0530 /* ProfileView.swift in Sources */,
 				BFE5EE8E268F7A42003E1E66 /* ImageCacheKey.swift in Sources */,
@@ -776,6 +783,7 @@
 				BF4C91BE267E0D13005B0530 /* PlantDetailsCalendarView.swift in Sources */,
 				BF3AF15A268F10E300A3AE18 /* CachedAsyncImage.swift in Sources */,
 				BFE5EEB1268FA8B1003E1E66 /* HTTPMethod.swift in Sources */,
+				BFE5EEB3268FAC83003E1E66 /* FirebaseMyGardenEndpoint.swift in Sources */,
 				BF645310267E4FBF003F7B96 /* LoaderView.swift in Sources */,
 				BFCE78B226767CF1009DB52D /* MyGardenView.swift in Sources */,
 				BF22728E267DF1F1008A0DFB /* PlantDetailsBottomSheet.swift in Sources */,
