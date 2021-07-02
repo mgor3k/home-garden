@@ -68,7 +68,6 @@
 		BFE5EE8E268F7A42003E1E66 /* ImageCacheKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EE8D268F7A42003E1E66 /* ImageCacheKey.swift */; };
 		BFE5EE91268F912B003E1E66 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EE90268F912B003E1E66 /* Authenticator.swift */; };
 		BFE5EE96268F94AA003E1E66 /* MockAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EE95268F94AA003E1E66 /* MockAuthenticator.swift */; };
-		BFE5EE9C268F9A6C003E1E66 /* AuthCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EE9B268F9A6C003E1E66 /* AuthCredentials.swift */; };
 		BFE5EEA0268F9B62003E1E66 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EE9F268F9B62003E1E66 /* Dependencies.swift */; };
 		BFE5EEA2268F9C3C003E1E66 /* FirebaseAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEA1268F9C3C003E1E66 /* FirebaseAuthenticator.swift */; };
 		BFE5EEA6268FA4FF003E1E66 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEA5268FA4FF003E1E66 /* NetworkClient.swift */; };
@@ -148,7 +147,6 @@
 		BFE5EE8D268F7A42003E1E66 /* ImageCacheKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheKey.swift; sourceTree = "<group>"; };
 		BFE5EE90268F912B003E1E66 /* Authenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
 		BFE5EE95268F94AA003E1E66 /* MockAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthenticator.swift; sourceTree = "<group>"; };
-		BFE5EE9B268F9A6C003E1E66 /* AuthCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCredentials.swift; sourceTree = "<group>"; };
 		BFE5EE9F268F9B62003E1E66 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		BFE5EEA1268F9C3C003E1E66 /* FirebaseAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticator.swift; sourceTree = "<group>"; };
 		BFE5EEA5268FA4FF003E1E66 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
@@ -604,7 +602,6 @@
 		BFE5EE8F268F9122003E1E66 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				BFE5EE9B268F9A6C003E1E66 /* AuthCredentials.swift */,
 				BFE5EE90268F912B003E1E66 /* Authenticator.swift */,
 				BFE5EEA1268F9C3C003E1E66 /* FirebaseAuthenticator.swift */,
 				BFE5EE95268F94AA003E1E66 /* MockAuthenticator.swift */,
@@ -786,7 +783,6 @@
 				BF366DEF267E354700286255 /* MainStore.swift in Sources */,
 				BF366DE5267E325500286255 /* Fact.swift in Sources */,
 				BF57FEC9268884B60052D40B /* BadgeView.swift in Sources */,
-				BFE5EE9C268F9A6C003E1E66 /* AuthCredentials.swift in Sources */,
 				BF440183267624F800C21EBA /* HomeTopBar.swift in Sources */,
 				BFE5EEB8268FB608003E1E66 /* Storage.swift in Sources */,
 				BF57FEC726887C120052D40B /* Badge.swift in Sources */,
