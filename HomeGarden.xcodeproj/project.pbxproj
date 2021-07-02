@@ -79,6 +79,8 @@
 		BFE5EEB1268FA8B1003E1E66 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEB0268FA8B1003E1E66 /* HTTPMethod.swift */; };
 		BFE5EEB3268FAC83003E1E66 /* FirebaseMyGardenEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEB2268FAC83003E1E66 /* FirebaseMyGardenEndpoint.swift */; };
 		BFE5EEB5268FACD2003E1E66 /* FirebaseFactsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEB4268FACD2003E1E66 /* FirebaseFactsEndpoint.swift */; };
+		BFE5EEB8268FB608003E1E66 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEB7268FB608003E1E66 /* Storage.swift */; };
+		BFE5EEBA268FB61B003E1E66 /* DefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEB9268FB61B003E1E66 /* DefaultsStorage.swift */; };
 		BFEEDBE826889C4200331BA2 /* MockMyGardenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEEDBE726889C4200331BA2 /* MockMyGardenProvider.swift */; };
 		BFEEDBEA2688A01B00331BA2 /* FirebaseMyGardenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEEDBE92688A01B00331BA2 /* FirebaseMyGardenProvider.swift */; };
 		BFF2AA062676399A003069D4 /* FactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2AA052676399A003069D4 /* FactView.swift */; };
@@ -157,6 +159,8 @@
 		BFE5EEB0268FA8B1003E1E66 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		BFE5EEB2268FAC83003E1E66 /* FirebaseMyGardenEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMyGardenEndpoint.swift; sourceTree = "<group>"; };
 		BFE5EEB4268FACD2003E1E66 /* FirebaseFactsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFactsEndpoint.swift; sourceTree = "<group>"; };
+		BFE5EEB7268FB608003E1E66 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		BFE5EEB9268FB61B003E1E66 /* DefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsStorage.swift; sourceTree = "<group>"; };
 		BFEEDBE726889C4200331BA2 /* MockMyGardenProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMyGardenProvider.swift; sourceTree = "<group>"; };
 		BFEEDBE92688A01B00331BA2 /* FirebaseMyGardenProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMyGardenProvider.swift; sourceTree = "<group>"; };
 		BFF2AA052676399A003069D4 /* FactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactView.swift; sourceTree = "<group>"; };
@@ -591,6 +595,7 @@
 		BFE5EE8C268F7A25003E1E66 /* Persistance */ = {
 			isa = PBXGroup;
 			children = (
+				BFE5EEB6268FB5FE003E1E66 /* Storage */,
 				BF3AF156268F107800A3AE18 /* ImageCache */,
 			);
 			path = Persistance;
@@ -645,6 +650,15 @@
 				BFE5EEB2268FAC83003E1E66 /* FirebaseMyGardenEndpoint.swift */,
 			);
 			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		BFE5EEB6268FB5FE003E1E66 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				BFE5EEB7268FB608003E1E66 /* Storage.swift */,
+				BFE5EEB9268FB61B003E1E66 /* DefaultsStorage.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -774,11 +788,13 @@
 				BF57FEC9268884B60052D40B /* BadgeView.swift in Sources */,
 				BFE5EE9C268F9A6C003E1E66 /* AuthCredentials.swift in Sources */,
 				BF440183267624F800C21EBA /* HomeTopBar.swift in Sources */,
+				BFE5EEB8268FB608003E1E66 /* Storage.swift in Sources */,
 				BF57FEC726887C120052D40B /* Badge.swift in Sources */,
 				BFE5EEAF268FA899003E1E66 /* HTTPHeaders.swift in Sources */,
 				BF4C91C1267E17A4005B0530 /* OnboardingView.swift in Sources */,
 				BF4C91BA267E0CFC005B0530 /* PlantDetailsTipView.swift in Sources */,
 				BFE5EEA2268F9C3C003E1E66 /* FirebaseAuthenticator.swift in Sources */,
+				BFE5EEBA268FB61B003E1E66 /* DefaultsStorage.swift in Sources */,
 				BFD5347226887349007FB5D1 /* SearchView.swift in Sources */,
 				BF4C91BE267E0D13005B0530 /* PlantDetailsCalendarView.swift in Sources */,
 				BF3AF15A268F10E300A3AE18 /* CachedAsyncImage.swift in Sources */,

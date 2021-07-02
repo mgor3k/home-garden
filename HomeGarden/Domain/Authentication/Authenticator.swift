@@ -4,12 +4,10 @@
 
 import Foundation
 
-protocol SigninHandler {
-    func signin(credentials: AuthCredentials) async throws
+protocol Authenticator {
+    func signin(using credentials: AuthCredentials) async throws
+    func signup(using credentials: AuthCredentials) async throws
+    
+    var isAuthenticated: Bool { get }
+    func logout()
 }
-
-protocol SignupHandler {
-    func signup(credentials: AuthCredentials) async throws
-}
-
-typealias Authenticating = SignupHandler & SigninHandler

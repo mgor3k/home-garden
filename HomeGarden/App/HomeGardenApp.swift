@@ -19,7 +19,7 @@ struct HomeGardenApp: App {
         ZStack {
             switch state.current {
             case .launching:
-                Color.blue
+                Color.clear
             case .onboarding:
                 OnboardingView(
                     didLogin: state.login
