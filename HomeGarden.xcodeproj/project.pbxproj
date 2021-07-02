@@ -66,6 +66,20 @@
 		BFD534762688755D007FB5D1 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD534752688755D007FB5D1 /* NotificationsView.swift */; };
 		BFDB3C81267D2A2000B645A2 /* MyGardenListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDB3C80267D2A2000B645A2 /* MyGardenListView.swift */; };
 		BFE5EE8E268F7A42003E1E66 /* ImageCacheKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EE8D268F7A42003E1E66 /* ImageCacheKey.swift */; };
+		BFE5EE91268F912B003E1E66 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EE90268F912B003E1E66 /* Authenticator.swift */; };
+		BFE5EE96268F94AA003E1E66 /* MockAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EE95268F94AA003E1E66 /* MockAuthenticator.swift */; };
+		BFE5EEA0268F9B62003E1E66 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EE9F268F9B62003E1E66 /* Dependencies.swift */; };
+		BFE5EEA2268F9C3C003E1E66 /* FirebaseAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEA1268F9C3C003E1E66 /* FirebaseAuthenticator.swift */; };
+		BFE5EEA6268FA4FF003E1E66 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEA5268FA4FF003E1E66 /* NetworkClient.swift */; };
+		BFE5EEA9268FA850003E1E66 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEA8268FA850003E1E66 /* NetworkError.swift */; };
+		BFE5EEAB268FA867003E1E66 /* FirebaseSigninEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEAA268FA867003E1E66 /* FirebaseSigninEndpoint.swift */; };
+		BFE5EEAD268FA87D003E1E66 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEAC268FA87D003E1E66 /* Endpoint.swift */; };
+		BFE5EEAF268FA899003E1E66 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEAE268FA899003E1E66 /* HTTPHeaders.swift */; };
+		BFE5EEB1268FA8B1003E1E66 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEB0268FA8B1003E1E66 /* HTTPMethod.swift */; };
+		BFE5EEB3268FAC83003E1E66 /* FirebaseMyGardenEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEB2268FAC83003E1E66 /* FirebaseMyGardenEndpoint.swift */; };
+		BFE5EEB5268FACD2003E1E66 /* FirebaseFactsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEB4268FACD2003E1E66 /* FirebaseFactsEndpoint.swift */; };
+		BFE5EEB8268FB608003E1E66 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEB7268FB608003E1E66 /* Storage.swift */; };
+		BFE5EEBA268FB61B003E1E66 /* DefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEB9268FB61B003E1E66 /* DefaultsStorage.swift */; };
 		BFEEDBE826889C4200331BA2 /* MockMyGardenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEEDBE726889C4200331BA2 /* MockMyGardenProvider.swift */; };
 		BFEEDBEA2688A01B00331BA2 /* FirebaseMyGardenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEEDBE92688A01B00331BA2 /* FirebaseMyGardenProvider.swift */; };
 		BFF2AA062676399A003069D4 /* FactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2AA052676399A003069D4 /* FactView.swift */; };
@@ -131,6 +145,20 @@
 		BFD534752688755D007FB5D1 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		BFDB3C80267D2A2000B645A2 /* MyGardenListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenListView.swift; sourceTree = "<group>"; };
 		BFE5EE8D268F7A42003E1E66 /* ImageCacheKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheKey.swift; sourceTree = "<group>"; };
+		BFE5EE90268F912B003E1E66 /* Authenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
+		BFE5EE95268F94AA003E1E66 /* MockAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthenticator.swift; sourceTree = "<group>"; };
+		BFE5EE9F268F9B62003E1E66 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		BFE5EEA1268F9C3C003E1E66 /* FirebaseAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticator.swift; sourceTree = "<group>"; };
+		BFE5EEA5268FA4FF003E1E66 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		BFE5EEA8268FA850003E1E66 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		BFE5EEAA268FA867003E1E66 /* FirebaseSigninEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSigninEndpoint.swift; sourceTree = "<group>"; };
+		BFE5EEAC268FA87D003E1E66 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		BFE5EEAE268FA899003E1E66 /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
+		BFE5EEB0268FA8B1003E1E66 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		BFE5EEB2268FAC83003E1E66 /* FirebaseMyGardenEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMyGardenEndpoint.swift; sourceTree = "<group>"; };
+		BFE5EEB4268FACD2003E1E66 /* FirebaseFactsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFactsEndpoint.swift; sourceTree = "<group>"; };
+		BFE5EEB7268FB608003E1E66 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		BFE5EEB9268FB61B003E1E66 /* DefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsStorage.swift; sourceTree = "<group>"; };
 		BFEEDBE726889C4200331BA2 /* MockMyGardenProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMyGardenProvider.swift; sourceTree = "<group>"; };
 		BFEEDBE92688A01B00331BA2 /* FirebaseMyGardenProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMyGardenProvider.swift; sourceTree = "<group>"; };
 		BFF2AA052676399A003069D4 /* FactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactView.swift; sourceTree = "<group>"; };
@@ -213,7 +241,6 @@
 			isa = PBXGroup;
 			children = (
 				BF3AF157268F108100A3AE18 /* ImageLoader.swift */,
-				BFE5EE8D268F7A42003E1E66 /* ImageCacheKey.swift */,
 				BF3AF15C268F13AE00A3AE18 /* ImageCache.swift */,
 			);
 			path = ImageCache;
@@ -434,6 +461,9 @@
 		BF8CD84A267D43E7006E2988 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				BFE5EEA4268FA4F5003E1E66 /* Networking */,
+				BFE5EE92268F9431003E1E66 /* Dependencies */,
+				BFE5EE8F268F9122003E1E66 /* Authentication */,
 				BFE5EE8C268F7A25003E1E66 /* Persistance */,
 				BF366DEB267E34A700286255 /* Providers */,
 				BF8CD84B267D43EE006E2988 /* Model */,
@@ -563,9 +593,69 @@
 		BFE5EE8C268F7A25003E1E66 /* Persistance */ = {
 			isa = PBXGroup;
 			children = (
+				BFE5EEB6268FB5FE003E1E66 /* Storage */,
 				BF3AF156268F107800A3AE18 /* ImageCache */,
 			);
 			path = Persistance;
+			sourceTree = "<group>";
+		};
+		BFE5EE8F268F9122003E1E66 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				BFE5EE90268F912B003E1E66 /* Authenticator.swift */,
+				BFE5EEA1268F9C3C003E1E66 /* FirebaseAuthenticator.swift */,
+				BFE5EE95268F94AA003E1E66 /* MockAuthenticator.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		BFE5EE92268F9431003E1E66 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				BFE5EEA3268FA174003E1E66 /* Keys */,
+				BFE5EE9F268F9B62003E1E66 /* Dependencies.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		BFE5EEA3268FA174003E1E66 /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				BFE5EE8D268F7A42003E1E66 /* ImageCacheKey.swift */,
+			);
+			path = Keys;
+			sourceTree = "<group>";
+		};
+		BFE5EEA4268FA4F5003E1E66 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BFE5EEA7268FA83E003E1E66 /* Endpoints */,
+				BFE5EEA5268FA4FF003E1E66 /* NetworkClient.swift */,
+				BFE5EEAE268FA899003E1E66 /* HTTPHeaders.swift */,
+				BFE5EEB0268FA8B1003E1E66 /* HTTPMethod.swift */,
+				BFE5EEAC268FA87D003E1E66 /* Endpoint.swift */,
+				BFE5EEA8268FA850003E1E66 /* NetworkError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BFE5EEA7268FA83E003E1E66 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				BFE5EEAA268FA867003E1E66 /* FirebaseSigninEndpoint.swift */,
+				BFE5EEB4268FACD2003E1E66 /* FirebaseFactsEndpoint.swift */,
+				BFE5EEB2268FAC83003E1E66 /* FirebaseMyGardenEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		BFE5EEB6268FB5FE003E1E66 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				BFE5EEB7268FB608003E1E66 /* Storage.swift */,
+				BFE5EEB9268FB61B003E1E66 /* DefaultsStorage.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -644,14 +734,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE5EEAB268FA867003E1E66 /* FirebaseSigninEndpoint.swift in Sources */,
+				BFE5EEB5268FACD2003E1E66 /* FirebaseFactsEndpoint.swift in Sources */,
 				BFCE78A726765778009DB52D /* FactsStore.swift in Sources */,
 				BF4C91C7267E2642005B0530 /* ProfileView.swift in Sources */,
 				BFE5EE8E268F7A42003E1E66 /* ImageCacheKey.swift in Sources */,
 				BF227291267DF240008A0DFB /* View+Shadow.swift in Sources */,
 				BF57FECB26888CB80052D40B /* FirebaseFactsProvider.swift in Sources */,
+				BFE5EE91268F912B003E1E66 /* Authenticator.swift in Sources */,
 				BFCE78B626767DE0009DB52D /* MyGardenStore.swift in Sources */,
 				BFCE78B426767DCE009DB52D /* MyPlantView.swift in Sources */,
 				BFCE78C326769A9D009DB52D /* CalendarView.swift in Sources */,
+				BFE5EEA9268FA850003E1E66 /* NetworkError.swift in Sources */,
 				BFEEDBEA2688A01B00331BA2 /* FirebaseMyGardenProvider.swift in Sources */,
 				BF9539C7267D13EF008882B1 /* PlantDetails.swift in Sources */,
 				BF645308267E42F3003F7B96 /* Providers.swift in Sources */,
@@ -663,6 +757,9 @@
 				BF5CE6D2267E6BF7001DA12D /* View+TabBar.swift in Sources */,
 				BFCE78A926766E67009DB52D /* ReversibleAnimationStore.swift in Sources */,
 				BFEEDBE826889C4200331BA2 /* MockMyGardenProvider.swift in Sources */,
+				BFE5EE96268F94AA003E1E66 /* MockAuthenticator.swift in Sources */,
+				BFE5EEA6268FA4FF003E1E66 /* NetworkClient.swift in Sources */,
+				BFE5EEA0268F9B62003E1E66 /* Dependencies.swift in Sources */,
 				BFD53470268872A4007FB5D1 /* CameraView.swift in Sources */,
 				BF59CE0E267BBEEE0005034D /* TabBarShape.swift in Sources */,
 				BFD534762688755D007FB5D1 /* NotificationsView.swift in Sources */,
@@ -687,12 +784,18 @@
 				BF366DE5267E325500286255 /* Fact.swift in Sources */,
 				BF57FEC9268884B60052D40B /* BadgeView.swift in Sources */,
 				BF440183267624F800C21EBA /* HomeTopBar.swift in Sources */,
+				BFE5EEB8268FB608003E1E66 /* Storage.swift in Sources */,
 				BF57FEC726887C120052D40B /* Badge.swift in Sources */,
+				BFE5EEAF268FA899003E1E66 /* HTTPHeaders.swift in Sources */,
 				BF4C91C1267E17A4005B0530 /* OnboardingView.swift in Sources */,
 				BF4C91BA267E0CFC005B0530 /* PlantDetailsTipView.swift in Sources */,
+				BFE5EEA2268F9C3C003E1E66 /* FirebaseAuthenticator.swift in Sources */,
+				BFE5EEBA268FB61B003E1E66 /* DefaultsStorage.swift in Sources */,
 				BFD5347226887349007FB5D1 /* SearchView.swift in Sources */,
 				BF4C91BE267E0D13005B0530 /* PlantDetailsCalendarView.swift in Sources */,
 				BF3AF15A268F10E300A3AE18 /* CachedAsyncImage.swift in Sources */,
+				BFE5EEB1268FA8B1003E1E66 /* HTTPMethod.swift in Sources */,
+				BFE5EEB3268FAC83003E1E66 /* FirebaseMyGardenEndpoint.swift in Sources */,
 				BF645310267E4FBF003F7B96 /* LoaderView.swift in Sources */,
 				BFCE78B226767CF1009DB52D /* MyGardenView.swift in Sources */,
 				BF22728E267DF1F1008A0DFB /* PlantDetailsBottomSheet.swift in Sources */,
@@ -702,6 +805,7 @@
 				BF44016D2676245B00C21EBA /* HomeGardenApp.swift in Sources */,
 				BFDB3C81267D2A2000B645A2 /* MyGardenListView.swift in Sources */,
 				BFD534742688752F007FB5D1 /* BookmarksView.swift in Sources */,
+				BFE5EEAD268FA87D003E1E66 /* Endpoint.swift in Sources */,
 				BF8CD852267D47A0006E2988 /* PlantDetailsNavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

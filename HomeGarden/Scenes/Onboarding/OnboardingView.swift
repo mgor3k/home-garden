@@ -5,7 +5,7 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    let didLogin: () -> Void
+    let didLogin: (AuthCredentials) -> Void
     
     var body: some View {
         VStack {
@@ -23,7 +23,9 @@ struct OnboardingView: View {
             
             Spacer()
             
-            MockSignInWithAppleButton(action: didLogin)
+            MockSignInWithAppleButton {
+                didLogin(("demo@gmail.com", "password"))
+            }
                 .frame(maxHeight: 48)
                 .cornerRadius(10)
                 .padding()
@@ -43,6 +45,6 @@ struct OnboardingView: View {
 
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingView(didLogin: {})
+        OnboardingView(didLogin: { _ in })
     }
 }

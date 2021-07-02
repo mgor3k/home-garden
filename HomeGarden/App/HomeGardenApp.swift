@@ -6,7 +6,7 @@ import SwiftUI
 
 @main
 struct HomeGardenApp: App {
-    @StateObject var state = AppState(providers: .environmentBased)
+    @StateObject var state = AppState(dependencies: .environmentBased)
     
     var body: some Scene {
         WindowGroup {
@@ -19,7 +19,7 @@ struct HomeGardenApp: App {
         ZStack {
             switch state.current {
             case .launching:
-                Color.blue
+                Color.clear
             case .onboarding:
                 OnboardingView(
                     didLogin: state.login
