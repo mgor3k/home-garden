@@ -23,5 +23,6 @@ extension FirebaseAuthenticator: Authenticating {
     }
     
     func signup(credentials: AuthCredentials) async throws {
+        // TODO: To be implemented
     }
 }
