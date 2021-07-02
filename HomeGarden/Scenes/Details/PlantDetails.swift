@@ -54,8 +54,11 @@ struct PlantDetails: View {
                 .padding(.horizontal)
                 
                 Spacer()
-                Image(plant.imageURL)
-                    .resizable()
+                CachedAsyncImage(url: plant.imageURL) {
+                    $0.resizable()
+                } placeholder: {
+                    Color.gray
+                }
                     .scaledToFit()
                     .matchedGeometryEffect(
                         id: plant,

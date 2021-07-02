@@ -10,23 +10,28 @@ struct HomeGardenApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ZStack {
-                switch state.current {
-                case .launching:
-                    Color.blue
-                case .onboarding:
-                    OnboardingView(
-                        didLogin: state.login
-                    )
-                case .running(let store):
-                    MainView(
-                        store: store,
-                        onLogoutTapped: state.logout
-                    )
-                }
-                
-                LoaderView(isVisible: $state.isLoading)
+            content
+                .environment(\.imageCache, InMemoryImageCache())
+        }
+    }
+    
+    var content: some View {
+        ZStack {
+            switch state.current {
+            case .launching:
+                Color.blue
+            case .onboarding:
+                OnboardingView(
+                    didLogin: state.login
+                )
+            case .running(let store):
+                MainView(
+                    store: store,
+                    onLogoutTapped: state.logout
+                )
             }
+            
+            LoaderView(isVisible: $state.isLoading)
         }
     }
 }

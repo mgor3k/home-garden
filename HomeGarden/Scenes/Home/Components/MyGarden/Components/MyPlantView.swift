@@ -10,8 +10,11 @@ struct MyPlantView: View {
     
     var body: some View {
         VStack {
-            Image(plant.imageURL)
-                .resizable()
+            CachedAsyncImage(url: plant.imageURL) {
+                $0.resizable()
+            } placeholder: {
+                Color.gray
+            }
                 .scaledToFill()
                 .frame(height: 200)
                 .overlay(

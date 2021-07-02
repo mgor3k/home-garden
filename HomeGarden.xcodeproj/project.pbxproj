@@ -15,6 +15,9 @@
 		BF366DE5267E325500286255 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF366DE4267E325500286255 /* Fact.swift */; };
 		BF366DED267E34BC00286255 /* MockFactsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF366DEC267E34BC00286255 /* MockFactsProvider.swift */; };
 		BF366DEF267E354700286255 /* MainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF366DEE267E354700286255 /* MainStore.swift */; };
+		BF3AF158268F108100A3AE18 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3AF157268F108100A3AE18 /* ImageLoader.swift */; };
+		BF3AF15A268F10E300A3AE18 /* CachedAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3AF159268F10E300A3AE18 /* CachedAsyncImage.swift */; };
+		BF3AF15D268F13AE00A3AE18 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3AF15C268F13AE00A3AE18 /* ImageCache.swift */; };
 		BF44016D2676245B00C21EBA /* HomeGardenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF44016C2676245B00C21EBA /* HomeGardenApp.swift */; };
 		BF44016F2676245B00C21EBA /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF44016E2676245B00C21EBA /* Home.swift */; };
 		BF4401712676245C00C21EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF4401702676245C00C21EBA /* Assets.xcassets */; };
@@ -62,6 +65,7 @@
 		BFD534742688752F007FB5D1 /* BookmarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD534732688752F007FB5D1 /* BookmarksView.swift */; };
 		BFD534762688755D007FB5D1 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD534752688755D007FB5D1 /* NotificationsView.swift */; };
 		BFDB3C81267D2A2000B645A2 /* MyGardenListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDB3C80267D2A2000B645A2 /* MyGardenListView.swift */; };
+		BFE5EE8E268F7A42003E1E66 /* ImageCacheKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EE8D268F7A42003E1E66 /* ImageCacheKey.swift */; };
 		BFEEDBE826889C4200331BA2 /* MockMyGardenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEEDBE726889C4200331BA2 /* MockMyGardenProvider.swift */; };
 		BFEEDBEA2688A01B00331BA2 /* FirebaseMyGardenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEEDBE92688A01B00331BA2 /* FirebaseMyGardenProvider.swift */; };
 		BFF2AA062676399A003069D4 /* FactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2AA052676399A003069D4 /* FactView.swift */; };
@@ -76,6 +80,9 @@
 		BF366DE4267E325500286255 /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
 		BF366DEC267E34BC00286255 /* MockFactsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFactsProvider.swift; sourceTree = "<group>"; };
 		BF366DEE267E354700286255 /* MainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStore.swift; sourceTree = "<group>"; };
+		BF3AF157268F108100A3AE18 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		BF3AF159268F10E300A3AE18 /* CachedAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedAsyncImage.swift; sourceTree = "<group>"; };
+		BF3AF15C268F13AE00A3AE18 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		BF4401692676245B00C21EBA /* HomeGarden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeGarden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF44016C2676245B00C21EBA /* HomeGardenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGardenApp.swift; sourceTree = "<group>"; };
 		BF44016E2676245B00C21EBA /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -123,6 +130,7 @@
 		BFD534732688752F007FB5D1 /* BookmarksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksView.swift; sourceTree = "<group>"; };
 		BFD534752688755D007FB5D1 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		BFDB3C80267D2A2000B645A2 /* MyGardenListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGardenListView.swift; sourceTree = "<group>"; };
+		BFE5EE8D268F7A42003E1E66 /* ImageCacheKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheKey.swift; sourceTree = "<group>"; };
 		BFEEDBE726889C4200331BA2 /* MockMyGardenProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMyGardenProvider.swift; sourceTree = "<group>"; };
 		BFEEDBE92688A01B00331BA2 /* FirebaseMyGardenProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMyGardenProvider.swift; sourceTree = "<group>"; };
 		BFF2AA052676399A003069D4 /* FactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactView.swift; sourceTree = "<group>"; };
@@ -199,6 +207,16 @@
 				BF645307267E42F3003F7B96 /* Providers.swift */,
 			);
 			path = Providers;
+			sourceTree = "<group>";
+		};
+		BF3AF156268F107800A3AE18 /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				BF3AF157268F108100A3AE18 /* ImageLoader.swift */,
+				BFE5EE8D268F7A42003E1E66 /* ImageCacheKey.swift */,
+				BF3AF15C268F13AE00A3AE18 /* ImageCache.swift */,
+			);
+			path = ImageCache;
 			sourceTree = "<group>";
 		};
 		BF4401602676245B00C21EBA = {
@@ -285,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				BFC7179326762DD5000A2F8B /* IconButton.swift */,
+				BF3AF159268F10E300A3AE18 /* CachedAsyncImage.swift */,
 				BF64530F267E4FBF003F7B96 /* LoaderView.swift */,
 				BFCE78C026769A32009DB52D /* SectionText.swift */,
 				BFCE78C426769B5F009DB52D /* PageIndicator.swift */,
@@ -415,6 +434,7 @@
 		BF8CD84A267D43E7006E2988 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				BFE5EE8C268F7A25003E1E66 /* Persistance */,
 				BF366DEB267E34A700286255 /* Providers */,
 				BF8CD84B267D43EE006E2988 /* Model */,
 			);
@@ -540,6 +560,14 @@
 			path = "My Garden";
 			sourceTree = "<group>";
 		};
+		BFE5EE8C268F7A25003E1E66 /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				BF3AF156268F107800A3AE18 /* ImageCache */,
+			);
+			path = Persistance;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -618,6 +646,7 @@
 			files = (
 				BFCE78A726765778009DB52D /* FactsStore.swift in Sources */,
 				BF4C91C7267E2642005B0530 /* ProfileView.swift in Sources */,
+				BFE5EE8E268F7A42003E1E66 /* ImageCacheKey.swift in Sources */,
 				BF227291267DF240008A0DFB /* View+Shadow.swift in Sources */,
 				BF57FECB26888CB80052D40B /* FirebaseFactsProvider.swift in Sources */,
 				BFCE78B626767DE0009DB52D /* MyGardenStore.swift in Sources */,
@@ -630,6 +659,7 @@
 				BF756E6B26792076007EC5E9 /* MainRouter.swift in Sources */,
 				BF4C91C4267E2371005B0530 /* MockSignInWithAppleButton.swift in Sources */,
 				BFCE78C726772052009DB52D /* CalendarItem.swift in Sources */,
+				BF3AF158268F108100A3AE18 /* ImageLoader.swift in Sources */,
 				BF5CE6D2267E6BF7001DA12D /* View+TabBar.swift in Sources */,
 				BFCE78A926766E67009DB52D /* ReversibleAnimationStore.swift in Sources */,
 				BFEEDBE826889C4200331BA2 /* MockMyGardenProvider.swift in Sources */,
@@ -643,6 +673,7 @@
 				BF366DED267E34BC00286255 /* MockFactsProvider.swift in Sources */,
 				BFC7179426762DD5000A2F8B /* IconButton.swift in Sources */,
 				BFCE78C126769A32009DB52D /* SectionText.swift in Sources */,
+				BF3AF15D268F13AE00A3AE18 /* ImageCache.swift in Sources */,
 				BF645306267E42D8003F7B96 /* AppState.swift in Sources */,
 				BF227297267DF396008A0DFB /* PlantDetailsMenuItem.swift in Sources */,
 				BF22729A267DFEF9008A0DFB /* PlantDetailsBottomSheetStore.swift in Sources */,
@@ -661,6 +692,7 @@
 				BF4C91BA267E0CFC005B0530 /* PlantDetailsTipView.swift in Sources */,
 				BFD5347226887349007FB5D1 /* SearchView.swift in Sources */,
 				BF4C91BE267E0D13005B0530 /* PlantDetailsCalendarView.swift in Sources */,
+				BF3AF15A268F10E300A3AE18 /* CachedAsyncImage.swift in Sources */,
 				BF645310267E4FBF003F7B96 /* LoaderView.swift in Sources */,
 				BFCE78B226767CF1009DB52D /* MyGardenView.swift in Sources */,
 				BF22728E267DF1F1008A0DFB /* PlantDetailsBottomSheet.swift in Sources */,
