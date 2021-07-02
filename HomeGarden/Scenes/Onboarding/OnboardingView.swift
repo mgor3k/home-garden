@@ -5,7 +5,7 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    let didLogin: (LoginCredentials) -> Void
+    let didLogin: (AuthCredentials) -> Void
     
     var body: some View {
         VStack {

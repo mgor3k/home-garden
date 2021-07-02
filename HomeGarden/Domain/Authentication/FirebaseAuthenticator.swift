@@ -15,7 +15,7 @@ struct FirebaseAuthenticator {
 
 extension FirebaseAuthenticator: Authenticating {
     // TODO: Make proper networking
-    func signin(email: String, password: String) async throws {
+    func signin(credentials: AuthCredentials) async throws {
         struct Request: Encodable {
             let email: String
             let password: String
@@ -25,7 +25,7 @@ extension FirebaseAuthenticator: Authenticating {
         let url = URL(string: "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=\(apiKey)")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.httpBody = try JSONEncoder().encode(Request(email: email, password: password))
+        request.httpBody = try JSONEncoder().encode(Request(email: credentials.email, password: credentials.password))
         request.allHTTPHeaderFields = ["content-type": "application/json"]
         
         let (_, response) = try await URLSession.shared.data(for: request, delegate: nil)
@@ -36,6 +36,6 @@ extension FirebaseAuthenticator: Authenticating {
         }
     }
     
-    func signup(email: String, password: String) async throws {
+    func signup(credentials: AuthCredentials) async throws {
     }
 }

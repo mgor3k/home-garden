@@ -16,14 +16,11 @@ class AppState: ObservableObject {
         current = .onboarding
     }
     
-    func login(credentials: LoginCredentials) {
+    func login(credentials: AuthCredentials) {
         isLoading = true
         async {
             do {
-                try await dependencies.authenticator.signin(
-                    email: credentials.email,
-                    password: credentials.password
-                )
+                try await dependencies.authenticator.signin(credentials: credentials)
                 
                 let facts = try await dependencies.facts.fetchFacts()
                 let myGarden = try await dependencies.myGarden.fetchMyGarden()
@@ -31,6 +28,7 @@ class AppState: ObservableObject {
                 await didLogin(store: .init(facts: facts, myGarden: myGarden))
             } catch {
                 print(error)
+                await errorOccured(error)
             }
         }
     }
@@ -39,6 +37,12 @@ class AppState: ObservableObject {
     func didLogin(store: MainStore) {
         isLoading = false
         current = .running(store)
+    }
+    
+    @MainActor
+    func errorOccured(_ error: Error) {
+        isLoading = false
+        // TODO: Add error handling
     }
     
     func logout() {

@@ -5,11 +5,11 @@
 import Foundation
 
 struct MockAuthenticator: Authenticating {
-    func signup(email: String, password: String) async throws {
+    func signup(credentials: AuthCredentials) async throws {
         
     }
     
-    func signin(email: String, password: String) async throws {
+    func signin(credentials: AuthCredentials) async throws {
         await withCheckedContinuation { continuation in
             DispatchQueue.global().asyncAfter(deadline: .now() + 0.5) {
                 continuation.resume(returning: ())

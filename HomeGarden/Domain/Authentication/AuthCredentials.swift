@@ -4,4 +4,4 @@
 
 import Foundation
 
-typealias LoginCredentials = (email: String, password: String)
+typealias AuthCredentials = (email: String, password: String)

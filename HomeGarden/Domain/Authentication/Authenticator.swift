@@ -5,11 +5,11 @@
 import Foundation
 
 protocol SigninHandler {
-    func signin(email: String, password: String) async throws
+    func signin(credentials: AuthCredentials) async throws
 }
 
 protocol SignupHandler {
-    func signup(email: String, password: String) async throws
+    func signup(credentials: AuthCredentials) async throws
 }
 
 typealias Authenticating = SignupHandler & SigninHandler
