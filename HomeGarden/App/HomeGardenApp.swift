@@ -6,7 +6,7 @@ import SwiftUI
 
 @main
 struct HomeGardenApp: App {
-    @StateObject var state = AppState(providers: .environmentBased)
+    @StateObject var state = AppState(dependencies: .environmentBased)
     
     var body: some Scene {
         WindowGroup {

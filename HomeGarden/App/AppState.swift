@@ -8,20 +8,26 @@ class AppState: ObservableObject {
     @Published var current: State = .launching
     @Published var isLoading = false
     
-    let providers: Providers
+    let dependencies: Dependencies
     
-    init(providers: Providers) {
-        self.providers = providers
+    init(dependencies: Dependencies) {
+        self.dependencies = dependencies
         // TODO: Check if user is authenticated
         current = .onboarding
     }
     
-    func login() {
+    func login(credentials: LoginCredentials) {
         isLoading = true
         async {
             do {
-                let facts = try await providers.facts.fetchFacts()
-                let myGarden = try await providers.myGarden.fetchMyGarden()
+                try await dependencies.authenticator.signin(
+                    email: credentials.email,
+                    password: credentials.password
+                )
+                
+                let facts = try await dependencies.facts.fetchFacts()
+                let myGarden = try await dependencies.myGarden.fetchMyGarden()
+                
                 await didLogin(store: .init(facts: facts, myGarden: myGarden))
             } catch {
                 print(error)
