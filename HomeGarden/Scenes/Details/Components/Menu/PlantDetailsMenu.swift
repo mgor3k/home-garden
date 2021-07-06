@@ -17,6 +17,7 @@ struct PlantDetailsMenu: View {
                     Text(item.title)
                         .foregroundColor(.black)
                         .bold()
+                        .scaledToFill()
                 }
                 .rotationEffect(
                     item == selectedItem ? .degrees(-2) : .zero
@@ -50,6 +51,6 @@ struct PlantDetailsMenu_Previews: PreviewProvider {
             selectedItem: .constant(.more)
         )
             .padding()
-            .previewLayout(.sizeThatFits)
+            .previewLayout(.fixed(width: 300, height: 100))
     }
 }
