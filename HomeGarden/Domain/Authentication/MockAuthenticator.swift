@@ -19,7 +19,7 @@ struct MockAuthenticator: Authenticator {
     
     func signin(using credentials: AuthCredentials) async throws {
         await withCheckedContinuation { continuation in
-            DispatchQueue.global().asyncAfter(deadline: .now() + 0.5) {
+            DispatchQueue.global().asyncAfter(deadline: .now() + 0.3) {
                 continuation.resume(returning: ())
             }
         }

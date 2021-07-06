@@ -19,7 +19,7 @@ struct MockMyGardenProvider: MyGardenProviding {
     
     func fetchMyGarden() async throws -> [Plant] {
         await withUnsafeContinuation { continuation in
-            DispatchQueue.global().asyncAfter(deadline: .now() + 2) {
+            DispatchQueue.global().asyncAfter(deadline: .now() + 0.3) {
                 continuation.resume(returning: Self.plants)
             }
         }

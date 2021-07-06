@@ -30,7 +30,7 @@ struct MainView: View {
     
     var content: some View {
         GeometryReader { proxy in
-            VStack(spacing: 0) {
+            ZStack {
                 TabView(selection: $router.currentPage) {
                     HomeView(
                         namespace: namespace,
@@ -54,16 +54,19 @@ struct MainView: View {
                     CameraView()
                         .tag(Page.camera)
                 }
+                .padding(.bottom, 16)
                 
-                // TODO: Check non-notch devices
-                CustomTabBar(
-                    viewModel: router.tabBarModel,
-                    currentPage: $router.currentPage
-                )
+                VStack {
+                    Spacer()
+                    CustomTabBar(
+                        viewModel: router.tabBarModel,
+                        currentPage: $router.currentPage
+                    )
                     .frame(
                         width: proxy.size.width,
                         height: proxy.size.height / 12
                     )
+                }
             }
         }
     }

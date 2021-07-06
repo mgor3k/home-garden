@@ -7,7 +7,7 @@ import Foundation
 struct MockFactsProvider: FactsProviding {
     func fetchFacts() async throws -> [Fact] {
         await withUnsafeContinuation { continuation in
-            DispatchQueue.global().asyncAfter(deadline: .now() + 2) {
+            DispatchQueue.global().asyncAfter(deadline: .now() + 0.3) {
                 continuation.resume(returning: [
                     .init(
                         id: "1",
