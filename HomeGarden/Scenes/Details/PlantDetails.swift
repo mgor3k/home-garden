@@ -12,11 +12,11 @@ struct PlantDetails: View {
     
     var body: some View {
         GeometryReader { proxy in
-            VStack {
+            VStack(spacing: 0) {
                 ScrollView {
                     content
+                        .padding(.bottom, 16)
                 }
-                Spacer()
                 
                 PlantDetailsBottomSheet(plant: plant)
                     .defaultShadow()
