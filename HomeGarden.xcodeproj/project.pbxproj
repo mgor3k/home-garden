@@ -49,6 +49,7 @@
 		BF8CD852267D47A0006E2988 /* PlantDetailsNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8CD851267D47A0006E2988 /* PlantDetailsNavigationBar.swift */; };
 		BF9539C4267D1000008882B1 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9539C3267D1000008882B1 /* TabItem.swift */; };
 		BF9539C7267D13EF008882B1 /* PlantDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9539C6267D13EF008882B1 /* PlantDetails.swift */; };
+		BFA2CBF226948C2F00930FA9 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA2CBF126948C2F00930FA9 /* Dependencies.swift */; };
 		BFC7179426762DD5000A2F8B /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7179326762DD5000A2F8B /* IconButton.swift */; };
 		BFC71798267630A6000A2F8B /* FactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC71797267630A6000A2F8B /* FactsView.swift */; };
 		BFCE78A726765778009DB52D /* FactsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE78A626765778009DB52D /* FactsStore.swift */; };
@@ -68,7 +69,6 @@
 		BFE5EE8E268F7A42003E1E66 /* ImageCacheKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EE8D268F7A42003E1E66 /* ImageCacheKey.swift */; };
 		BFE5EE91268F912B003E1E66 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EE90268F912B003E1E66 /* Authenticator.swift */; };
 		BFE5EE96268F94AA003E1E66 /* MockAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EE95268F94AA003E1E66 /* MockAuthenticator.swift */; };
-		BFE5EEA0268F9B62003E1E66 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EE9F268F9B62003E1E66 /* Dependencies.swift */; };
 		BFE5EEA2268F9C3C003E1E66 /* FirebaseAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEA1268F9C3C003E1E66 /* FirebaseAuthenticator.swift */; };
 		BFE5EEA6268FA4FF003E1E66 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEA5268FA4FF003E1E66 /* NetworkClient.swift */; };
 		BFE5EEA9268FA850003E1E66 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5EEA8268FA850003E1E66 /* NetworkError.swift */; };
@@ -128,6 +128,7 @@
 		BF8CD851267D47A0006E2988 /* PlantDetailsNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsNavigationBar.swift; sourceTree = "<group>"; };
 		BF9539C3267D1000008882B1 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		BF9539C6267D13EF008882B1 /* PlantDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetails.swift; sourceTree = "<group>"; };
+		BFA2CBF126948C2F00930FA9 /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		BFC7179326762DD5000A2F8B /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
 		BFC71797267630A6000A2F8B /* FactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsView.swift; sourceTree = "<group>"; };
 		BFCE78A626765778009DB52D /* FactsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsStore.swift; sourceTree = "<group>"; };
@@ -147,7 +148,6 @@
 		BFE5EE8D268F7A42003E1E66 /* ImageCacheKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheKey.swift; sourceTree = "<group>"; };
 		BFE5EE90268F912B003E1E66 /* Authenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
 		BFE5EE95268F94AA003E1E66 /* MockAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthenticator.swift; sourceTree = "<group>"; };
-		BFE5EE9F268F9B62003E1E66 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		BFE5EEA1268F9C3C003E1E66 /* FirebaseAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticator.swift; sourceTree = "<group>"; };
 		BFE5EEA5268FA4FF003E1E66 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		BFE5EEA8268FA850003E1E66 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -612,8 +612,8 @@
 		BFE5EE92268F9431003E1E66 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				BFA2CBF126948C2F00930FA9 /* Dependencies.swift */,
 				BFE5EEA3268FA174003E1E66 /* Keys */,
-				BFE5EE9F268F9B62003E1E66 /* Dependencies.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -749,6 +749,7 @@
 				BFEEDBEA2688A01B00331BA2 /* FirebaseMyGardenProvider.swift in Sources */,
 				BF9539C7267D13EF008882B1 /* PlantDetails.swift in Sources */,
 				BF645308267E42F3003F7B96 /* Providers.swift in Sources */,
+				BFA2CBF226948C2F00930FA9 /* Dependencies.swift in Sources */,
 				BF756E6526791F0F007EC5E9 /* CustomTabBar.swift in Sources */,
 				BF756E6B26792076007EC5E9 /* MainRouter.swift in Sources */,
 				BF4C91C4267E2371005B0530 /* MockSignInWithAppleButton.swift in Sources */,
@@ -759,7 +760,6 @@
 				BFEEDBE826889C4200331BA2 /* MockMyGardenProvider.swift in Sources */,
 				BFE5EE96268F94AA003E1E66 /* MockAuthenticator.swift in Sources */,
 				BFE5EEA6268FA4FF003E1E66 /* NetworkClient.swift in Sources */,
-				BFE5EEA0268F9B62003E1E66 /* Dependencies.swift in Sources */,
 				BFD53470268872A4007FB5D1 /* CameraView.swift in Sources */,
 				BF59CE0E267BBEEE0005034D /* TabBarShape.swift in Sources */,
 				BFD534762688755D007FB5D1 /* NotificationsView.swift in Sources */,
