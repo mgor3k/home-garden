@@ -10,9 +10,9 @@ struct SearchView: View {
     var body: some View {
         NavigationView {
             content
-                .navigationTitle("Search")
+                .navigationTitle("SEARCH_TITLE")
         }
-        .searchable(text: $searchText, prompt: Text("Enter search phrase"))
+        .searchable(text: $searchText, prompt: Text("SEARCH_PLACEHOLDER"))
     }
     
     var content: some View {

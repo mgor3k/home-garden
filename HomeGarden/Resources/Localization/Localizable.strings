@@ -1,0 +1,7 @@
+// Profile
+"PROFILE_TITLE" = "Profile";
+"PROFILE_LOGOUT" = "Logout";
+
+// Search
+"SEARCH_TITLE" = "Search";
+"SEARCH_PLACEHOLDER" = "Enter search phrase";

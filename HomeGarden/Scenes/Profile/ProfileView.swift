@@ -10,13 +10,13 @@ struct ProfileView: View {
     var body: some View {
         NavigationView {
             content
-                .navigationTitle("Profile")
+                .navigationTitle("PROFILE_TITLE")
         }
     }
     
     var content: some View {
         Button(action: onLogoutTapped) {
-            Text("Logout")
+            Text("PROFILE_LOGOUT")
                 .frame(width: 200, height: 32)
         }
         .buttonStyle(.bordered)
